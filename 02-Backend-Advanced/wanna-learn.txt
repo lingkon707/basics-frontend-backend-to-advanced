@@ -1,0 +1,6 @@
+nextjs + ts + trpc 
+
+React Query, NextAuth, NextApi Route.
+
+ zod + prisma (ORM) + SQL (Postgre), 
+ Jest and Doker/Vercel
