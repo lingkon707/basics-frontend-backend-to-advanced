@@ -1,0 +1,36 @@
+##1 type:
+<button> – Standard button element; can hold text, HTML, or icons.
+<input type="button"> – Button with fixed value; cannot contain HTML inside.
+<input type="submit"> – Submits a form.
+<input type="reset"> – Resets the form to its initial values.
+
+##2 By Functionality (Purpose)
+Submit Button – Sends form data (<button type="submit">).
+Reset Button – Clears form inputs (<button type="reset">).
+Toggle Button – Changes state, e.g., on/off (<button class="toggle">).
+Navigation Button – Moves between pages (<button onclick="window.location.href='url'">).
+Icon Button – Only shows an icon instead of text.
+Action Button – Performs specific JS actions, e.g., alert, modal trigger.
+
+##3 CSS frameworks or custom styles can define buttons visually:
+
+Primary Button – Highlighted for main actions.
+Secondary Button – Less prominent than primary.
+Danger/Warning Button – For destructive actions (red or orange).
+Outline Button – Border-only button.
+Ghost Button – Transparent background, border or text only.
+Floating/Sticky Button – Stays visible on scroll (e.g., “Back to Top”).
+Icon-only Button – Button with only an icon.
+
+##4 By Interaction Behavior
+
+Hover Button – Animates or changes style on hover.
+Loading Button – Shows loading animation during action.
+Disabled Button – Inactive, cannot be clicked (disabled attribute).
+Animated Button – Has transitions or effects when clicked.
+
+###5 Framework/Library Specific
+
+Bootstrap Buttons – btn-primary, btn-secondary, btn-success, etc.
+Material UI Buttons – contained, outlined, text, fab (floating action button).
+Tailwind CSS Buttons – Custom classes like bg-blue-500 hover:bg-blue-700 text-white.

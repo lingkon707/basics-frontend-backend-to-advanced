@@ -1,0 +1,5 @@
+What a component is ?
+What role components play in a React application ?
+How to write your first React component ?
+
+#1  a React component is a JavaScript function that you can sprinkle with markup

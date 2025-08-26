@@ -1,0 +1,17 @@
+justify-start: Aligns items to the start of the container (left).
+
+justify-end: Aligns items to the end of the container (right).
+
+justify-center: Centers items within the container.
+
+justify-between: Distributes items with space between them.
+
+justify-around: Distributes items with equal space around them.
+
+justify-evenly: Distributes items with equal space between them.
+
+justify-stretch: Stretches items to fill the container.
+
+justify-baseline: Aligns items along their baseline.
+
+justify-normal: Default behavior (normal content alignment).
