@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Destination 100</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      text-align: center;
+      padding: 40px;
+    }
+
+    h1 {
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .player {
+      margin: 20px 0;
+      padding: 20px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .player.active {
+      border: 2px solid green;
+    }
+
+    .button {
+      padding: 10px 25px;
+      font-size: 18px;
+      margin-top: 15px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .button:hover {
+      background-color: #0056b3;
+    }
+
+    .score {
+      font-size: 24px;
+      margin-top: 10px;
+    }
+
+    .winner {
+      font-size: 28px;
+      color: green;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Destination 100</h1>
+  
+  <div class="player" id="playerA">
+    <h2>Player A</h2>
+    <div class="score" id="scoreA">0</div>
+  </div>
+
+  <div class="player" id="playerB">
+    <h2>Player B</h2>
+    <div class="score" id="scoreB">0</div>
+  </div>
+
+  <button class="button" id="turnButton">Your Turn</button>
+
+  <div id="message" class="score"></div>
+
+  <script>
+    let scoreA = 0;
+    let scoreB = 0;
+    let currentPlayer = 'A';
+
+    const scoreAEl = document.getElementById('scoreA');
+    const scoreBEl = document.getElementById('scoreB');
+    const messageEl = document.getElementById('message');
+    const playerAEl = document.getElementById('playerA');
+    const playerBEl = document.getElementById('playerB');
+    const button = document.getElementById('turnButton');
+
+    function updateActivePlayer() {
+      playerAEl.classList.remove('active');
+      playerBEl.classList.remove('active');
+      if (currentPlayer === 'A') {
+        playerAEl.classList.add('active');
+      } else {
+        playerBEl.classList.add('active');
+      }
+    }
+
+    function rollDice() {
+      return Math.floor(Math.random() * 6) + 1;
+    }
+
+    function handleTurn() {
+      if (scoreA >= 100 || scoreB >= 100) return;
+
+      const roll = rollDice();
+      messageEl.textContent = `Player ${currentPlayer} rolled: ${roll}`;
+
+      if (currentPlayer === 'A') {
+        scoreA += roll;
+        if (scoreA >= 100) {
+          scoreA = 100;
+          messageEl.innerHTML += `<br><span class="winner">Player A wins!</span>`;
+        }
+        scoreAEl.textContent = scoreA;
+        currentPlayer = 'B';
+      } else {
+        scoreB += roll;
+        if (scoreB >= 100) {
+          scoreB = 100;
+          messageEl.innerHTML += `<br><span class="winner">Player B wins!</span>`;
+        }
+        scoreBEl.textContent = scoreB;
+        currentPlayer = 'A';
+      }
+
+      updateActivePlayer();
+    }
+
+    button.addEventListener('click', handleTurn);
+    updateActivePlayer();
+  </script>
+
+</body>
+</html>

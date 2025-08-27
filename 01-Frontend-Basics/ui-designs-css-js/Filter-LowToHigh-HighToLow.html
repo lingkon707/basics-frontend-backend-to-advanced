@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hardware Price Sorter</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 30px;
+      max-width: 600px;
+      margin: auto;
+    }
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+    .button-group {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    button {
+      margin: 5px;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      font-size: 15px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    .output {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .output p {
+      margin: 6px 0;
+      font-size: 16px;
+    }
+    .total, .time {
+      font-weight: bold;
+      margin-top: 12px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Hardware Price Checker</h2>
+
+  <div class="button-group">
+    <button onclick="sortPrices('asc')">Low to High</button>
+    <button onclick="sortPrices('desc')">High to Low</button>
+  </div>
+
+  <div class="output" id="output"></div>
+
+  <script>
+    const hardwareItems = {
+      "Monitor": 150,
+      "Keyboard": 40,
+      "Mouse": 20,
+      "Motherboard": 120,
+      "CPU": 300,
+      "RAM": 90,
+      "SSD": 110
+    };
+
+    function sortPrices(order) {
+      const outputDiv = document.getElementById('output');
+      outputDiv.innerHTML = ''; // Clear previous output
+
+      // Convert object to array of [name, price]
+      const itemsArray = Object.entries(hardwareItems);
+
+      // Sort based on price
+      itemsArray.sort((a, b) => {
+        return order === 'asc' ? a[1] - b[1] : b[1] - a[1];
+      });
+
+      let total = 0;
+      itemsArray.forEach((item, index) => {
+        const [name, price] = item;
+        total += price;
+
+        const p = document.createElement('p');
+        p.textContent = `${index + 1}. ${name} - $${price}`;
+        outputDiv.appendChild(p);
+      });
+
+      const totalP = document.createElement('p');
+      totalP.className = 'total';
+      totalP.textContent = `Total: $${total}`;
+      outputDiv.appendChild(totalP);
+
+      const now = new Date();
+      const timeStr = now.toLocaleString('en-US', {
+        day: 'numeric', month: 'long', year: 'numeric',
+        hour: 'numeric', minute: '2-digit', hour12: true
+      });
+      const timeP = document.createElement('p');
+      timeP.className = 'time';
+      timeP.textContent = `Checked at: ${timeStr}`;
+      outputDiv.appendChild(timeP);
+    }
+  </script>
+
+</body>
+</html>

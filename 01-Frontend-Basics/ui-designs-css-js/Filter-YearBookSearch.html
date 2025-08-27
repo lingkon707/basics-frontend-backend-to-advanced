@@ -1,0 +1,118 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book List</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+      width: 60%;
+    }
+    li {
+      display: none;
+      background-color: #fff;
+      padding: 15px;
+      margin: 5px 0;
+      border-radius: 4px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s ease-in-out;
+    }
+    li:hover {
+      background-color: #f0f0f0;
+    }
+    .old-book {
+      color: #d9534f;
+    }
+    .filter-container {
+      margin-top: 20px;
+    }
+    input {
+      padding: 10px;
+      font-size: 16px;
+      box-sizing: border-box;
+    }
+    button {
+      background-color: #4caf50;
+      color: #fff;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-left: 10px;
+      transition: background-color 0.3s ease-in-out;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    #filteredBook {
+      margin-top: 20px;
+      font-size: 18px;
+      color: #333;
+      animation: fadeIn 1s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<ul id="bookList">
+  <li data-year="1998">To Kill a Mockingbird</li>
+  <li data-year="2003">The Da Vinci Code</li>
+  <li data-year="1954">Lord of the Rings</li>
+  <li data-year="1997">Harry Potter and the Philosopher's Stone</li>
+  <li data-year="1982">Blade Runner</li>
+  <li data-year="2007">The Secret</li>
+  <li data-year="1960">To Kill a Mockingbird</li>
+  <li data-year="2018">Becoming</li>
+  <li data-year="1949">1984</li>
+  <li data-year="2005">The Kite Runner</li>
+</ul>
+
+<div class="filter-container">
+  <input type="number" id="filterYear" placeholder="Enter year">
+  <button onclick="filterBooks()">Filter</button>
+</div>
+
+<div id="filteredBook"></div>
+
+<script>
+  function filterBooks() {
+    const filterYear = parseInt(document.getElementById("filterYear").value);
+    const bookList = document.getElementById("bookList");
+    const books = bookList.querySelectorAll("li");
+
+    let filteredBookName = "No book found";
+
+    books.forEach((book) => {
+      const publicationYear = parseInt(book.getAttribute("data-year"));
+      if (publicationYear === filterYear) {
+        filteredBookName = book.textContent;
+      }
+    });
+
+    const filteredBookDiv = document.getElementById("filteredBook");
+    filteredBookDiv.innerHTML = `<h2>Filtered Book</h2>${filteredBookName}`;
+  }
+</script>
+
+</body>
+</html>

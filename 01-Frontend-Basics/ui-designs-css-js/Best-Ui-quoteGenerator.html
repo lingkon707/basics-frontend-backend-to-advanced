@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Random Quote Generator</title>
+<style>
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+}
+
+input[type="text"] {
+  font-size: 1.2em;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 300px;
+}
+
+button {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.2em;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #4CAF50;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.quote-container {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 500px;
+  margin: 20px auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.quote {
+  font-size: 1.5em;
+  line-height: 1.5;
+}
+
+.author {
+  font-size: 1.2em;
+  font-style: italic;
+  margin-top: 10px;
+  color: #666;
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+  <input type="text" id="quoteInput" placeholder="Enter a quote">
+  <input type="text" id="authorInput" placeholder="Enter author's name">
+  <button id="generateBtn">Generate</button>
+  <div class="quote-container" id="quoteContainer" style="display: none;">
+    <p class="quote" id="quote"></p>
+    <p class="author" id="author"></p>
+  </div>
+</div>
+
+<script>
+const quoteInput = document.getElementById('quoteInput');
+const authorInput = document.getElementById('authorInput');
+const generateBtn = document.getElementById('generateBtn');
+const quoteContainer = document.getElementById('quoteContainer');
+const quoteElement = document.getElementById('quote');
+const authorElement = document.getElementById('author');
+
+generateBtn.addEventListener('click', function() {
+  const quote = quoteInput.value.trim();
+  const author = authorInput.value.trim();
+
+  if (quote === '' || author === '') {
+    alert("Please enter both a quote and author's name.");
+    return;
+  }
+
+  quoteElement.textContent = `"${quote}"`;
+  authorElement.textContent = `- ${author}`;
+  quoteContainer.style.display = 'block';
+});
+
+</script>
+
+</body>
+</html>

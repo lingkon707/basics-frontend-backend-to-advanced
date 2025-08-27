@@ -1,0 +1,71 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Table with Shadow and Animation</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+    table {
+      border-collapse: collapse;
+      width: 80%;
+      margin: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      border-radius: 8px;
+      background-color: #fff;
+      transition: box-shadow 0.3s ease-in-out;
+    }
+    th, td {
+      padding: 12px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+    th {
+      background-color: #4caf50;
+      color: #fff;
+    }
+    tr:hover {
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+<body>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>City</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>John Doe</td>
+      <td>25</td>
+      <td>New York</td>
+    </tr>
+    <tr>
+      <td>Jane Smith</td>
+      <td>30</td>
+      <td>London</td>
+    </tr>
+    <tr>
+      <td>Bob Johnson</td>
+      <td>22</td>
+      <td>Tokyo</td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>

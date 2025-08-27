@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Phone Number Lookup</title>
+  <style>
+    body {
+      font-family: Arial;
+      max-width: 400px;
+      margin: 50px auto;
+      text-align: center;
+    }
+    select, button {
+      padding: 10px;
+      margin-top: 10px;
+      width: 100%;
+    }
+    #result {
+      margin-top: 20px;
+      font-size: 18px;
+      color: green;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Find Phone Number</h2>
+
+  <label for="nameSelect">Select a Name:</label>
+  <select id="nameSelect">
+    <option disabled selected>-- Choose a Name --</option>
+  </select>
+
+  <button onclick="showNumber()">Submit</button>
+
+  <div id="result"></div>
+
+  <script>
+    // 📌 Sample Array: Name and Phone Number
+    const people = [
+      { name: "Rafiq", phone: "01711111111" },
+      { name: "Selina", phone: "01822222222" },
+      { name: "Tanvir", phone: "01933333333" },
+      { name: "Mitu", phone: "01644444444" }
+    ];
+
+    const nameSelect = document.getElementById("nameSelect");
+
+    // 🔁 Load names into the dropdown
+    people.forEach(person => {
+      const option = document.createElement("option");
+      option.value = person.name;
+      option.textContent = person.name;
+      nameSelect.appendChild(option);
+    });
+
+    // ▶️ When user submits
+    function showNumber() {
+      const selectedName = nameSelect.value;
+      const person = people.find(p => p.name === selectedName);
+      const resultDiv = document.getElementById("result");
+
+      if (person) {
+        resultDiv.textContent = `Phone Number: ${person.phone}`;
+      } else {
+        resultDiv.textContent = "Please select a valid name.";
+      }
+    }
+  </script>
+
+</body>
+</html>

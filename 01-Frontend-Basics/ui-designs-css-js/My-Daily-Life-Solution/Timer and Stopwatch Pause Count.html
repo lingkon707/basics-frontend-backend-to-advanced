@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Timer & Stopwatch with Pause History</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f0f0f0;
+      text-align: center;
+      padding: 50px;
+    }
+
+    h1 {
+      margin-bottom: 30px;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .box {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 20px;
+      width: 320px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .display {
+      font-size: 2em;
+      margin: 20px 0;
+    }
+
+    input[type="number"] {
+      width: 60px;
+      padding: 5px;
+      font-size: 1em;
+    }
+
+    button {
+      padding: 10px 15px;
+      margin: 5px;
+      font-size: 1em;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      background: #3498db;
+      color: white;
+    }
+
+    button:hover {
+      background: #2980b9;
+    }
+
+    .history {
+      font-size: 0.9em;
+      color: #555;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Timer & Stopwatch with Pause Tracking</h1>
+  <div class="container">
+    <!-- Stopwatch -->
+    <div class="box">
+      <h2>Stopwatch</h2>
+      <div id="stopwatch" class="display">00:00:00</div>
+      <button onclick="startStopwatch()">Start</button>
+      <button onclick="pauseStopwatch()">Pause</button>
+      <button onclick="stopStopwatch()">Stop</button>
+      <button onclick="resetStopwatch()">Reset</button>
+      <div class="history">
+        <div>Paused: <span id="swPauseCount">0</span> times</div>
+        <div>Total Pause Time: <span id="swPauseTime">0</span> sec</div>
+      </div>
+    </div>
+
+    <!-- Timer -->
+    <div class="box">
+      <h2>Timer</h2>
+      <div>
+        <input type="number" id="min" placeholder="Min" min="0">
+        <input type="number" id="sec" placeholder="Sec" min="0" max="59">
+      </div>
+      <div id="timer" class="display">00:00</div>
+      <button onclick="startTimer()">Start</button>
+      <button onclick="pauseTimer()">Pause</button>
+      <button onclick="stopTimer()">Stop</button>
+      <button onclick="resetTimer()">Reset</button>
+      <div class="history">
+        <div>Paused: <span id="timerPauseCount">0</span> times</div>
+        <div>Total Pause Time: <span id="timerPauseTime">0</span> sec</div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Stopwatch Logic
+    let stopwatchInterval, stopwatchTime = 0;
+    let swPauseCount = 0, swPauseTotal = 0, swPauseStart = null;
+
+    function formatStopwatchTime(time) {
+      const hrs = String(Math.floor(time / 3600)).padStart(2, '0');
+      const mins = String(Math.floor((time % 3600) / 60)).padStart(2, '0');
+      const secs = String(time % 60).padStart(2, '0');
+      return `${hrs}:${mins}:${secs}`;
+    }
+
+    function startStopwatch() {
+      if (stopwatchInterval) return;
+      if (swPauseStart) {
+        swPauseTotal += Math.floor((Date.now() - swPauseStart) / 1000);
+        swPauseStart = null;
+        document.getElementById('swPauseTime').innerText = swPauseTotal;
+      }
+      stopwatchInterval = setInterval(() => {
+        stopwatchTime++;
+        document.getElementById('stopwatch').innerText = formatStopwatchTime(stopwatchTime);
+      }, 1000);
+    }
+
+    function pauseStopwatch() {
+      if (!stopwatchInterval) return;
+      clearInterval(stopwatchInterval);
+      stopwatchInterval = null;
+      swPauseCount++;
+      swPauseStart = Date.now();
+      document.getElementById('swPauseCount').innerText = swPauseCount;
+    }
+
+    function stopStopwatch() {
+      clearInterval(stopwatchInterval);
+      stopwatchInterval = null;
+      swPauseStart = null;
+    }
+
+    function resetStopwatch() {
+      stopStopwatch();
+      stopwatchTime = 0;
+      swPauseCount = 0;
+      swPauseTotal = 0;
+      document.getElementById('stopwatch').innerText = '00:00:00';
+      document.getElementById('swPauseCount').innerText = '0';
+      document.getElementById('swPauseTime').innerText = '0';
+    }
+
+    // Timer Logic
+    let timerInterval, timerTime = 0;
+    let timerPaused = false;
+    let timerPauseCount = 0, timerPauseTotal = 0, timerPauseStart = null;
+
+    function formatTimerTime(time) {
+      const mins = String(Math.floor(time / 60)).padStart(2, '0');
+      const secs = String(time % 60).padStart(2, '0');
+      return `${mins}:${secs}`;
+    }
+
+    function startTimer() {
+      if (timerInterval) return;
+      if (timerTime === 0) {
+        const min = parseInt(document.getElementById('min').value) || 0;
+        const sec = parseInt(document.getElementById('sec').value) || 0;
+        timerTime = min * 60 + sec;
+        if (timerTime === 0) return;
+      }
+
+      if (timerPauseStart) {
+        timerPauseTotal += Math.floor((Date.now() - timerPauseStart) / 1000);
+        timerPauseStart = null;
+        document.getElementById('timerPauseTime').innerText = timerPauseTotal;
+      }
+
+      timerInterval = setInterval(() => {
+        if (timerTime <= 0) {
+          clearInterval(timerInterval);
+          timerInterval = null;
+          alert("Time's up!");
+          return;
+        }
+        timerTime--;
+        document.getElementById('timer').innerText = formatTimerTime(timerTime);
+      }, 1000);
+    }
+
+    function pauseTimer() {
+      if (!timerInterval) return;
+      clearInterval(timerInterval);
+      timerInterval = null;
+      timerPauseCount++;
+      timerPauseStart = Date.now();
+      document.getElementById('timerPauseCount').innerText = timerPauseCount;
+    }
+
+    function stopTimer() {
+      clearInterval(timerInterval);
+      timerInterval = null;
+      timerPauseStart = null;
+    }
+
+    function resetTimer() {
+      stopTimer();
+      timerTime = 0;
+      timerPauseCount = 0;
+      timerPauseTotal = 0;
+      document.getElementById('timer').innerText = '00:00';
+      document.getElementById('min').value = '';
+      document.getElementById('sec').value = '';
+      document.getElementById('timerPauseCount').innerText = '0';
+      document.getElementById('timerPauseTime').innerText = '0';
+    }
+  </script>
+
+</body>
+</html>

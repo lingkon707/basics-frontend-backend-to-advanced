@@ -1,0 +1,70 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coin Design</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .coin {
+            width: 200px;
+            height: 200px;
+            background: radial-gradient(circle, #d4af37, #b8860b);
+            border-radius: 50%;
+            box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.5), 0 4px 8px rgba(0, 0, 0, 0.3);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .coin:before {
+            content: '';
+            position: absolute;
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            background: radial-gradient(circle, #fff5b7, transparent);
+            top: 10px;
+            left: 10px;
+            z-index: 1;
+        }
+
+        .coin h1 {
+            font-size: 3em;
+            color: #8b4513;
+            margin: 0;
+            z-index: 2;
+            font-family: 'Georgia', serif;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .coin .symbol {
+            font-size: 1.5em;
+            color: #8b4513;
+            margin: 0;
+            z-index: 2;
+            font-family: 'Georgia', serif;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+            position: absolute;
+            bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="coin">
+        <h1>₿</h1>
+        <div class="symbol">2024</div>
+    </div>
+
+</body>
+</html>

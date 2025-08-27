@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Real-Time Clock with BDTIME and Date</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+      }
+
+      .date {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 2rem;
+      }
+
+      .clock-section {
+        margin: 1rem;
+        text-align: center;
+      }
+
+      .clock-title {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+      }
+
+      .clock {
+        font-size: 2rem;
+        background-color: #fff;
+        padding: 1rem 2rem;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Date Display -->
+    <div class="date" id="current-date">Loading date...</div>
+
+    <!-- International Time -->
+    <div class="clock-section">
+      <div class="clock-title">International Time</div>
+      <div class="clock" id="intl-clock">
+        <span id="intl-hours">00</span>:<span id="intl-minutes">00</span>:<span id="intl-seconds">00</span>
+      </div>
+    </div>
+
+    <!-- BD Time -->
+    <div class="clock-section">
+      <div class="clock-title">BDTIME</div>
+      <div class="clock" id="bd-clock">
+        <span id="bd-output">--</span>
+      </div>
+    </div>
+
+    <script>
+      function updateClock() {
+        const now = new Date();
+
+        const rawHours = now.getHours();
+        const minutes = String(now.getMinutes()).padStart(2, "0");
+        const seconds = String(now.getSeconds()).padStart(2, "0");
+
+        // International time
+        document.getElementById("intl-hours").textContent = String(rawHours).padStart(2, "0");
+        document.getElementById("intl-minutes").textContent = minutes;
+        document.getElementById("intl-seconds").textContent = seconds;
+
+        // BDTIME logic
+        let bdText = "--";
+        if (rawHours >= 13 && rawHours <= 23) {
+          const bdTime = rawHours - 12;
+          bdText = `BDTIME = ${bdTime} : ${minutes} : ${seconds}`;
+        } else {
+          bdText = "BDTIME not applicable";
+        }
+
+        document.getElementById("bd-output").textContent = bdText;
+
+        // Date display
+        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        const dateString = now.toLocaleDateString(undefined, options);
+        document.getElementById("current-date").textContent = dateString;
+      }
+
+      // Update every second
+      setInterval(updateClock, 1000);
+      updateClock();
+    </script>
+  </body>
+</html>

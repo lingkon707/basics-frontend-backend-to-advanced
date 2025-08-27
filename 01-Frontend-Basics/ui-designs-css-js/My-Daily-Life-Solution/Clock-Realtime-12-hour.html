@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Real-Time Clock</title>
+
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+      }
+
+      .clock {
+        display: flex;
+        align-items: center;
+        font-size: 2rem;
+      }
+
+      .clock span {
+        margin: 0 0.2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="clock">
+      <span id="hours">00</span>
+      <span>:</span>
+      <span id="minutes">00</span>
+      <span>:</span>
+      <span id="seconds">00</span>
+    </div>
+    <script>
+      
+  function updateClock() {
+    const now = new Date();
+
+    const rawHours = now.getHours();
+    const minutes = String(now.getMinutes()).padStart(2, "0");
+    const seconds = String(now.getSeconds()).padStart(2, "0");
+
+    let displayHours = String(rawHours).padStart(2, "0");
+
+    // Check if hours are between 13 and 23 (inclusive)
+    if (rawHours >= 13 && rawHours <= 23) {
+      const bdTime = rawHours - 12;
+      displayHours = `BDTIME = ${bdTime}`;
+    }
+
+    document.getElementById("hours").textContent = displayHours;
+    document.getElementById("minutes").textContent = minutes;
+    document.getElementById("seconds").textContent = seconds;
+  }
+
+  // Update the clock every second
+  setInterval(updateClock, 1000);
+
+  // Initial call to set the clock immediately
+  updateClock();
+
+
+    </script>
+  </body>
+</html>

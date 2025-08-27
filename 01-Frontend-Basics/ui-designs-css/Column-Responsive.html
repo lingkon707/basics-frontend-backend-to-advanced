@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Columns</title>
+<style>
+    .container {
+        border: 2px solid #000; /* Full border outside */
+        padding: 20px;
+        background-color: #f0f0f0; /* Background color filled entirely */
+        text-align: center; /* Center align text */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Center align flex items horizontally */
+    }
+
+    .headline {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        background-color: #ffc; /* Background color for headline */
+        padding: 10px; /* Add padding to headline */
+        flex-basis: 100%;
+    }
+
+    .column {
+        flex-basis: calc(33.33% - 20px); /* Three separate columns with some space between */
+        margin-right: 20px; /* Space between columns */
+        background-color: #ddd; /* Default background color for columns */
+        padding: 10px; /* Add padding to columns */
+        margin-bottom: 20px; /* Space between rows */
+    }
+
+    /* Unique background colors for each column */
+    .column:nth-child(1) {
+        background-color: #ffc;
+    }
+    .column:nth-child(2) {
+        background-color: #cfc;
+    }
+    .column:nth-child(3) {
+        background-color: #ccf;
+    }
+
+    /* Optional: Add styles for better readability */
+    p {
+        margin-bottom: 10px;
+    }
+
+    @media (max-width: 768px) {
+        .column {
+            flex-basis: calc(50% - 20px); /* Two columns on smaller screens */
+        }
+    }
+
+    @media (max-width: 480px) {
+        .column {
+            flex-basis: 100%; /* Single column on even smaller screens */
+        }
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="headline">Headline</div>
+    <div class="column">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla magna ut eros sodales tincidunt. Nam eu purus nec elit consequat dictum ac sed nunc. Vestibulum sed tincidunt eros. Suspendisse potenti.</p>
+    </div>
+    <div class="column">
+        <p>Integer sed nulla ac purus efficitur vestibulum. Curabitur vitae urna dapibus, fringilla eros sit amet, viverra sapien. Sed auctor felis id neque faucibus sodales.</p>
+    </div>
+    <div class="column">
+        <p>Quisque id lorem ut lorem auctor suscipit. Phasellus ultricies, quam at sodales viverra, sem sapien posuere odio, eget placerat risus nulla in dolor. Nunc in purus vel dui dignissim varius ac nec libero.</p>
+    </div>
+    <!-- More paragraphs can be added here -->
+</div>
+
+</body>
+</html>

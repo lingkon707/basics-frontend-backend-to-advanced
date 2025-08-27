@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Book Price Filter</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f7fa;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px;
+    }
+
+    h2 {
+      color: #2c3e50;
+      margin-bottom: 20px;
+    }
+
+    .input-group {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 15px;
+      flex-wrap: wrap;
+    }
+
+    input[type="number"] {
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      width: 120px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #3498db;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #2980b9;
+    }
+
+    .result {
+      margin-top: 30px;
+      width: 100%;
+      max-width: 500px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      padding: 20px;
+    }
+
+    .book {
+      padding: 10px 0;
+      border-bottom: 1px solid #eee;
+    }
+
+    .book:last-child {
+      border-bottom: none;
+    }
+
+    .book-name {
+      font-weight: bold;
+      color: #2c3e50;
+    }
+
+    .book-price {
+      color: #555;
+    }
+
+    @media (max-width: 600px) {
+      .input-group {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      input[type="number"] {
+        width: 100%;
+      }
+
+      button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h2>📚 Filter Books by Price</h2>
+
+  <div class="input-group">
+    <input type="number" id="minPrice" placeholder="Min Price">
+    <input type="number" id="maxPrice" placeholder="Max Price">
+    <button onclick="filterBooks()">Find Books</button>
+  </div>
+
+  <div class="result" id="output"></div>
+
+  <script>
+    const books = [
+      { name: "Atomic Habits", price: 380 },
+      { name: "Deep Work", price: 450 },
+      { name: "Rich Dad Poor Dad", price: 320 },
+      { name: "The Alchemist", price: 280 },
+      { name: "Ikigai", price: 290 },
+      { name: "Think and Grow Rich", price: 400 },
+      { name: "Start With Why", price: 500 },
+      { name: "Sapiens", price: 650 },
+      { name: "The Power of Now", price: 350 },
+      { name: "Can't Hurt Me", price: 550 },
+      { name: "The Psychology of Money", price: 420 },
+      { name: "Man's Search for Meaning", price: 310 },
+      { name: "Zero to One", price: 370 },
+      { name: "The Lean Startup", price: 480 },
+      { name: "Hooked", price: 430 },
+      { name: "Outliers", price: 390 },
+      { name: "The 4-Hour Workweek", price: 520 },
+      { name: "Mindset", price: 360 },
+      { name: "Drive", price: 410 },
+      { name: "The Subtle Art of Not Giving a F*ck", price: 440 },
+      { name: "Grit", price: 470 },
+      { name: "Make Your Bed", price: 260 }
+    ];
+
+    function filterBooks() {
+      const min = parseInt(document.getElementById("minPrice").value);
+      const max = parseInt(document.getElementById("maxPrice").value);
+      const output = document.getElementById("output");
+      output.innerHTML = "";
+
+      if (isNaN(min) || isNaN(max) || min > max) {
+        output.innerHTML = "<p>Please enter a valid price range.</p>";
+        return;
+      }
+
+      const filtered = books.filter(book => book.price >= min && book.price <= max);
+
+      if (filtered.length === 0) {
+        output.innerHTML = "<p>No books found in this price range.</p>";
+        return;
+      }
+
+      filtered.forEach(book => {
+        output.innerHTML += `
+          <div class="book">
+            <div class="book-name">${book.name}</div>
+            <div class="book-price">৳${book.price}</div>
+          </div>
+        `;
+      });
+    }
+  </script>
+
+</body>
+</html>
