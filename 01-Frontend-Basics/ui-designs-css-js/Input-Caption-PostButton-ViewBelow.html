@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Beautiful Board</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        #container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #007bff;
+        }
+
+        #post-form {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        #post-text {
+            width: 70%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        #post-button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #posts {
+            padding: 10px;
+        }
+
+        .post {
+            background-color: #f7f7f7;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Beautiful Board</h1>
+    <div id="container">
+        <div id="post-form">
+            <input type="text" id="post-text" placeholder="Write your post...">
+            <button id="post-button">Post</button>
+        </div>
+        <div id="posts"></div>
+    </div>
+
+    <script>
+        const postText = document.getElementById('post-text');
+        const postButton = document.getElementById('post-button');
+        const postsContainer = document.getElementById('posts');
+        let postCount = 1;
+
+        postButton.addEventListener('click', () => {
+            const text = postText.value;
+            if (text.trim() !== '') {
+                const postDiv = document.createElement('div');
+                postDiv.classList.add('post');
+                postDiv.innerText = `${postCount}. ${text}`;
+                postsContainer.appendChild(postDiv);
+                postText.value = '';
+                postCount++;
+            }
+        });
+    </script>
+</body>
+</html>

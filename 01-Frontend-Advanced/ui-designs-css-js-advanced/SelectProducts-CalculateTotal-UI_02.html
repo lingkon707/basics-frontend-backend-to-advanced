@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Massive Grocery Store</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom right, #f9f9f9, #e0e0e0);
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+    }
+
+    h1 {
+      font-size: 48px;
+      color: #2c3e50;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 32px;
+      color: #34495e;
+      margin-top: 40px;
+      margin-bottom: 20px;
+    }
+
+    label {
+      font-size: 24px;
+      display: block;
+      margin-bottom: 15px;
+      color: #333;
+    }
+
+    select {
+      width: 100%;
+      padding: 20px;
+      font-size: 22px;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      margin-bottom: 30px;
+    }
+
+    button {
+      display: block;
+      width: 100%;
+      background-color: #27ae60;
+      color: #fff;
+      padding: 20px;
+      font-size: 26px;
+      font-weight: bold;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #219150;
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 30px;
+      font-size: 22px;
+      color: #555;
+    }
+
+    li {
+      margin-bottom: 12px;
+    }
+
+    #totalBill {
+      font-size: 28px;
+      font-weight: bold;
+      margin-top: 30px;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 36px;
+      }
+      h2 {
+        font-size: 28px;
+      }
+      label, select, button, li, #totalBill {
+        font-size: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Grocery Store</h1>
+
+    <label for="productSelect">Select Products:</label>
+    <select id="productSelect" multiple size="6">
+      <option value="2.5">Apples - $2.5</option>
+      <option value="1.8">Bananas - $1.8</option>
+      <option value="3.0">Milk - $3.0</option>
+      <option value="2.0">Bread - $2.0</option>
+      <option value="1.2">Eggs - $1.2</option>
+      <option value="4.5">Chicken - $4.5</option>
+      <option value="5.0">Cheese - $5.0</option>
+    </select>
+
+    <button onclick="calculateTotal()">🧾 Calculate Total</button>
+
+    <h2>Selected Products:</h2>
+    <ul id="selectedProducts"></ul>
+
+    <div id="totalBill"></div>
+  </div>
+
+  <script>
+    const budget = 1000; // Set to a high value to avoid red by default
+
+    function calculateTotal() {
+      const selectedProducts = document.getElementById('productSelect').selectedOptions;
+      let total = 0;
+
+      const selectedProductsList = document.getElementById('selectedProducts');
+      selectedProductsList.innerHTML = '';
+
+      for (const option of selectedProducts) {
+        const productInfo = option.text.split(' - ');
+        const productName = productInfo[0];
+        const productPrice = parseFloat(productInfo[1].replace('$', ''));
+
+        const listItem = document.createElement('li');
+        listItem.textContent = `${productName} - $${productPrice.toFixed(2)}`;
+        selectedProductsList.appendChild(listItem);
+
+        total += productPrice;
+      }
+
+      const totalBill = document.getElementById('totalBill');
+      totalBill.textContent = `💰 Total Bill: $${total.toFixed(2)}`;
+
+      totalBill.style.color = total > budget ? 'red' : '#27ae60';
+    }
+  </script>
+</body>
+</html>

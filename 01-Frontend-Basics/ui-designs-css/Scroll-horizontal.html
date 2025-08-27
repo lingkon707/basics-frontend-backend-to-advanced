@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="gallery-container">
+    <div class="gallery">
+      <img src="https://www.shyamgroup.org/images/agro/003.jpg" alt="Image 1">
+      <img src="https://www.tasteofhome.com/wp-content/uploads/2018/06/tkp-tortilla-chipsArtboard-2.jpg" alt="Image 2">
+      <img src="https://www.bombaysweetsbd.com/images/slider/slide-05.jpg alt="Image 3">
+      <img src="https://www.pranfoods.net/sites/default/files/2023-09/Banner-min.png" alt="Image 3">
+
+    
+      <!-- Add more images as needed -->
+    </div>
+</body>
+<style>
+    body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.gallery-container {
+  width: 100%;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+
+.gallery {
+  display: flex;
+  scroll-snap-align: start;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  scroll-snap-stop: always;
+}
+
+</style>
+</html>

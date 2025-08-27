@@ -1,0 +1,158 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tech Learning Guide</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .box {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .html {
+    background-color: #ff6b6b;
+    width: 100px;
+    height: 80px;
+  }
+
+  .CSS {
+    background-color: #ffd166;
+    width: 120px;
+    height: 90px;
+  }
+
+  .JavaScript {
+    background-color: #06d6a0;
+    width: 110px;
+    height: 85px;
+  }
+
+  .ES6 {
+    background-color: #118ab2;
+    width: 130px;
+    height: 95px;
+  }
+
+  .ReactJS {
+    background-color: #073b4c;
+    width: 140px;
+    height: 100px;
+  }
+
+  .nextjs {
+    background-color: #f8961e;
+    width: 120px;
+    height: 90px;
+  }
+
+  .Tailwind {
+    background-color: #06aed5;
+    width: 130px;
+    height: 95px;
+  }
+
+  .typescript {
+    background-color: #8338ec;
+    width: 110px;
+    height: 85px;
+  }
+
+  .redux {
+    background-color: #e63946;
+    width: 100px;
+    height: 80px;
+  }
+
+  .input-container {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .input-container input[type="number"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+
+  .input-container button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  .suggestion-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .suggestion-box {
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="box html">HTML</div>
+    <div class="box CSS">CSS</div>
+    <div class="box JavaScript">JavaScript</div>
+    <div class="box ES6">ES6</div>
+    <div class="box ReactJS">ReactJS</div>
+    <div class="box nextjs">Next.js</div>
+    <div class="box Tailwind">Tailwind CSS</div>
+    <div class="box typescript">TypeScript</div>
+    <div class="box redux">Redux</div>
+  </div>
+
+  <div class="input-container">
+    <input type="number" id="index" min="0" max="8" placeholder="Enter step index">
+    <button onclick="suggestTech()">Get Suggestion</button>
+  </div>
+
+  <div class="suggestion-container" id="suggestionContainer"></div>
+
+  <script>
+    const techArray = ["HTML", "CSS", "JavaScript", "ES6", "ReactJS", "Next.js", "Tailwind CSS", "TypeScript", "Redux"];
+
+    function suggestTech() {
+      const index = document.getElementById("index").value;
+      const prerequisites = techArray.slice(0, index).join(", ");
+      const suggestionContainer = document.getElementById("suggestionContainer");
+      suggestionContainer.innerHTML = `<div class="suggestion-box">You should learn ${techArray[index]}.<br>Prerequisites: ${prerequisites || "None"}</div>`;
+    }
+  </script>
+</body>
+</html>

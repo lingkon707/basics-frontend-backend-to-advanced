@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Medicine App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        #container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #007bff;
+        }
+
+        .medicine {
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            margin: 20px 0;
+            background-color: #f7f7f7;
+            transition: transform 0.2s;
+            cursor: pointer;
+        }
+
+        .medicine:hover {
+            transform: scale(1.02);
+        }
+
+        .medicine h2 {
+            color: #007bff;
+            margin: 0;
+        }
+
+        .medicine p {
+            margin: 10px 0;
+        }
+
+        .medicine-description {
+            font-style: italic;
+            font-size: 14px;
+        }
+
+        .medicine-price {
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        #add-medicine {
+            display: flex;
+            margin-top: 20px;
+        }
+
+        #medicine-name {
+            width: 30%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        #medicine-description {
+            width: 40%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        #medicine-price {
+            width: 20%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        #add-button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Medicine App</h1>
+    <div id="container">
+        <div id="medicines"></div>
+        <div id="add-medicine">
+            <input type="text" id="medicine-name" placeholder="Medicine Name">
+            <input type="text" id="medicine-description" placeholder="Description">
+            <input type="text" id="medicine-price" placeholder="Price">
+            <button id="add-button">Add Medicine</button>
+        </div>
+    </div>
+
+    <script>
+        const medicinesData = [
+            {
+                name: "Medicine A",
+                description: "This is Medicine A. It is used for...",
+                price: "$10",
+            },
+            {
+                name: "Medicine B",
+                description: "Medicine B is prescribed for...",
+                price: "$15",
+            },
+            {
+                name: "Medicine C",
+                description: "Use Medicine C for...",
+                price: "$8",
+            },
+        ];
+
+        const medicinesContainer = document.getElementById('medicines');
+        const addMedicineButton = document.getElementById('add-button');
+        const medicineNameInput = document.getElementById('medicine-name');
+        const medicineDescriptionInput = document.getElementById('medicine-description');
+        const medicinePriceInput = document.getElementById('medicine-price');
+
+        function renderMedicines() {
+            medicinesContainer.innerHTML = '';
+
+            medicinesData.forEach((medicine, index) => {
+                const medicineDiv = document.createElement('div');
+                medicineDiv.classList.add('medicine');
+
+                const medicineName = document.createElement('h2');
+                medicineName.innerText = medicine.name;
+
+                const medicineDescription = document.createElement('p');
+                medicineDescription.innerText = medicine.description;
+                medicineDescription.classList.add('medicine-description');
+
+                const medicinePrice = document.createElement('p');
+                medicinePrice.innerText = `Price: ${medicine.price}`;
+                medicinePrice.classList.add('medicine-price');
+
+                medicineDiv.appendChild(medicineName);
+                medicineDiv.appendChild(medicineDescription);
+                medicineDiv.appendChild(medicinePrice);
+
+                medicinesContainer.appendChild(medicineDiv);
+            });
+        }
+
+        addMedicineButton.addEventListener('click', () => {
+            const name = medicineNameInput.value;
+            const description = medicineDescriptionInput.value;
+            const price = medicinePriceInput.value;
+
+            if (name.trim() !== '' && description.trim() !== '' && price.trim() !== '') {
+                const newMedicine = {
+                    name,
+                    description,
+                    price,
+                };
+
+                medicinesData.push(newMedicine);
+                renderMedicines();
+
+                medicineNameInput.value = '';
+                medicineDescriptionInput.value = '';
+                medicinePriceInput.value = '';
+            }
+        });
+
+        renderMedicines();
+    </script>
+</body>
+</html>

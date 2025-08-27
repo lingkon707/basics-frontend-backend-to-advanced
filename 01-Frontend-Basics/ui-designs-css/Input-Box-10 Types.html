@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Input Examples</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.input-group {
+  position: relative;
+}
+
+.input-group input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 200px;
+  transition: border-color 0.3s ease;
+}
+
+.input-group input:focus {
+  border-color: #007bff;
+}
+
+/* Example 1: Rounded Input */
+.input-rounded input {
+  border-radius: 20px;
+}
+
+/* Example 2: Bordered Input */
+.input-bordered input {
+  border: 2px solid #007bff;
+}
+
+/* Example 3: Hover Border Input */
+.input-hover-border input:hover {
+  border-color: #0056b3;
+}
+
+/* Example 4: Shadow Input */
+.input-shadow input {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Example 5: Underline Input */
+.input-underline input {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  border-radius: 0;
+}
+
+/* Example 6: Transparent Input */
+.input-transparent input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Example 7: Placeholder Color */
+.input-placeholder-color input::placeholder {
+  color: #999;
+}
+
+/* Example 8: Placeholder Opacity */
+.input-placeholder-opacity input::placeholder {
+  opacity: 0.5;
+}
+
+/* Example 9: Disabled Input */
+.input-disabled input {
+  background-color: #f4f4f4;
+  cursor: not-allowed;
+}
+
+/* Example 10: Custom Icon Input */
+.input-icon input {
+  padding-left: 30px;
+}
+
+.input-icon .icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <!-- Example 1: Rounded Input -->
+  <div class="input-group input-rounded">
+    <input type="text" placeholder="Rounded Input">
+  </div>
+
+  <!-- Example 2: Bordered Input -->
+  <div class="input-group input-bordered">
+    <input type="text" placeholder="Bordered Input">
+  </div>
+
+  <!-- Example 3: Hover Border Input -->
+  <div class="input-group input-hover-border">
+    <input type="text" placeholder="Hover Border Input">
+  </div>
+
+  <!-- Example 4: Shadow Input -->
+  <div class="input-group input-shadow">
+    <input type="text" placeholder="Shadow Input">
+  </div>
+
+  <!-- Example 5: Underline Input -->
+  <div class="input-group input-underline">
+    <input type="text" placeholder="Underline Input">
+  </div>
+
+  <!-- Example 6: Transparent Input -->
+  <div class="input-group input-transparent">
+    <input type="text" placeholder="Transparent Input">
+  </div>
+
+  <!-- Example 7: Placeholder Color -->
+  <div class="input-group input-placeholder-color">
+    <input type="text" placeholder="Placeholder Color">
+  </div>
+
+  <!-- Example 8: Placeholder Opacity -->
+  <div class="input-group input-placeholder-opacity">
+    <input type="text" placeholder="Placeholder Opacity">
+  </div>
+
+  <!-- Example 9: Disabled Input -->
+  <div class="input-group input-disabled">
+    <input type="text" placeholder="Disabled Input" disabled>
+  </div>
+
+  <!-- Example 10: Custom Icon Input -->
+  <div class="input-group input-icon">
+    <span class="icon">&#128269;</span>
+    <input type="text" placeholder="Custom Icon Input">
+  </div>
+</div>
+
+</body>
+</html>

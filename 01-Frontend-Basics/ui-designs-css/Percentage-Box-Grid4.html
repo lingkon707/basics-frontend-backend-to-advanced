@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kyrillos Zakhary</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #000d3d;
+      color: white;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: white;
+      padding: 1rem;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    .logo-circle {
+      background-color: #000d3d;
+      color: white;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 0.5rem;
+    }
+
+    .logo-text span {
+      color: #a259ff;
+    }
+
+    .menu-icon {
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    .stats-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 1rem;
+      padding: 2rem;
+    }
+
+    .card {
+      border: 2px solid rgba(255, 255, 255, 0.2);
+      border-radius: 12px;
+      padding: 2rem 1rem;
+      text-align: center;
+      background-color: #000e4d;
+    }
+
+    .highlight {
+      border-color: #a259ff;
+    }
+
+    .card .value {
+      color: #ffd700;
+      font-size: 1.8rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+
+    .card .label {
+      font-size: 0.9rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <div class="logo-circle">K</div>
+      <div class="logo-text">Kyrillos<span>Zakhary</span></div>
+    </div>
+    <div class="menu-icon">&#9776;</div>
+  </header>
+
+  <main class="stats-container">
+    <div class="card">
+      <div class="value">25%</div>
+      <div class="label">Development<br>Efficiency</div>
+    </div>
+    <div class="card">
+      <div class="value">20%</div>
+      <div class="label">User<br>Engagement</div>
+    </div>
+    <div class="card">
+      <div class="value">15%</div>
+      <div class="label">Crash<br>Reduction</div>
+    </div>
+    <div class="card highlight">
+      <div class="value">95%</div>
+      <div class="label">ML<br>Accuracy</div>
+    </div>
+  </main>
+
+</body>
+</html>

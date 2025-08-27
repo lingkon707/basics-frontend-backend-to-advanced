@@ -1,0 +1,139 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rent Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #1a1a1a;
+      color: #fff;
+      text-align: center;
+      padding: 1em;
+    }
+
+    section {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-bottom: 8px;
+    }
+
+    input, textarea {
+      padding: 8px;
+      margin-bottom: 16px;
+    }
+
+    button {
+      background-color: #1a1a1a;
+      color: #fff;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+    }
+
+    /* Unique color codes for offer sections */
+    #featured {
+      background-color: #ffd700; /* gold */
+    }
+
+    #specialOffer {
+      background-color: #00bfff; /* deep sky blue */
+    }
+
+    #winterOffer {
+      background-color: #4682b4; /* steel blue */
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Rent Websites</h1>
+  </header>
+
+  <section id="intro">
+    <h2>Welcome to Rent Services</h2>
+    <p>Find the perfect place to rent. We offer a variety of options to suit your needs.</p>
+  </section>
+
+  <section id="search">
+    <h2>Search for Properties</h2>
+    <form id="rentForm">
+      <label for="location">Location:</label>
+      <input type="text" id="location" name="location" required>
+
+      <label for="budget">Budget:</label>
+      <input type="number" id="budget" name="budget" required>
+
+      <button type="button" onclick="searchProperties()">Search</button>
+    </form>
+  </section>
+
+  <section id="featured">
+    <h2>Featured Properties</h2>
+    <p>Discover our handpicked selection of premium properties available for rent.</p>
+    <!-- Include featured property listings here -->
+  </section>
+
+  <section id="specialOffer">
+    <h2>Special Offer</h2>
+    <p>Explore our special offer for a limited time. Don't miss out on these exclusive deals!</p>
+    <!-- Include details of the special offer -->
+  </section>
+
+  <section id="winterOffer">
+    <h2>Winter Offer</h2>
+    <p>Warm up to our special winter package! Cozy homes and discounted rates for the winter season.</p>
+    <!-- Include details of the winter offer package -->
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="button" onclick="submitContactForm()">Submit</button>
+    </form>
+  </section>
+
+  <script>
+    function searchProperties() {
+      // You can add JavaScript logic to handle property search
+      alert('Searching for properties!');
+    }
+
+    function submitContactForm() {
+      // You can add JavaScript logic to handle the contact form submission
+      alert('Contact form submitted!');
+    }
+  </script>
+
+</body>
+</html>
