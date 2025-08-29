@@ -1,0 +1,75 @@
+
+
+{
+  "Diploma_in_Computer_Technology_2016_Probidhan": {
+    "Semester_1": {
+      "65711": "Bangla",
+      "65712": "English",
+      "65812": "Physical Education & Life Skill Development",
+      "65911": "Mathematics-1",
+      "65912": "Physics-1",
+      "66611": "Computer Application",
+      "66712": "Electrical Engineering Fundamentals",
+      "result":"2.79"
+      
+    },
+    "Semester_2": {
+      "66621": "Database Application",
+      "66622": "IT Support System-I",
+      "66623": "Graphics Design-I",
+      "66823": "Analog Electronics",
+      "65921": "Mathematics-2",
+      "65922": "Physics-2",
+      "65722": "Communicative English"
+    },
+    "Semester_3": {
+      "66631": "Programming Essentials",
+      "66632": "Web Design",
+      "66633": "Graphics Design-II",
+      "66634": "IT Support System-II",
+      "65931": "Mathematics-3",
+      "65913": "Chemistry",
+      "65811": "Social Science"
+    },
+    "Semester_4": {
+      "66641": "Object-Oriented Programming",
+      "66642": "Data Structure & Algorithm",
+      "66643": "Web Development",
+      "66644": "Data Communication System",
+      "66645": "Computer Peripherals",
+      "66842": "Principle of Digital Electronics",
+      "65841": "Business Organization & Communication"
+    },
+    "Semester_5": {
+      "66651": "Programming in Java",
+      "66652": "Surveillance Security System",
+      "66653": "Sequential Logic System",
+      "66654": "Web Development Project",
+      "66655": "PCB Design & Circuit Making",
+      "68546": "Operating System Application",
+      "65851": "Accounting Theory & Practice"
+    },
+    "Semester_6": {
+      "66661": "Principles of Software Engineering",
+      "66662": "Microprocessor & Interfacing",
+      "66663": "Microcontroller Application",
+      "66664": "Database Management System",
+      "6666X": "Optional Subject-I Web Mastering",
+      "69054": "Environmental Studies",
+      "65852": "Industrial Management"
+    },
+    "Semester_7": {
+      "66671": "System Analysis & Design",
+      "66672": "Network Administration & Services",
+      "66673": "Apps Development Project",
+      "66674": "E-Commerce & CMS",
+      "66675": "Cyber Security & Ethics",
+      "6667X": "Optional Subject-II Advance Database",
+      "65853": "Innovation & Entrepreneurship"
+    },
+    "Semester_8": {
+      "Industrial_Attachment": "Web Development - BDTask Software (React, Nextjs, Node, Express, MongoDB",
+      "link": "https://btebresultszone.com/booklists/computer-technology-2016"
+    }
+  }
+}

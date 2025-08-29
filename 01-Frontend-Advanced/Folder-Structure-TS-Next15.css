@@ -1,0 +1,89 @@
+/app
+│
+├── /api                   → Server-only API handlers (route handlers)
+│   └── /auth              → Example API route (/api/auth)
+│
+├── /[locale]              → Internationalization (optional)
+│   └── /page.tsx
+│
+├── /dashboard             → Route segment (/dashboard)
+│   ├── /page.tsx
+│   └── /settings          → Nested route (/dashboard/settings)
+│       └── /page.tsx
+│
+├── /layout.tsx           → Root layout
+├── /page.tsx             → Home page
+├── /globals.css          → Global styles
+├── /ClientProvider.tsx   → Root context/provider wrapper
+├── /fonts.ts             → Custom font loading (Geist, Inter, etc.)
+│
+/components                → Reusable UI components (buttons, inputs, etc.)
+│   └── /ui                → Low-level UI primitives (atoms)
+│   └── /layout            → Header, Footer, Sidebar
+│   └── /shared            → Shared functional components
+│
+/features                  → Domain-specific components
+│   └── /auth              → login form, register form
+│   └── /profile           → user card, settings panel
+│   └── /diploma           → diploma view, diploma list
+│
+/lib                       → Utilities & helpers (API clients, formatters)
+│   └── /api               → Fetchers, axios instance, etc.
+│   └── /validators        → Zod/Yup schemas
+│   └── /utils.ts
+│
+/hooks                     → Custom React hooks
+│   └── useAuth.ts
+│   └── useScroll.ts
+│
+/context                   → React context (e.g. AuthContext, ThemeContext)
+│   └── AuthContext.tsx
+│   └── ThemeProvider.tsx
+│
+/types                     → TypeScript types/interfaces
+│   └── index.ts
+│   └── user.ts
+│
+/styles                    → CSS, SCSS, or Tailwind config
+│   └── globals.css
+│   └── tailwind.config.ts
+│
+/public                    → Static files (images, icons, etc.)
+│
+/middleware.ts             → Middleware for auth, redirects, etc.
+
+
+Notes for Scale & Performance
+✅ Use /features for domain-based separation
+
+Helps you group logic by feature, not just file type (component, hook, etc.).
+
+✅ Use /components/ui for design system
+
+Includes Button.tsx, Input.tsx, Card.tsx, etc., built for reuse everywhere.
+
+✅ Use /lib/api to organize all API fetchers or SDKs
+
+This avoids cluttering your components with API logic.
+
+✅ Use /context for global app state
+
+E.g., Auth, Theme, Sidebar state — use client components here.
+
+✅ Use /types for centralized TS definitions
+
+Helps you avoid circular imports and keep your types in one place.
+
+✅ Tools You Should Use
+
+Tailwind CSS for utility-first styling
+
+Zod for schema validation
+
+React Query / SWR for data fetching (optional)
+
+Zustand or Context for state management
+
+ESLint + Prettier + Husky for clean, linted codebase
+
+SVGR for SVG icons as components

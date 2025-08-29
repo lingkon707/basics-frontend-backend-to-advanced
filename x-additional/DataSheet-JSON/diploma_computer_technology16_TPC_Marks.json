@@ -1,0 +1,70 @@
+{
+  "Diploma_in_Computer_Technology_2016_Probidhan": {
+    "Semester_1": {
+      "65711": { "name": "Bangla", "T": 3, "P": 3, "C": 4, "marks": { "Cont_Assess": 60, "Final_Exam": 90, "Total": 200 } },
+      "65712": { "name": "English", "T": 2, "P": 0, "C": 2, "marks": { "Cont_Assess": 40, "Final_Exam": 60, "Total": 100 } },
+      "65812": { "name": "Physical Education & Life Skill Development", "T": 0, "P": 3, "C": 1, "marks": { "Cont_Assess": 25, "Final_Exam": 25, "Total": 50 } },
+      "65911": { "name": "Mathematics-1", "T": 3, "P": 3, "C": 4, "marks": { "Cont_Assess": 60, "Final_Exam": 90, "Total": 200 } },
+      "65912": { "name": "Physics-1", "T": 3, "P": 3, "C": 4, "marks": { "Cont_Assess": 25, "Final_Exam": 25, "Total": 200 } },
+      "66611": { "name": "Computer Application", "T": 0, "P": 6, "C": 2, "marks": { "Cont_Assess": 50, "Final_Exam": 50, "Total": 100 } },
+      "66712": { "name": "Electrical Engineering Fundamentals", "T": 3, "P": 3, "C": 4, "marks": { "Cont_Assess": 25, "Final_Exam": 25, "Total": 200 } }
+    },
+    "Semester_2": {
+      "66621": { "name": "Database Application", "T": 0, "P": 6, "C": 2, "marks": { "Cont_Assess": 50, "Final_Exam": 50, "Total": 100 } },
+      "66622": { "name": "IT Support System-I", "T": 0, "P": 6, "C": 2, "marks": { "Cont_Assess": 50, "Final_Exam": 50, "Total": 100 } },
+      "66623": { "name": "Graphics Design-I", "T": 0, "P": 6, "C": 2, "marks": { "Cont_Assess": 50, "Final_Exam": 50, "Total": 100 } },
+      "66823": { "name": "Analog Electronics", "T": 3, "P": 3, "C": 4, "marks": { "Cont_Assess": 25, "Final_Exam": 25, "Total": 200 } },
+      "65921": { "name": "Mathematics-2", "T": 3, "P": 3, "C": 4, "marks": { "Cont_Assess": 50, "Final_Exam": 50, "Total": 200 } },
+      "65922": { "name": "Physics-2", "T": 3, "P": 3, "C": 4, "marks": { "Cont_Assess": 25, "Final_Exam": 25, "Total": 200 } },
+      "65722": { "name": "Communicative English", "T": 1, "P": 3, "C": 2, "marks": { "Cont_Assess": 20, "Final_Exam": 30, "Total": 100 } }
+    },
+    "Semester_3": {
+      "66631": { "name": "Programming Essentials", "T": 2, "P": 3, "C": 3, "marks": { "Cont_Assess": 40, "Final_Exam": 60, "Total": 150 } },
+      "66632": { "name": "Web Design", "T": 0, "P": 6, "C": 2, "marks": { "Cont_Assess": 50, "Final_Exam": 50, "Total": 100 } },
+      "66633": { "name": "Graphics Design-II", "T": 0, "P": 6, "C": 2, "marks": { "Cont_Assess": 50, "Final_Exam": 50, "Total": 100 } },
+      "66634": { "name": "IT Support-II", "T": 0, "P": 6, "C": 2, "marks": { "Cont_Assess": 50, "Final_Exam": 50, "Total": 100 } },
+      "65931": { "name": "Mathematics-3", "T": 3, "P": 3, "C": 4, "marks": { "Cont_Assess": 50, "Final_Exam": 50, "Total": 200 } },
+      "65913": { "name": "Chemistry", "T": 3, "P": 3, "C": 4, "marks": { "Cont_Assess": 25, "Final_Exam": 25, "Total": 200 } },
+      "65811": { "name": "Social Science", "T": 3, "P": 0, "C": 3, "marks": { "Cont_Assess": 60, "Final_Exam": 90, "Total": 150 } }
+    },
+    "Semester_4": {
+      "66641": { "name": "Object-Oriented Programming", "T": 2, "P": 3, "C": 3, "marks": { "Cont_Assess": 40, "Final_Exam": 60, "Total": 150 } },
+      "66642": { "name": "Data Structure & Algorithm", "T": 2, "P": 3, "C": 3, "marks": { "Cont_Assess": 40, "Final_Exam": 60, "Total": 150 } },
+      "66643": { "name": "Web Development", "T": 0, "P": 6, "C": 2, "marks": { "Cont_Assess": 50, "Final_Exam": 50, "Total": 100 } },
+      "66644": { "name": "Data Communication System", "T": 2, "P": 6, "C": 4, "marks": { "Cont_Assess": 50, "Final_Exam": 50, "Total": 200 } },
+      "66645": { "name": "Computer Peripherals", "T": 1, "P": 6, "C": 3, "marks": { "Cont_Assess": 50, "Final_Exam": 50, "Total": 150 } },
+      "66842": { "name": "Principle of Digital Electronics", "T": 3, "P": 3, "C": 4, "marks": { "Cont_Assess": 25, "Final_Exam": 25, "Total": 200 } },
+      "65841": { "name": "Business Organization & Communication", "T": 2, "P": 0, "C": 2, "marks": { "Cont_Assess": 40, "Final_Exam": 60, "Total": 100 } }
+    },
+    "Semester_5": {
+      "66651": { "name": "Programming in Java", "T": 2, "P": 3, "C": 3, "marks": { "Cont_Assess": 40, "Final_Exam": 60, "Total": 150 } },
+      "66652": { "name": "Surveillance Security System", "T": 1, "P": 6, "C": 3, "marks": { "Cont_Assess": 20, "Final_Exam": 30, "Total": 150 } },
+      "66653": { "name": "Sequential Logic System", "T": 2, "P": 3, "C": 3, "marks": { "Cont_Assess": 40, "Final_Exam": 60, "Total": 150 } },
+      "66654": { "name": "Web Development Project", "T": 0, "P": 6, "C": 2, "marks": { "Cont_Assess": 50, "Final_Exam": 50, "Total": 100 } },
+      "66655": { "name": "PCB Design & Circuit Making", "T": 1, "P": 6, "C": 3, "marks": { "Cont_Assess": 25, "Final_Exam": 25, "Total": 100 } },
+      "68546": { "name": "Operating System Application", "T": 2, "P": 3, "C": 3, "marks": { "Cont_Assess": 40, "Final_Exam": 60, "Total": 150 } },
+      "65851": { "name": "Accounting Theory & Practice", "T": 2, "P": 0, "C": 2, "marks": { "Cont_Assess": 40, "Final_Exam": 60, "Total": 100 } }
+    },
+    "Semester_6": {
+      "66661": { "name": "Principles of Software Engineering", "T": 2, "P": 3, "C": 3, "marks": { "Cont_Assess": 40, "Final_Exam": 60, "Total": 150 } },
+      "66662": { "name": "Microprocessor & Interfacing", "T": 2, "P": 3, "C": 3, "marks": { "Cont_Assess": 40, "Final_Exam": 60, "Total": 150 } },
+      "66663": { "name": "Microcontroller Application", "T": 1, "P": 6, "C": 3, "marks": { "Cont_Assess": 20, "Final_Exam": 30, "Total": 150 } },
+      "66664": { "name": "Database Management System", "T": 2, "P": 3, "C": 3, "marks": { "Cont_Assess": 40, "Final_Exam": 60, "Total": 150 } },
+      "6666X": { "name": "Optional Subject-I", "T": 2, "P": 0, "C": 2, "marks": { "Cont_Assess": 20, "Final_Exam": 30, "Total": 50 } },
+      "69054": { "name": "Environmental Studies", "T": 1, "P": 0, "C": 1, "marks": { "Cont_Assess": 25, "Final_Exam": 25, "Total": 50 } },
+      "65852": { "name": "Industrial Management", "T": 2, "P": 0, "C": 2, "marks": { "Cont_Assess": 20, "Final_Exam": 30, "Total": 50 } }
+    },
+    "Semester_7": {
+      "66671": { "name": "System Analysis & Design", "T": 2, "P": 3, "C": 3, "marks": { "Cont_Assess": 40, "Final_Exam": 60, "Total": 150 } },
+      "66672": { "name": "Network Administration & Services", "T": 2, "P": 3, "C": 3, "marks": { "Cont_Assess": 40, "Final_Exam": 60, "Total": 150 } },
+      "66673": { "name": "Apps Development Project", "T": 0, "P": 6, "C": 2, "marks": { "Cont_Assess": 50, "Final_Exam": 50, "Total": 100 } },
+      "66674": { "name": "E-Commerce & CMS", "T": 2, "P": 3, "C": 3, "marks": { "Cont_Assess": 40, "Final_Exam": 60, "Total": 150 } },
+      "66675": { "name": "Cyber Security & Ethics", "T": 2, "P": 0, "C": 2, "marks": { "Cont_Assess": 20, "Final_Exam": 30, "Total": 50 } },
+      "6667X": { "name": "Optional Subject-II", "T": 2, "P": 0, "C": 2, "marks": { "Cont_Assess": 20, "Final_Exam": 30, "Total": 50 } },
+      "65853": { "name": "Innovation & Entrepreneurship", "T": 2, "P": 0, "C": 2, "marks": { "Cont_Assess": 20, "Final_Exam": 30, "Total": 50 } }
+    },
+    "Semester_8": {
+      "Industrial_Attachment": { "name": "Web Development", "T": 0, "P": 12, "C": 6, "marks": { "Cont_Assess": 100, "Final_Exam": 100, "Total": 200 } }
+    }
+  }
+}

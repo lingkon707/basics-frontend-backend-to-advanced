@@ -1,0 +1,122 @@
+[
+  {
+    "company": "Alphabet Inc.",
+    "subsidiaries": [
+      {
+        "name": "Google",
+        "products_services": [
+          "Google Search",
+          "Google Maps",
+          "Google Drive",
+          "Google Photos",
+          "Google Docs/Sheets/Slides",
+          "Google Chrome",
+          "Android OS",
+          "Google Ads",
+          "Google Cloud Platform (GCP)",
+          "YouTube",
+          "Gmail"
+        ]
+      },
+      {
+        "name": "Waymo",
+        "products_services": [
+          "Self-driving cars",
+          "Autonomous ride-hailing"
+        ]
+      },
+      {
+        "name": "DeepMind",
+        "products_services": [
+          "AI Research",
+          "AlphaGo",
+          "AlphaFold"
+        ]
+      },
+      {
+        "name": "Verily",
+        "products_services": [
+          "Healthcare technology",
+          "Medical research tools"
+        ]
+      },
+      {
+        "name": "Fitbit",
+        "products_services": [
+          "Fitness trackers",
+          "Smartwatches"
+        ]
+      }
+    ]
+  },
+  {
+    "company": "Microsoft",
+    "products_services": [
+      "Windows OS",
+      "Microsoft Office (Word, Excel, PowerPoint, Outlook)",
+      "Microsoft Teams",
+      "Microsoft Edge",
+      "Xbox",
+      "Xbox Game Pass",
+      "Azure Cloud",
+      "LinkedIn",
+      "GitHub",
+      "Visual Studio",
+      "OneDrive",
+      "Outlook.com",
+      "Skype"
+    ]
+  },
+  {
+    "company": "Amazon",
+    "products_services": [
+      "Amazon.com (E-commerce marketplace)",
+      "Amazon Prime",
+      "Prime Video",
+      "Amazon Music",
+      "Kindle",
+      "Amazon Alexa",
+      "Echo Devices",
+      "Fire TV",
+      "Amazon Fresh",
+      "Amazon Web Services (AWS)",
+      "Audible",
+      "Twitch"
+    ]
+  },
+  {
+    "company": "Meta Platforms",
+    "products_services": [
+      "Facebook",
+      "Messenger",
+      "Instagram",
+      "WhatsApp",
+      "Threads",
+      "Meta Quest (VR Headsets)",
+      "Horizon Worlds",
+      "Meta AI Research"
+    ]
+  },
+  {
+    "company": "Apple Inc.",
+    "products_services": [
+      "iPhone",
+      "iPad",
+      "MacBook",
+      "iMac",
+      "Apple Watch",
+      "AirPods",
+      "Apple TV",
+      "iOS",
+      "macOS",
+      "watchOS",
+      "iCloud",
+      "Apple Music",
+      "Apple Arcade",
+      "Apple News+",
+      "Apple Fitness+",
+      "Apple Pay",
+      "App Store"
+    ]
+  }
+]

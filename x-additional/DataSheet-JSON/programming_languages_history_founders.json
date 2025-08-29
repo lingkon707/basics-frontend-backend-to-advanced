@@ -1,0 +1,134 @@
+[
+  {
+    "language": "C",
+    "real_name": "C",
+    "present_name": "C",
+    "founder": "Dennis Ritchie",
+    "co_founder": null,
+    "birth_year": 1972,
+    "birthday": "1972-01-01",
+    "country": "USA",
+    "current_owner": "ISO/ANSI Standards (originally Bell Labs)"
+  },
+  {
+    "language": "C++",
+    "real_name": "C with Classes",
+    "present_name": "C++",
+    "founder": "Bjarne Stroustrup",
+    "co_founder": null,
+    "birth_year": 1985,
+    "birthday": "1985-10-01",
+    "country": "Denmark",
+    "current_owner": "ISO/IEC (standardized)"
+  },
+  {
+    "language": "Python",
+    "real_name": "Python",
+    "present_name": "Python",
+    "founder": "Guido van Rossum",
+    "co_founder": null,
+    "birth_year": 1991,
+    "birthday": "1991-02-20",
+    "country": "Netherlands",
+    "current_owner": "Python Software Foundation"
+  },
+  {
+    "language": "Java",
+    "real_name": "Oak",
+    "present_name": "Java",
+    "founder": "James Gosling",
+    "co_founder": null,
+    "birth_year": 1995,
+    "birthday": "1995-05-23",
+    "country": "Canada",
+    "current_owner": "Oracle Corporation"
+  },
+  {
+    "language": "PHP",
+    "real_name": "Personal Home Page Tools",
+    "present_name": "PHP: Hypertext Preprocessor",
+    "founder": "Rasmus Lerdorf",
+    "co_founder": null,
+    "birth_year": 1995,
+    "birthday": "1995-06-08",
+    "country": "Greenland/Denmark",
+    "current_owner": "The PHP Group"
+  },
+  {
+    "language": "JavaScript",
+    "real_name": "Mocha (then LiveScript)",
+    "present_name": "JavaScript",
+    "founder": "Brendan Eich",
+    "co_founder": null,
+    "birth_year": 1995,
+    "birthday": "1995-12-04",
+    "country": "USA",
+    "current_owner": "Ecma International (standardized as ECMAScript)"
+  },
+  {
+    "language": "Ruby",
+    "real_name": "Ruby",
+    "present_name": "Ruby",
+    "founder": "Yukihiro Matsumoto",
+    "co_founder": null,
+    "birth_year": 1995,
+    "birthday": "1995-12-21",
+    "country": "Japan",
+    "current_owner": "Open-source community"
+  },
+  {
+    "language": "C#",
+    "real_name": "C#",
+    "present_name": "C#",
+    "founder": "Anders Hejlsberg",
+    "co_founder": null,
+    "birth_year": 2000,
+    "birthday": "2000-01-01",
+    "country": "Denmark",
+    "current_owner": "Microsoft"
+  },
+  {
+    "language": "Kotlin",
+    "real_name": "Kotlin",
+    "present_name": "Kotlin",
+    "founder": "JetBrains (Andrey Breslav leading)",
+    "co_founder": null,
+    "birth_year": 2011,
+    "birthday": "2011-07-19",
+    "country": "Russia",
+    "current_owner": "JetBrains"
+  },
+  {
+    "language": "TypeScript",
+    "real_name": "TypeScript",
+    "present_name": "TypeScript",
+    "founder": "Anders Hejlsberg",
+    "co_founder": null,
+    "birth_year": 2012,
+    "birthday": "2012-10-01",
+    "country": "Denmark/USA",
+    "current_owner": "Microsoft"
+  },
+  {
+    "language": "Go",
+    "real_name": "Go",
+    "present_name": "Golang (informal), Go (official)",
+    "founder": "Robert Griesemer",
+    "co_founder": "Rob Pike, Ken Thompson",
+    "birth_year": 2009,
+    "birthday": "2009-11-10",
+    "country": "USA",
+    "current_owner": "Google"
+  },
+  {
+    "language": "Swift",
+    "real_name": "Swift",
+    "present_name": "Swift",
+    "founder": "Chris Lattner",
+    "co_founder": null,
+    "birth_year": 2014,
+    "birthday": "2014-06-02",
+    "country": "USA",
+    "current_owner": "Apple Inc."
+  }
+]
