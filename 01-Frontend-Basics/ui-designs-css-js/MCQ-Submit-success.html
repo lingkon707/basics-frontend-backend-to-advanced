@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MCQ Paper</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="question">
+        <h2>Question 1:</h2>
+        <p>What is the capital of France?</p>
+      </div>
+      <div class="options">
+        <label> <input type="radio" name="q1" value="a" /> Paris </label>
+        <label> <input type="radio" name="q1" value="b" /> Rome </label>
+        <label> <input type="radio" name="q1" value="c" /> Madrid </label>
+      </div>
+      <button id="submitBtn">Submit</button>
+      <div id="result"></div>
+    </div>
+  </body>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+    }
+
+    .container {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .question {
+      margin-bottom: 10px;
+    }
+
+    .options label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    #result {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+  </style>
+  <script>
+    const submitButton = document.getElementById("submitBtn");
+    const resultDiv = document.getElementById("result");
+
+    submitButton.addEventListener("click", () => {
+      const selectedOption = document.querySelector('input[name="q1"]:checked');
+
+      if (selectedOption) {
+        const userAnswer = selectedOption.value;
+        const correctAnswer = "a"; // Correct answer for Question 1
+
+        if (userAnswer === correctAnswer) {
+          resultDiv.textContent = "Correct!";
+          resultDiv.style.color = "green";
+        } else {
+          resultDiv.textContent = "Incorrect. The correct answer is Paris.";
+          resultDiv.style.color = "red";
+        }
+      }
+    });
+  </script>
+</html>

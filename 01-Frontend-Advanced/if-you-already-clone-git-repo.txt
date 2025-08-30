@@ -1,0 +1,24 @@
+after clone and set project.
+
+npx create-next-app@latest . --typescript
+(must use dot)
+
+. → installs inside the current folder (your cloned repo).
+
+
+
+
+with repo clone / not repo clone:
+
+npx create-next-app@latest . --typescript --eslint --app
+npm install tailwindcss @tailwindcss/postcss postcss
+
+
+npx create-next-app@latest my-project --typescript --eslint --app
+npm install tailwindcss @tailwindcss/postcss postcss
+
+
+
+
+
+now have a Next.js 15 + TypeScript + ESLint + App Router project scaffold inside your repo.

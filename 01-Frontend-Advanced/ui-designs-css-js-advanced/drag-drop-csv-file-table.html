@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drag and Drop Table File</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      #table-container {
+        border: 2px dashed #aaa;
+        padding: 20px;
+        text-align: center;
+        cursor: pointer;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        border: 1px solid #aaa;
+        padding: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="table-container">
+      <p>Drag and drop a CSV file here to create a table</p>
+    </div>
+    <script>
+      const tableContainer = document.getElementById("table-container");
+
+      tableContainer.addEventListener("dragover", (e) => {
+        e.preventDefault();
+        tableContainer.style.border = "2px dashed #333";
+      });
+
+      tableContainer.addEventListener("dragleave", () => {
+        tableContainer.style.border = "2px dashed #aaa";
+      });
+
+      tableContainer.addEventListener("drop", (e) => {
+        e.preventDefault();
+        tableContainer.style.border = "2px dashed #aaa";
+        const file = e.dataTransfer.files[0];
+        if (file.type === "text/csv") {
+          const reader = new FileReader();
+          reader.onload = (event) => {
+            const csv = event.target.result;
+            const rows = csv.split("\n");
+            const table = document.createElement("table");
+            rows.forEach((row) => {
+              const cells = row.split(",");
+              const tr = document.createElement("tr");
+              cells.forEach((cell) => {
+                const td = document.createElement("td");
+                td.textContent = cell;
+                tr.appendChild(td);
+              });
+              table.appendChild(tr);
+            });
+            tableContainer.innerHTML = "";
+            tableContainer.appendChild(table);
+          };
+          reader.readAsText(file);
+        } else {
+          alert("Please drop a CSV file.");
+        }
+      });
+    </script>
+  </body>
+</html>

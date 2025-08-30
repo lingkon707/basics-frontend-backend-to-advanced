@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="productTitle" placeholder="Enter Product Title" />
+    <p>Generated Slug: <span id="slugDisplay"></span></p>
+  </body>
+  <script>
+    const titleInput = document.getElementById("productTitle");
+    const slugDisplay = document.getElementById("slugDisplay");
+
+    titleInput.addEventListener("input", updateSlug);
+
+    function updateSlug() {
+      const title = titleInput.value.trim();
+      const slug = generateSlug(title);
+      slugDisplay.textContent = slug;
+    }
+
+    function generateSlug(title) {
+      return title
+        .toLowerCase()
+        .replace(/[^a-zA-Z0-9]+/g, "-") // Replace non-alphanumeric characters with dashes
+        .replace(/^-+|-+$/g, ""); // Trim dashes from the beginning or end
+    }
+  </script>
+</html>

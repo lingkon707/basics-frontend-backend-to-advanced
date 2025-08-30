@@ -1,0 +1,131 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agile Model UI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .agile-board {
+            display: flex;
+            gap: 20px;
+            overflow-x: auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            backdrop-filter: blur(10px);
+        }
+
+        .column {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            flex: 1;
+            min-width: 250px;
+            padding: 20px;
+            transition: transform 0.2s;
+        }
+
+        .column:hover {
+            transform: translateY(-5px);
+        }
+
+        .column h2 {
+            font-size: 1.6rem;
+            margin: 0 0 15px;
+            text-align: center;
+            color: #444;
+            font-weight: 600;
+        }
+
+        .task {
+            background-color: #f8f9fa;
+            border-left: 5px solid #2575fc;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            padding: 15px;
+            transition: background-color 0.3s, border-left-color 0.3s;
+        }
+
+        .task:hover {
+            background-color: #e0e4e8;
+            border-left-color: #6a11cb;
+        }
+
+        .task-title {
+            font-size: 1.2rem;
+            margin: 0 0 5px;
+            font-weight: 600;
+        }
+
+        .task-detail {
+            font-size: 0.9rem;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="agile-board">
+        <div class="column">
+            <h2>Backlog</h2>
+            <div class="task">
+                <div class="task-title">Task 1</div>
+                <div class="task-detail">Description of task 1.</div>
+            </div>
+            <div class="task">
+                <div class="task-title">Task 2</div>
+                <div class="task-detail">Description of task 2.</div>
+            </div>
+            <div class="task">
+                <div class="task-title">Task 3</div>
+                <div class="task-detail">Description of task 3.</div>
+            </div>
+        </div>
+        <div class="column">
+            <h2>In Progress</h2>
+            <div class="task">
+                <div class="task-title">Task 4</div>
+                <div class="task-detail">Description of task 4.</div>
+            </div>
+            <div class="task">
+                <div class="task-title">Task 5</div>
+                <div class="task-detail">Description of task 5.</div>
+            </div>
+        </div>
+        <div class="column">
+            <h2>Review</h2>
+            <div class="task">
+                <div class="task-title">Task 6</div>
+                <div class="task-detail">Description of task 6.</div>
+            </div>
+            <div class="task">
+                <div class="task-title">Task 7</div>
+                <div class="task-detail">Description of task 7.</div>
+            </div>
+        </div>
+        <div class="column">
+            <h2>Done</h2>
+            <div class="task">
+                <div class="task-title">Task 8</div>
+                <div class="task-detail">Description of task 8.</div>
+            </div>
+            <div class="task">
+                <div class="task-title">Task 9</div>
+                <div class="task-detail">Description of task 9.</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

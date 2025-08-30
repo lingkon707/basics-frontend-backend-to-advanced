@@ -1,0 +1,66 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agile Model UI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .agile-board {
+            display: flex;
+            gap: 20px;
+            overflow-x: auto;
+        }
+
+        .column {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            flex: 1;
+            min-width: 200px;
+            padding: 20px;
+        }
+
+        .column h2 {
+            font-size: 1.5rem;
+            margin: 0 0 10px;
+            text-align: center;
+        }
+
+        .task {
+            background-color: #e1e1e1;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="agile-board">
+        <div class="column">
+            <h2>Backlog</h2>
+            <div class="task">Task 1</div>
+            <div class="task">Task 2</div>
+        </div>
+        <div class="column">
+            <h2>In Progress</h2>
+            <div class="task">Task 3</div>
+            <div class="task">Task 4</div>
+        </div>
+        <div class="column">
+            <h2>Review</h2>
+            <div class="task">Task 5</div>
+        </div>
+        <div class="column">
+            <h2>Done</h2>
+            <div class="task">Task 6</div>
+        </div>
+    </div>
+</body>
+</html>
