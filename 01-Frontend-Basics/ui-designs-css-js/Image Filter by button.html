@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS-Only Image Gallery with Filtering</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .gallery-item {
+    margin: 10px;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+
+  .gallery-item:hover {
+    transform: scale(1.05);
+  }
+
+  .gallery-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .filter-menu {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .filter-menu button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .filter-menu button:hover {
+    background-color: #0056b3;
+  }
+</style>
+</head>
+<body>
+<div class="filter-menu">
+  <button class="filter-button" data-filter="all">All</button>
+  <button class="filter-button" data-filter="nature">Nature</button>
+  <button class="filter-button" data-filter="architecture">Architecture</button>
+  <button class="filter-button" data-filter="travel">Travel</button>
+</div>
+<div class="gallery">
+  <div class="gallery-item nature">
+    <img src="https://via.placeholder.com/300x200?text=Nature+1" alt="Nature 1">
+  </div>
+  <div class="gallery-item architecture">
+    <img src="https://via.placeholder.com/300x200?text=Architecture+1" alt="Architecture 1">
+  </div>
+  <div class="gallery-item travel">
+    <img src="https://via.placeholder.com/300x200?text=Travel+1" alt="Travel 1">
+  </div>
+  
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const filterButtons = document.querySelectorAll('.filter-button');
+    const galleryItems = document.querySelectorAll('.gallery-item');
+
+    filterButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const filterValue = button.getAttribute('data-filter');
+        galleryItems.forEach(item => {
+          if (filterValue === 'all' || item.classList.contains(filterValue)) {
+            item.style.display = 'block';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      });
+    });
+  });
+</script>
+</body>
+</html>

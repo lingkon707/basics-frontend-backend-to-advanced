@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Azinur Time Zone App</title>
+    <style>
+      body {
+        margin: 40px;
+        padding: 0;
+        font-family: "Poppins", sans-serif;
+
+        background-size: 300% 300%;
+        animation: gradientMove 12s ease infinite;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+        text-align: center;
+      }
+
+      @keyframes gradientMove {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+      }
+
+      h1 {
+        margin: 1.2rem 0 0.5rem;
+        font-size: 1.8rem;
+        font-weight: 700;
+        text-shadow: 1px 1px 6px rgba(0,0,0,0.3);
+      }
+
+      .date {
+        font-size: 1rem;
+background: black;
+padding: 45px;
+        margin-bottom: 1.5rem;
+        color: #f5f5f5;
+      }
+
+      .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        width: 90%;
+        max-width: 380px;
+      }
+
+      .clock-card {
+        background: rgba(255, 255, 255, 0.15);
+        border-radius: 15px;
+        padding: 1rem;
+        text-align: center;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      }
+
+      .clock-card:nth-child(1) {
+        background: linear-gradient(135deg, #43cea2, #185a9d);
+      }
+      .clock-card:nth-child(2) {
+        background: linear-gradient(135deg, #ff512f, #dd2476);
+      }
+      .clock-card:nth-child(3) {
+        background: linear-gradient(135deg, #f7971e, #ffd200);
+        color: #222;
+      }
+
+      .clock-title {
+        font-size: 1rem;
+        font-weight: 600;
+        margin-bottom: 0.4rem;
+      }
+
+      .clock {
+        font-size: 1.3rem;
+        font-weight: bold;
+      }
+
+      .sub-time {
+        font-size: 0.85rem;
+        margin-top: 0.3rem;
+        opacity: 0.9;
+      }
+
+      @media (min-width: 600px) {
+        .container {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+       <div class="date" id="current-date">Loading date...</div>
+
+    <!-- Time Cards -->
+    <div class="container">
+      <!-- Moscow Time -->
+      <div class="clock-card">
+        <div class="clock-title">Moscow Time</div>
+        <div class="clock" id="moscow-clock">--</div>
+      </div>
+
+      <!-- Dhaka Time -->
+      <div class="clock-card">
+        <div class="clock-title">Dhaka Time</div>
+        <div class="clock" id="dhaka-clock-24">--</div>
+        <div class="sub-time" id="dhaka-clock-12">--</div>
+      </div>
+
+      <!-- Time Difference -->
+      <div class="clock-card">
+        <div class="clock-title">Time Difference</div>
+        <div class="clock" id="time-diff">--</div>
+      </div>
+    </div>
+
+    <script>
+      function updateClock() {
+        const now = new Date();
+
+        // Moscow Time
+        const moscow = new Date(
+          now.toLocaleString("en-US", { timeZone: "Europe/Moscow" })
+        );
+        const moscowTime = moscow.toTimeString().split(" ")[0];
+        document.getElementById("moscow-clock").textContent = moscowTime;
+
+        // Dhaka Time (24h)
+        const dhaka = new Date(
+          now.toLocaleString("en-US", { timeZone: "Asia/Dhaka" })
+        );
+        const dhakaTime24 = dhaka.toTimeString().split(" ")[0];
+        document.getElementById("dhaka-clock-24").textContent =
+          " " + dhakaTime24;
+
+        // Dhaka Time (12h)
+        const dhakaTime12 = dhaka.toLocaleTimeString("en-US", {
+          timeZone: "Asia/Dhaka",
+          hour12: true,
+        });
+        document.getElementById("dhaka-clock-12").textContent =
+          " " + dhakaTime12;
+
+        // Time Difference
+        const diffHours = Math.round(
+          (dhaka.getTime() - moscow.getTime()) / (1000 * 60 * 60)
+        );
+        const diffText =
+          diffHours > 0
+            ? `Dhaka is ${diffHours}h ahead`
+            : `Moscow is ${Math.abs(diffHours)}h ahead`;
+        document.getElementById("time-diff").textContent = diffText;
+
+        // Date
+        const options = {
+          weekday: "long",
+          year: "numeric",
+          month: "long",
+          day: "numeric",
+        };
+        document.getElementById("current-date").textContent =
+          now.toLocaleDateString(undefined, options);
+      }
+
+      setInterval(updateClock, 1000);
+      updateClock();
+    </script>
+  </body>
+</html>

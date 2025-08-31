@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    /* background-color: blueviolet; */
+
+}
+
+.Calculator {
+    background-color: rgb(146, 4, 103);
+    position: absolute;
+    top: 12%;
+    left: 30%;
+    width: 32%;
+    height: 75vh;    
+}
+
+table{
+    position: absolute;
+    top: 1%;
+    left: 3%;
+   
+
+}
+#MyResult{
+    height: 10vh;
+    font-size: 25px;
+    width:100% ;
+
+}
+.full {
+    /* height: 100px;
+   background-color: rgb(174, 226, 31);;
+   width: 100%; */
+}
+
+
+input[type=button] {
+   
+    height: 80px ;
+    width: 100px;
+    border: 2px solid blueviolet;
+    font-size: 32px;
+    background-color: rgb(234, 238, 9);
+
+}

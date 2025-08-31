@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Grade Calculator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+    input {
+      margin: 5px;
+      padding: 5px;
+      width: 80px;
+    }
+    button {
+      margin-top: 10px;
+      padding: 8px 15px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .result {
+      margin-top: 15px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>5 Subject Grade Calculator</h2>
+
+  <div>
+    <input type="number" id="math" placeholder="Math" />
+    <input type="number" id="english" placeholder="English" />
+    <input type="number" id="science" placeholder="Science" />
+    <input type="number" id="ict" placeholder="ICT" />
+    <input type="number" id="bangla" placeholder="Bangla" />
+  </div>
+
+  <button onclick="calculateGrades()">Get Grades</button>
+
+  <div id="output" class="result"></div>
+
+  <script>
+    function getGrade(score) {
+      let grade;
+      switch (true) {
+        case score > 100:
+          grade = "Invalid (Max 100)";
+          break;
+        case score >= 80:
+          grade = "A+";
+          break;
+        case score >= 70:
+          grade = "A-";
+          break;
+        case score >= 60:
+          grade = "B";
+          break;
+        case score >= 50:
+          grade = "C";
+          break;
+        case score >= 33:
+          grade = "C-";
+          break;
+        default:
+          grade = "F";
+      }
+      return grade;
+    }
+
+    function calculateGrades() {
+      let subjects = ["Math", "English", "Science", "ICT", "Bangla"];
+      let output = "";
+
+      subjects.forEach(sub => {
+        let score = parseInt(document.getElementById(sub.toLowerCase()).value) || 0;
+        let grade = getGrade(score);
+        output += `${sub}: ${score} → ${grade}<br>`;
+      });
+
+      document.getElementById("output").innerHTML = output;
+    }
+  </script>
+
+</body>
+</html>

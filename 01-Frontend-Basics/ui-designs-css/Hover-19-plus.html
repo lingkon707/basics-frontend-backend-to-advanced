@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Hover Effects</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: #007bff;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 1.2em;
+  transition: transform 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Example 6: Flip on Hover */
+.box.flip .back {
+  transform: rotateY(180deg);
+}
+
+.box.flip .front {
+  transform: rotateY(0deg);
+}
+
+.box.flip .front,
+.box.flip .back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+  transition: transform 0.6s;
+}
+
+.box.flip .back {
+  transform: rotateY(-180deg);
+}
+
+/* Example 7: Grow and Shrink on Hover */
+.box.grow-shrink:hover {
+  transform: scale(1.2);
+}
+
+/* Example 8: Skew on Hover */
+.box.skew:hover {
+  transform: skew(10deg, 10deg);
+}
+
+/* Example 9: Change Border Color on Hover */
+.box.border-color:hover {
+  border: 2px solid #0056b3;
+}
+
+/* Example 10: Rotate and Scale on Hover */
+.box.rotate-scale:hover {
+  transform: rotate(20deg) scale(1.2);
+}
+
+/* Example 11: Blur Background on Hover */
+.box.blur:hover {
+  filter: blur(5px);
+}
+
+/* Example 12: Change Opacity on Hover */
+.box.opacity:hover {
+  opacity: 0.8;
+}
+
+/* Example 13: Slide Up on Hover */
+.box.slide-up:hover {
+  transform: translateY(-20px);
+}
+
+/* Example 14: Change Text Shadow on Hover */
+.box.text-shadow:hover {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Example 15: Rotate and Fade on Hover */
+.box.rotate-fade:hover {
+  transform: rotate(10deg);
+  opacity: 0.8;
+}
+
+/* Example 16: Add Gradient on Hover */
+.box.gradient:hover {
+  background: linear-gradient(to right, #007bff, #0056b3);
+}
+
+/* Example 17: Change Box Shadow on Hover */
+.box.box-shadow:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Example 18: Change Border Radius on Hover */
+.box.border-radius:hover {
+  border-radius: 50%;
+}
+
+/* Example 19: Add Text Decoration on Hover */
+.box.text-decoration:hover {
+  text-decoration: underline;
+}
+
+/* Example 20: Change Font Weight on Hover */
+.box.font-weight:hover {
+  font-weight: bold;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <!-- Example 6: Flip on Hover -->
+  <div class="box flip">
+    <div class="front">Front</div>
+    <div class="back">Back</div>
+  </div>
+
+  <!-- Example 7: Grow and Shrink on Hover -->
+  <div class="box grow-shrink">Grow/Shrink</div>
+
+  <!-- Example 8: Skew on Hover -->
+  <div class="box skew">Skew</div>
+
+  <!-- Example 9: Change Border Color on Hover -->
+  <div class="box border-color">Border Color</div>
+
+  <!-- Example 10: Rotate and Scale on Hover -->
+  <div class="box rotate-scale">Rotate/Scale</div>
+
+  <!-- Example 11: Blur Background on Hover -->
+  <div class="box blur">Blur</div>
+
+  <!-- Example 12: Change Opacity on Hover -->
+  <div class="box opacity">Opacity</div>
+
+  <!-- Example 13: Slide Up on Hover -->
+  <div class="box slide-up">Slide Up</div>
+
+  <!-- Example 14: Change Text Shadow on Hover -->
+  <div class="box text-shadow">Text Shadow</div>
+
+  <!-- Example 15: Rotate and Fade on Hover -->
+  <div class="box rotate-fade">Rotate/Fade</div>
+
+  <!-- Example 16: Add Gradient on Hover -->
+  <div class="box gradient">Gradient</div>
+
+  <!-- Example 17: Change Box Shadow on Hover -->
+  <div class="box box-shadow">Box Shadow</div>
+
+  <!-- Example 18: Change Border Radius on Hover -->
+  <div class="box border-radius">Border Radius</div>
+
+<!-- Example 19: Add Text Decoration on Hover -->
+<div class="box text-decoration">Text Decoration</div>
+
+<!-- Example 20: Change Font Weight on Hover -->
+<div class="box font-weight">Font Weight</div>
+</div>
+
+</body>
+</html>
+

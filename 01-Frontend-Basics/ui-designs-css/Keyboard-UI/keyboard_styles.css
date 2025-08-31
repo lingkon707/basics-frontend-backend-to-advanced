@@ -1,0 +1,58 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-sizing: border-box;  
+}
+
+
+body{
+    display: flex;   
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: rgb(13, 172, 172);
+}
+
+
+.keyboard {
+    width: 60%;  
+}
+
+
+.wrapper {
+  min-width:900px ;
+  max-width: 920px;  /*left to right width*/
+  padding: 75px;    /* black-height*/
+  border-radius: 20px;
+  background: rgb(24, 23, 23);
+}
+
+
+.wrapper .keys {
+   display: flex;
+   justify-content: center;    
+}
+
+
+.wrapper .keys input{
+    height: 60px;
+    width: 70%;
+    outline: none;
+    margin:5px ;
+    font-size: 20px;
+    border-radius: 5px ;
+    color: rgb(24, 24, 26);
+    cursor: default;
+}
+
+
+.wrapper .keys input:focus{
+      color: darkgreen;
+      font-size: 30px ;
+      font-weight: bold;
+}
+

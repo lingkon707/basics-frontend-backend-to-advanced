@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Bank Dashboard</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <h1>Bank Dashboard</h1>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Accounts</a></li>
+        <li><a href="#">Funds</a></li>
+        <li><a href="#">Transactions</a></li>
+        <li><a href="#">Settings</a></li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <section class="account-summary">
+        <h2>Account Summary</h2>
+        <div class="account-card">
+          <p><strong>Account Number:</strong> XXXX-XXXX-XXXX-1234</p>
+          <p><strong>Balance:</strong> $5,000.00</p>
+        </div>
+      </section>
+
+      <section class="transaction-history">
+        <h2>Transaction History</h2>
+        <ul class="transactions-list">
+          <li>
+            <p class="transaction-date">2023-08-25</p>
+            <p class="transaction-description">Supermarket</p>
+            <p class="transaction-amount">-$100.00</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="transaction-history">
+        <h2>Funds - Collect</h2>
+        <ul class="transactions-list">
+          <li>
+            <p class="transaction-date">2021-02-11</p>
+            <p class="transaction-description">UN America</p>
+            <p class="transaction-amount">-$4500.00</p>
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <style>
+      /* Reset some default styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+      }
+
+      /* Navigation Bar */
+      .navbar {
+        background-color: #065cfd;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+      }
+
+      .nav-links {
+        list-style: none;
+        display: flex;
+      }
+
+      .nav-links li {
+        margin-right: 1rem;
+      }
+
+      .nav-links a {
+        text-decoration: none;
+        color: #fff;
+      }
+
+      /* Container */
+      .container {
+        max-width: 1200px;
+        margin: 2rem auto;
+        padding: 0 2rem;
+      }
+
+      /* Account Summary */
+      .account-summary {
+        margin-bottom: 2rem;
+      }
+
+      .account-card {
+        border: 1px solid #ddd;
+        padding: 1rem;
+        background-color: #f9f9f9;
+      }
+
+      /* Transaction History */
+      .transaction-history {
+        border-top: 1px solid #ddd;
+        padding-top: 2rem;
+      }
+
+      .transactions-list li {
+        list-style: none;
+        border-bottom: 1px solid #ddd;
+        padding: 1rem 0;
+      }
+
+      .transaction-date {
+        color: #888;
+      }
+
+      .transaction-amount {
+        color: red;
+      }
+
+      /* Add more styling as needed */
+    </style>
+  </body>
+</html>

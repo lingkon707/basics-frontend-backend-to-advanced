@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Hover Effects</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: #007bff;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 1.2em;
+  transition: transform 0.3s ease;
+}
+
+/* Example 1: Scale on Hover */
+.box.scale:hover {
+  transform: scale(1.1);
+}
+
+/* Example 2: Change Background on Hover */
+.box.background:hover {
+  background-color: #0056b3;
+}
+
+/* Example 3: Rotate on Hover */
+.box.rotate:hover {
+  transform: rotate(10deg);
+}
+
+/* Example 4: Add Shadow on Hover */
+.box.shadow:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Example 5: Change Text Color on Hover */
+.box.text-color:hover {
+  color: #ff6347;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <!-- Example 1: Scale on Hover -->
+  <div class="box scale">Scale on Hover</div>
+
+  <!-- Example 2: Change Background on Hover -->
+  <div class="box background">Change Background</div>
+
+  <!-- Example 3: Rotate on Hover -->
+  <div class="box rotate">Rotate on Hover</div>
+
+  <!-- Example 4: Add Shadow on Hover -->
+  <div class="box shadow">Add Shadow on Hover</div>
+
+  <!-- Example 5: Change Text Color on Hover -->
+  <div class="box text-color">Change Text Color</div>
+</div>
+
+</body>
+</html>
