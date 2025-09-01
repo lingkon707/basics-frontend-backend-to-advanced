@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text Case Converter</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 50px;
+      text-align: center;
+    }
+    input[type="text"] {
+      width: 300px;
+      padding: 8px;
+      font-size: 16px;
+    }
+    button {
+      padding: 8px 12px;
+      margin: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    #output {
+      margin-top: 20px;
+      font-weight: bold;
+      font-size: 18px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Text Case Converter</h2>
+  
+  <input type="text" id="inputText" placeholder="Type something...">
+  <br>
+  <button onclick="convertLower()">Lowercase</button>
+  <button onclick="convertProper()">Proper Case</button>
+  <button onclick="convertUpper()">Uppercase</button>
+  <button onclick="submitText()">Submit</button>
+  
+  <div id="output"></div>
+
+  <script>
+    function convertLower() {
+      const input = document.getElementById('inputText').value;
+      document.getElementById('output').textContent = input.toLowerCase();
+    }
+
+    function convertProper() {
+      const input = document.getElementById('inputText').value;
+      const proper = input
+        .split(' ')
+        .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+        .join(' ');
+      document.getElementById('output').textContent = proper;
+    }
+
+    function convertUpper() {
+      const input = document.getElementById('inputText').value;
+      document.getElementById('output').textContent = input.toUpperCase();
+    }
+
+    function submitText() {
+      const input = document.getElementById('inputText').value;
+      alert("Submitted text: " + input);
+    }
+  </script>
+
+</body>
+</html>
