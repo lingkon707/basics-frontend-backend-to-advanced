@@ -1,0 +1,1 @@
+These should all be client components ("use client") because context is used on the client side.

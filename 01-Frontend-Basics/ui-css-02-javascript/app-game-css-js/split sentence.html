@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Split Sentences</title>
+  <style>
+    .container {
+      margin: 50px auto;
+      text-align: center;
+    }
+
+    input[type="text"] {
+      padding: 10px;
+      width: 300px;
+      margin-right: 10px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    .box-card {
+      display: inline-block;
+      padding: 10px;
+      margin: 5px;
+      border: 1px solid #000;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <input type="text" id="sentenceInput" placeholder="Enter a new sentence">
+    <button onclick="splitSentence()">Add Sentence</button>
+  </div>
+  <div id="result" class="container"></div>
+  <script>
+    function splitSentence() {
+      const input = document.getElementById("sentenceInput").value;
+      const words = input.split(" ");
+      const resultDiv = document.getElementById("result");
+      resultDiv.innerHTML = "";
+      words.forEach(word => {
+        const wordDiv = document.createElement("div");
+        wordDiv.classList.add("box-card");
+        wordDiv.textContent = word;
+        resultDiv.appendChild(wordDiv);
+      });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Missing Alphabets Checker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin: 20px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #28a745;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .result {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Missing Alphabets Checker</h1>
+        <input type="text" id="inputText" placeholder="Type your sentence here...">
+        <button onclick="checkMissingAlphabets()">Check Missing Alphabets</button>
+        <div class="result" id="result"></div>
+    </div>
+
+    <script>
+        function checkMissingAlphabets() {
+            const inputText = document.getElementById('inputText').value.toLowerCase();
+            const alphabet = 'abcdefghijklmnopqrstuvwxyz';
+            let missingAlphabets = '';
+
+            for (let letter of alphabet) {
+                if (!inputText.includes(letter)) {
+                    missingAlphabets += letter;
+                }
+            }
+
+            document.getElementById('result').textContent = missingAlphabets ? 
+                `Missing alphabets: ${missingAlphabets}` : 'All alphabets are present.';
+        }
+    </script>
+</body>
+</html>

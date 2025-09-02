@@ -1,0 +1,14 @@
+/hooks – Custom React Hooks
+Purpose:
+
+Custom logic encapsulated in hooks.
+
+Shared between components or features.
+
+Examples:
+
+useAuth.ts → Auth state hook
+
+useScroll.ts → Scroll detection
+
+useToggle.ts → Boolean toggle

@@ -1,0 +1,77 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Number Input</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        select, input, button {
+            margin: 10px 0;
+            padding: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Enter Mobile Number</h1>
+        <select id="operator" onchange="updatePrefix()">
+            <option value="">Select Operator</option>
+            <option value="88017">GP</option>
+            <option value="88019">BL</option>
+            <option value="88018">Robi</option>
+        </select>
+        <br>
+        <input type="text" id="number" placeholder="Enter the rest of the number" maxlength="14" oninput="validateInput()">
+        <br>
+        <button onclick="submitNumber()">Submit</button>
+    </div>
+
+    <script>
+        function updatePrefix() {
+            const operator = document.getElementById('operator').value;
+            const input = document.getElementById('number');
+            input.value = operator ? `+${operator}` : '';
+        }
+
+        function validateInput() {
+            const input = document.getElementById('number');
+            const operator = document.getElementById('operator').value;
+            const prefix = `+${operator}`;
+            if (!input.value.startsWith(prefix)) {
+                input.value = prefix;
+            }
+            const regex = new RegExp(`^\\+${operator}[0-9]*$`);
+            if (!regex.test(input.value)) {
+                input.value = input.value.slice(0, -1);
+            }
+        }
+
+        function submitNumber() {
+            const operator = document.getElementById('operator').value;
+            const number = document.getElementById('number').value;
+            if (operator && number.length === 14) {
+                alert(`Full Number: ${number}`);
+            } else {
+                alert('Please select an operator and enter a valid number.');
+            }
+        }
+    </script>
+</body>
+</html>

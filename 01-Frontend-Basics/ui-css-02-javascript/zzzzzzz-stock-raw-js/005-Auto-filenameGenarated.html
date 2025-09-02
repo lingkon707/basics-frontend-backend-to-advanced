@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>filename with .js</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+  }
+
+  .container {
+    text-align: center;
+  }
+
+  input[type="text"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+  }
+
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+
+  button:hover {
+    background-color: #0056b3;
+  }
+
+  #fileName {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  #copyButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  #copyButton:hover {
+    background-color: #218838;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <input type="text" id="titleInput" placeholder="Enter Title">
+  <button onclick="generateFileName()">Generate Filename</button>
+  <div id="fileName"></div>
+  <button id="copyButton" onclick="copyFileName()">Copy Filename</button>
+  <textarea id="fileContent" style="display: none;"></textarea>
+</div>
+
+<script>
+  function generateFileName() {
+    var titleInput = document.getElementById("titleInput").value.trim();
+    var lowercaseTitle = titleInput.toLowerCase();
+    var hyphenatedTitle = addHyphens(lowercaseTitle);
+    var fileName = hyphenatedTitle + '.js';
+    document.getElementById("fileName").innerText = fileName;
+    document.getElementById("fileContent").value = fileName;
+  }
+
+  function addHyphens(str) {
+    return str.replace(/\s+/g, '-');
+  }
+
+  function copyFileName() {
+    var fileName = document.getElementById("fileName").innerText;
+    var tempInput = document.createElement("input");
+    tempInput.value = fileName;
+    document.body.appendChild(tempInput);
+    tempInput.select();
+    document.execCommand("copy");
+    document.body.removeChild(tempInput);
+    alert("Filename copied to clipboard!");
+  }
+</script>
+
+</body>
+</html>

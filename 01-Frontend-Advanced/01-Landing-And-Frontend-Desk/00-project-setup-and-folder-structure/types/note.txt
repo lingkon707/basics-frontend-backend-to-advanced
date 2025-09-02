@@ -1,0 +1,6 @@
+/types – Global TypeScript Types & Interfaces
+Purpose:
+
+Central place for TypeScript types.
+
+Prevents import loops and scattered type definitions.

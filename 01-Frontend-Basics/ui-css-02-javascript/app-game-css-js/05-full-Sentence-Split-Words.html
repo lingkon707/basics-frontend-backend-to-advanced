@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Split Sentences</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    input[type="text"] {
+      padding: 10px;
+      width: calc(100% - 150px);
+      margin-right: 10px;
+      border: 2px solid #007bff;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      font-size: 16px;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    #result {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+      gap: 10px;
+      justify-items: center;
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #ffffff;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .box-card {
+      padding: 10px;
+      background-color: #ffc107; /* Yellow */
+      border: 1px solid #ffc107; /* Yellow */
+      border-radius: 5px;
+      font-size: 16px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s;
+    }
+
+    .box-card:hover {
+      background-color: #ffca28; /* Lighter Yellow */
+      border-color: #ffca28; /* Lighter Yellow */
+    }
+
+    @media (max-width: 768px) {
+      #result {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    @media (max-width: 480px) {
+      #result {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <input type="text" id="sentenceInput" placeholder="Enter a new sentence">
+    <button onclick="splitSentence()"> Sentence Split</button>
+  </div>
+  <div id="result" class="container"></div>
+  <script>
+    function splitSentence() {
+      const input = document.getElementById("sentenceInput").value;
+      const words = input.split(" ");
+      const resultDiv = document.getElementById("result");
+      resultDiv.innerHTML = "";
+      words.forEach((word, index) => {
+        const wordDiv = document.createElement("div");
+        wordDiv.classList.add("box-card");
+        wordDiv.textContent = `${index + 1}. ${word}`;
+        resultDiv.appendChild(wordDiv);
+      });
+    }
+  </script>
+</body>
+</html>
