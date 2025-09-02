@@ -1,0 +1,52 @@
+Sure! Let’s compare the differences between these three git add commands:
+
+1️⃣ git add .
+
+Adds all changes in the current directory recursively, including:
+
+Modified files
+
+New (untracked) files
+
+New folders and their contents
+
+Very broad; useful when you want to stage everything.
+
+Example:
+
+git add .
+
+
+Pros: Quick, stages everything.
+
+Cons: May include files you didn’t intend to commit.
+
+2️⃣ git add 07-Language-Go/
+
+Adds all files inside the folder 07-Language-Go recursively, including subfolders.
+
+Does not affect other folders.
+
+Example:
+
+git add 07-Language-Go/
+
+
+Pros: Targets a specific folder.
+
+Cons: You must repeat for other folders.
+
+3️⃣ git add 07-Language-Go/main.go
+
+Adds only this specific file (main.go).
+
+Does not affect any other files or folders.
+
+Example:
+
+git add 07-Language-Go/main.go
+
+
+Pros: Very precise; useful if you only want to stage one file.
+
+Cons: Must manually add each file if you have many new files.

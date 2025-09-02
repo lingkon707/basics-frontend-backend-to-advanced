@@ -1,0 +1,7 @@
+### Add a file or all files
+
+1. Add all files inside folder:
+git add 07-Language-Go/
+
+2. Add only one file
+git add 07-Language-Go/main.go

@@ -1,0 +1,20 @@
+Git-Check-untracked
+
+git status 07-Language-Go/
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        07-Language-Go/main.go
+        07-Language-Go/helper.go
+
+
+git ls-files --others --exclude-standard 07-Language-Go/
+
+
+### Add a file or all files
+
+1. Add all files inside folder:
+git add 07-Language-Go/
+
+2. Add only one file
+git add 07-Language-Go/main.go

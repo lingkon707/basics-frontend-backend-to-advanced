@@ -1,0 +1,79 @@
+VS Code Shortcuts (Windows)
+General
+
+Ctrl + Shift + P
+Open Command Palette (search any command)
+
+Ctrl + P
+Quick file open
+
+Ctrl + Shift + N
+New window
+
+Ctrl + W
+Close current editor tab
+
+Ctrl + ,
+Open Settings
+
+Editing
+
+Ctrl + X / Ctrl + C / Ctrl + V
+Cut / Copy / Paste
+
+Ctrl + Z / Ctrl + Y
+Undo / Redo
+
+Ctrl + D
+Select next occurrence of the current selection (multi-cursor)
+
+Ctrl + /
+Toggle line comment
+
+Alt + Up/Down Arrow
+Move line up/down
+
+Shift + Alt + F
+Format document
+
+Ctrl + Space
+Trigger suggestion/autocomplete
+
+Navigation
+
+Ctrl + G
+Go to line number
+
+Ctrl + Shift + O
+Go to symbol in file
+
+F12
+Go to definition
+
+Alt + Left/Right Arrow
+Navigate back/forward
+
+Ctrl + Tab
+Switch between open files
+
+Terminal
+
+Ctrl + `
+Toggle integrated terminal
+
+Ctrl + Shift + `
+Create new terminal
+
+Ctrl + C (inside terminal)
+Cancel current command
+
+Multi-cursor
+
+Alt + Click
+Add cursor at clicked position
+
+Ctrl + Alt + Down/Up
+Add cursor below/above
+
+Ctrl + Shift + L
+Select all occurrences of current selection
