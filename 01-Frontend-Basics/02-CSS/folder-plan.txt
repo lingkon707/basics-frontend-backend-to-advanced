@@ -1,0 +1,140 @@
+
+
+Folder Structure for CSS Tutorial Playlist (Basic to Advanced)
+
+1. 00-Introduction
+
+Introduction to CSS
+
+Why CSS is important
+
+Setting up environment
+
+
+
+2. 01-CSS-Basics
+
+CSS Syntax and Selectors
+
+Colors, Fonts, and Text
+
+Box Model: Margin, Padding, Border, Content
+
+Backgrounds and Borders
+
+
+
+3. 02-Selectors-and-Properties
+
+Element, Class, ID Selectors
+
+Grouping, Descendant, Child, and Pseudo-class Selectors
+
+CSS Specificity
+
+
+
+4. 03-Positioning-and-Layout
+
+Display Property: block, inline, inline-block
+
+Position Property: static, relative, absolute, fixed, sticky
+
+Float and Clear
+
+Flexbox Basics
+
+CSS Grid Basics
+
+
+
+5. 04-Responsive-Design
+
+Media Queries
+
+Mobile-first Design
+
+Relative Units: %, em, rem, vh, vw
+
+
+
+6. 05-Advanced-Styles
+
+Transitions and Animations
+
+Transformations: rotate, scale, translate
+
+Pseudo-elements (::before, ::after)
+
+Shadows: text-shadow, box-shadow
+
+
+
+7. 06-CSS-Functions
+
+calc(), var(), clamp(), min(), max()
+
+CSS Variables and Custom Properties
+
+
+
+8. 07-Advanced-Layout
+
+Flexbox Advanced Techniques
+
+CSS Grid Advanced Techniques
+
+CSS Shapes and Clip-path
+
+
+
+9. 08-Theming-and-Design-Patterns
+
+Dark Mode / Light Mode
+
+CSS Components / Cards / Buttons
+
+Utility Classes
+
+
+
+10. 09-Transitions-and-Effects
+
+Hover Effects
+
+Keyframe Animations
+
+Gradient Animations
+
+
+
+11. 10-Best-Practices-and-Optimization
+
+Minification and Compression
+
+CSS Organization and Modularization
+
+Using Preprocessors: SASS / LESS (optional)
+
+
+
+12. 11-Projects
+
+Simple Landing Page
+
+Portfolio Website
+
+Responsive Blog Layout
+
+CSS Animation Playground
+
+
+
+
+Notes:
+
+Each folder contains HTML and CSS files for practical tutorials.
+
+Playlist progresses from beginner to advanced with hands-on examples.
+
+
