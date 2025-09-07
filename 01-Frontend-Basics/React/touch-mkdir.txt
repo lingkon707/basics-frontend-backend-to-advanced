@@ -1,0 +1,44 @@
+Note: You cannot create files directly with mkdir because mkdir is for 
+creating directories (folders), not files. However, you can use mkdir 
+to create folders and then use touch to create files inside those folders.
+
+## in 10 folder if i need app.jsx ?? solve it
+Step 1: Use mkdir to create the 10 folders
+mkdir -p "Folder1" "Folder2" "Folder3" "Folder4" "Folder5" "Folder6" "Folder7" "Folder8" "Folder9" "Folder10"
+
+Step 2: to create a app.jsx file inside each of these folders, use touch:
+touch "Folder1/app.jsx" "Folder2/app.jsx" "Folder3/app.jsx" "Folder4/app.jsx" "Folder5/app.jsx" "Folder6/app.jsx" "Folder7/app.jsx" "Folder8/app.jsx" "Folder9/app.jsx" "Folder10/app.jsx"
+
+******** GET STARTED *****
+mkdir "Quick-Start" Installation Setup "React-Compiler"
+
+
+******** Describing the UI *******
+mkdir -p "Your-First-Component" "Importing-and-Exporting-Components" "Writing-Markup-with-JSX" "JavaScript-in-JSX-with-Curly-Braces" "Passing-Props-to-a-Component" "Conditional-Rendering" "Rendering-Lists" "Keeping-Components-Pure" "Your-UI-as-a-Tree"
+touch "Your-First-Component/test.jsx" "Importing-and-Exporting-Components/test.jsx" "Writing-Markup-with-JSX/test.jsx" "JavaScript-in-JSX-with-Curly-Braces/test.jsx" "Passing-Props-to-a-Component/test.jsx" "Conditional-Rendering/test.jsx" "Rendering-Lists/test.jsx" "Keeping-Components-Pure/test.jsx" "Your-UI-as-a-Tree/test.jsx"
+
+********* Managing State ***********
+mkdir "Reacting-to-Input-with-State" "Choosing-the-State-Structure" "Sharing-State-Between-Components" "Preserving-and-Resetting-State" "Extracting-State-Logic-into-a-Reducer" "Passing-Data-Deeply-with-Context" "Scaling-Up-with-Reducer-and-Context"
+
+********** Escape Hatches *********
+mkdir "Referencing-Values-with-Refs" "Manipulating-the-DOM-with-Refs" "Synchronizing-with-Effects" "You-Might-Not-Need-an-Effect" "Lifecycle-of-Reactive-Effects" "Separating-Events-from-Effects" "Removing-Effect-Dependencies" "Reusing-Logic-with-Custom-Hooks"
+
+
+####  :  Why Use Quotes?
+
+Spaces in folder names: If a folder name has spaces 
+(e.g., Reacting to Input with State), the command line will treat 
+each part (words separated by spaces) as separate arguments, causing errors. 
+Using quotes ensures that the full name is considered as one entity.
+
+For example:
+Without quotes: mkdir Reacting to Input with State would result in an error because 
+the system treats Reacting, to, Input, with, and State as separate commands/arguments.
+
+With quotes: mkdir "Reacting to Input with State" ensures the entire name is treated 
+as a single folder name.
+
+## : When Can You Skip Quotes?
+mkdir Folder1 Folder2 Folder3
+## : WHEN NOT ?
+mkdir "Reacting to Input with State" "Choosing the State Structure"

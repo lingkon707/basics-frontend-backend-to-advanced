@@ -1,0 +1,17 @@
+go to folder, open git-bash
+
+## push all folder - if closer name :
+find . -type d -name "CLASS*" -exec cp demo.jsx {} \;   // not use
+
+# push all folder - if varity name
+find . -type d -exec cp demo.jsx {}/ \;      // use this 
+
+
+### command to remove all demo.jsx files:
+find . -type f -name "demo.jsx" -exec rm {} \;  use this one
+find . -type f -exec "demo.jsx" -exec rm {} \;   not this - ok.
+
+
+
+
+

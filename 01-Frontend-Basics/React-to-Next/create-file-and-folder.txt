@@ -1,0 +1,47 @@
+File create
+touch Analytics 
+
+folder create
+mkdir Analytics 
+mkdir -p Analytics/use-cache
+
+******** Getting started ***********
+mkdir Installation Project-Structure Layouts-and-Pages Linking-and-Navigating Server-and-Client-Components Partial-Prerendering Fetching-Data Updating-Data Caching-and-Revalidating Error-Handling CSS Image-Optimization Font-Optimization Metadata-and-OG-images Route-Handlers-and-Middleware Deploying Upgrading
+touch Installation.jsx Project-Structure.jsx Layouts-and-Pages.jsx Linking-and-Navigating.jsx Server-and-Client-Components.jsx Partial-Prerendering.jsx Fetching-Data.jsx Updating-Data.jsx Caching-and-Revalidating.jsx Error-Handling.jsx CSS.jsx Image-Optimization.jsx Font-Optimization.jsx Metadata-and-OG-images.jsx Route-Handlers-and-Middleware.jsx Deploying.jsx Upgrading.jsx
+
+
+******** all Guides | folders ************
+mkdir Analytics Authentication Backend-for-Frontend Caching CI-Build-Caching Content-Security-Policy CSS-in-JS Custom-Server Data-Security Debugging Draft-Mode Environment-Variables Forms ISR Instrumentation Internationalization JSON-LD
+mkdir Lazy-Loading Development-Environment MDX Memory-Usage Migrating Multi-tenant Multi-zones OpenTelemetry Package-Bundling Prefetching Production PWAs Redirecting Sass Scripts Self-Hosting SPAs
+mkdir Static-Exports Tailwind-CSS-v3 Testing Third-Party-Libraries Upgrading Videos
+
+********* all API Reference | folders ********
+1-2
+mkdir -p Directives/use-cache Directives/use-client Directives/use-server Components/Font Components/Form-Component Components/Image-Component Components/Link-Component Components/Script-Component
+
+3: File-system conventions
+mkdir default Dynamic-Segments error forbidden instrumentation instrumentation-client Intercepting-Routes layout loading mdx-components middleware not-found page Parallel-Routes
+mkdir public route-js Route-Groups Route-Segment-Config src template-js unauthorized-js Metadata-Files
+
+4-Functions
+mkdir after cacheLife cacheTag connection cookies draftMode fetch forbidden generateImageMetadata generateMetadata generateSitemaps generateStaticParams generateViewport headers ImageResponse NextRequest NextResponse notFound
+mkdir permanentRedirect redirect revalidatePath revalidateTag unauthorized unstable_cache unstable_noStore unstable_rethrow useLinkStatus useParams usePathname useReportWebVitals useRouter useSearchParams useSelectedLayoutSegment useSelectedLayoutSegments userAgent
+
+5-6 
+mkdir -p Configuration/next-config TypeScript ESLint CLI/create-next-app CLI/next-CLI Edge-Runtime Turbopack
+
+[7-8]
+mkdir -p Configuration/next-config Configuration/TypeScript Configuration/ESLint CLI/create-next-app CLI/next-CLI Edge-Runtime Turbopack
+
+sub: 7-8 : next-config
+mkdir allowedDevOrigins appDir assetPrefix authInterrupts basePath browserDebugInfoInTerr cacheComponents cacheLife compress crossOrigin cssChunking devIndicators distDir env eslint expireTime exportPathMap generateBuildId
+mkdir generateEtags headers htmlLimitedBots httpAgentOptions images cacheHandler inlineCss logging mdxRs onDemandEntries optimizePackageImport output pageExtensions poweredByHeader ppr productionBrowserSoun reactCompiler
+mkdir reactMaxHeadersLength reactStrictMode redirects rewrites sassOptions serverActions serverComponentsHmr serverExternalPackages staleTimes staticGeneration taint trailingSlash transpilePackages turbopack turbopackPersistentCache typedRoutes typescript urlImports
+mkdir useCache useLightningcss viewTransition webpack webVitalsAttribution
+
+
+
+
+
+
+
