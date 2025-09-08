@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>@supports Queries</title>
+  <style>
+    div { width: 200px; height: 100px; background: lightblue; }
+    @supports (display: grid) {
+      div { background: coral; }
+    }
+  </style>
+</head>
+<body>
+  <div>Background changes if grid is supported</div>
+</body>
+</html>

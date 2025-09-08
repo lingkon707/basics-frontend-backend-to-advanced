@@ -1,0 +1,53 @@
+===========================================
+      CSS VS SCSS VS SASS IN REACT & VUE
+===========================================
+
+1. REACT PROJECTS
+-----------------
+- Recommended: SCSS
+- Why SCSS:
+  * Works well with CSS Modules
+  * Supports nesting, variables, mixins
+  * Easy to maintain for component-based styling
+- SASS (indented syntax) is less common
+- CSS is okay for small projects
+- Example setup:
+  npm install sass
+  import './App.scss';
+
+2. VUE PROJECTS
+---------------
+- Recommended: SCSS
+- Why SCSS:
+  * Works in single-file components (<style lang="scss">)
+  * Supports nesting, variables, mixins
+  * Scoped component styling
+- CSS is okay for small apps
+- SASS (indented syntax) is rare
+- Example usage in Vue:
+  <style lang="scss" scoped>
+    .button {
+      color: $primary-color;
+      &:hover {
+        color: darken($primary-color, 10%);
+      }
+    }
+  </style>
+
+3. MAIN RECOMMENDATION
+----------------------
+- Use SCSS in both React and Vue projects
+- Advantages:
+  * CSS-compatible syntax
+  * Supports variables, nesting, mixins, and functions
+  * Maintains large-scale project styles easily
+- Use SASS (indented) only if preferred by team
+- Use plain CSS for very small or legacy projects
+
+===========================================
+          FINAL TIP
+===========================================
+- SCSS is modern, maintainable, and widely adopted
+- Works seamlessly with both React and Vue
+- Avoid plain CSS for complex projects
+- Indented SASS is optional, less common in modern projects

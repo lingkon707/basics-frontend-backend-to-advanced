@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Counters</title>
+  <style>
+    body { counter-reset: section; }
+    h2::before {
+      counter-increment: section;
+      content: "Section " counter(section) ": ";
+    }
+  </style>
+</head>
+<body>
+  <h2>Introduction</h2>
+  <h2>Getting Started</h2>
+  <h2>Conclusion</h2>
+</body>
+</html>

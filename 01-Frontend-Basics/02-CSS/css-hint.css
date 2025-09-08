@@ -1,0 +1,59 @@
+| Property / Concept               | Description                                   | Example Filename                           | Key Notes / Tips                            |
+| -------------------------------- | --------------------------------------------- | ------------------------------------------ | ------------------------------------------- |
+| `color`                          | Text color                                    | `color.html`                               | Can use names, HEX, RGB, HSL                |
+| `background-color`               | Element background                            | `background-color.html`                    | Use with `background-image`                 |
+| `font-size`                      | Text size                                     | `font-size.html`                           | Use px, em, rem, %, clamp()                 |
+| `font-family`                    | Text font                                     | `font-family.html`                         | Fallback fonts recommended                  |
+| `font-weight`                    | Boldness                                      | `font-weight.html`                         | normal, bold, 100–900                       |
+| `text-align`                     | Alignment                                     | `text-align.html`                          | left, center, right, justify                |
+| `text-decoration`                | Underline, line-through                       | `text-decoration.html`                     | underline, none, overline                   |
+| `text-transform`                 | Upper/lower/capitalize                        | `text-transform.html`                      | uppercase, lowercase, capitalize            |
+| `line-height`                    | Text spacing                                  | `line-height.html`                         | Can use unitless for scalability            |
+| `letter-spacing`                 | Space between letters                         | `letter-spacing.html`                      | Use px or em                                |
+| `padding`                        | Inner space                                   | `padding.html`                             | shorthand: top right bottom left            |
+| `margin`                         | Outer space                                   | `margin.html`                              | margin: auto centers horizontally           |
+| `border`                         | Element border                                | `border.html`                              | border-radius for rounded corners           |
+| `border-radius`                  | Rounded corners                               | `border-radius.html`                       | px, %, or shorthand for multiple corners    |
+| `width` / `height`               | Element size                                  | `width-height.html`                        | Use %, px, em, rem, minmax, clamp           |
+| `max-width` / `min-width`        | Responsive sizing                             | `max-min-width.html`                       | Prevents content overflow                   |
+| `display`                        | Block / Inline / Flex / Grid                  | `display.html`                             | key for layout control                      |
+| `flex`                           | Flexbox shorthand                             | `flex.html`                                | flex-grow, flex-shrink, flex-basis          |
+| `flex-wrap`                      | Wrap flex items                               | `flex-wrap.html`                           | nowrap, wrap, wrap-reverse                  |
+| `justify-content`                | Horizontal alignment                          | `justify-content.html`                     | start, center, end, space-between           |
+| `align-items`                    | Vertical alignment                            | `align-items.html`                         | start, center, stretch, baseline            |
+| `grid`                           | Grid layout                                   | `grid.html`                                | Combine rows & columns                      |
+| `grid-template-columns` / `rows` | Define grid                                   | `grid.html`                                | repeat(), minmax()                          |
+| `grid-auto-flow`                 | Auto placement of grid items                  | `grid-auto-flow.html`                      | row, column, dense                          |
+| `grid-gap`                       | Space between grid items                      | `grid-gap.html`                            | can use px, rem, fr                         |
+| `grid-template-areas`            | Named grid layout                             | `grid-template-areas.html`                 | Eases complex layouts                       |
+| `minmax()`                       | Grid column / row size                        | `grid-minmax.html`                         | minmax(min, max)                            |
+| `position`                       | Static / Relative / Absolute / Fixed / Sticky | `position.html`                            | key for overlays and sticky headers         |
+| `top/right/bottom/left`          | Offset positioning                            | `position.html`                            | Requires non-static position                |
+| `z-index`                        | Layer order                                   | `z-index.html`                             | Higher = front                              |
+| `overflow`                       | Scroll / hidden / visible                     | `overflow-xy.html`                         | Controls content clipping                   |
+| `opacity`                        | Transparency                                  | `opacity.html`                             | 0–1 value                                   |
+| `cursor`                         | Pointer style                                 | `cursor.html`                              | pointer, not-allowed, grab                  |
+| `animation`                      | Keyframe animations                           | `animation.html`                           | duration, delay, iteration-count, direction |
+| `transition`                     | Smooth change of properties                   | `transition.html`                          | duration, timing-function                   |
+| `transform`                      | Translate, rotate, scale                      | `transform.html`                           | Can combine multiple transforms             |
+| `perspective`                    | 3D depth                                      | `transform-3d.html`                        | Use with transform-style: preserve-3d       |
+| `clip-path`                      | Shape clipping                                | `clip-path.html` / `clip-path-shapes.html` | circle(), polygon(), ellipse()              |
+| `object-fit`                     | Fit images inside container                   | `object-fit.html`                          | cover, contain, fill                        |
+| `object-position`                | Image alignment                               | `object-position.html`                     | top, right, bottom, left                    |
+| `filter`                         | Image effects                                 | `filter.html`                              | grayscale, blur, brightness                 |
+| `mix-blend-mode`                 | Blend overlapping elements                    | `mix-blend-mode.html`                      | multiply, screen, overlay                   |
+| `pseudo-classes`                 | Select states                                 | `pseudo-classes.html`                      | :first-child, \:nth-child, \:hover          |
+| `pseudo-elements`                | Insert content                                | `pseudo-elements.html`                     | ::before, ::after                           |
+| `css-variables`                  | Custom properties                             | `css-variables.html`                       | --var-name, fallback via var()              |
+| `clamp()`                        | Responsive sizing                             | `clamp.html`                               | clamp(min, preferred, max)                  |
+| `aspect-ratio`                   | Width/Height ratio                            | `aspect-ratio.html`                        | Modern responsive sizing                    |
+| `scroll-snap-type` / `align`     | Scroll snapping                               | `scroll-snap.html`                         | x / y, mandatory / proximity                |
+| `white-space`                    | Preserve spaces / line breaks                 | `white-space.html`                         | normal, nowrap, pre                         |
+| `text-overflow`                  | Ellipsis for overflow                         | `text-overflow.html`                       | Requires overflow hidden                    |
+| `mask-image`                     | Element masking                               | `mask-image.html`                          | Create cut-out shapes                       |
+| `backdrop-filter`                | Blur / brightness behind element              | `backdrop-filter.html`                     | Great for glass effect                      |
+| `multi-column`                   | Split text into columns                       | `multi-column.html`                        | column-count, column-gap                    |
+| `logical-properties`             | Margin / padding inline & block               | `logical-properties.html`                  | Works with writing-mode                     |
+| `@supports`                      | Feature detection                             | `supports.html`                            | Conditional CSS based on support            |
+| `scrollbar styling`              | Customize scrollbars                          | `scrollbar.html`                           | Works for Webkit / Firefox                  |
+| `sticky`                         | Sticky elements                               | `sticky.html`                              | position: sticky + top                      |

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Scrollbar Styling</title>
+  <style>
+    div {
+      width: 200px;
+      height: 150px;
+      overflow-y: scroll;
+      background: lightgray;
+    }
+    div::-webkit-scrollbar { width: 10px; }
+    div::-webkit-scrollbar-track { background: #f1f1f1; }
+    div::-webkit-scrollbar-thumb { background: coral; border-radius: 5px; }
+  </style>
+</head>
+<body>
+  <div>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus.
+    Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur
+    ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue.
+  </div>
+</body>
+</html>

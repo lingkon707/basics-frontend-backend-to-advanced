@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Z-index Example</title>
+  <style>
+    .box1 {
+      width: 150px;
+      height: 150px;
+      background-color: coral;
+      position: absolute;
+      top: 50px;
+      left: 50px;
+      z-index: 1;
+    }
+    .box2 {
+      width: 150px;
+      height: 150px;
+      background-color: lightblue;
+      position: absolute;
+      top: 100px;
+      left: 100px;
+      z-index: 2;
+    }
+  </style>
+</head>
+<body>
+  <div class="box1">Box 1</div>
+  <div class="box2">Box 2 (on top)</div>
+</body>
+</html>

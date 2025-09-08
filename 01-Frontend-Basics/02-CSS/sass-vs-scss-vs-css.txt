@@ -1,0 +1,57 @@
+===========================================
+          CSS VS SCSS VS SASS
+===========================================
+
+1. CSS (Cascading Style Sheets)
+-------------------------------
+- Standard stylesheet language for styling web pages.
+- No variables, mixins, or nesting (pure CSS before CSS3 supports some features).
+- Syntax example:
+  body {
+      background-color: #f0f0f0;
+      font-size: 16px;
+  }
+- Directly understood by browsers, no compilation needed.
+
+2. SASS (Syntactically Awesome Stylesheets)
+-------------------------------------------
+- Preprocessor for CSS.
+- Older syntax uses indentation instead of braces and semicolons.
+- Example syntax:
+  $primary-color: #333
+  body
+      background-color: $primary-color
+      font-size: 16px
+- Needs to be compiled into CSS before use.
+- Supports variables, nesting, mixins, inheritance, and functions.
+
+3. SCSS (Sassy CSS)
+-------------------
+- Modern syntax of SASS, more like standard CSS (uses braces `{}` and semicolons `;`).
+- Fully compatible with CSS.
+- Example syntax:
+  $primary-color: #333;
+  body {
+      background-color: $primary-color;
+      font-size: 16px;
+  }
+- Supports all SASS features: variables, nesting, mixins, functions, inheritance.
+- Most commonly used in modern projects.
+
+4. MAIN DIFFERENCES
+-------------------
+| Feature         | CSS          | SASS          | SCSS         |
+|-----------------|--------------|---------------|--------------|
+| Syntax          | Standard CSS | Indented style| CSS-like     |
+| Variables       | ❌           | ✅             | ✅           |
+| Nesting         | ❌           | ✅             | ✅           |
+| Mixins/Functions| ❌           | ✅             | ✅           |
+| Compilation     | ❌           | ✅             | ✅           |
+| Browser Support | ✅           | ❌ (compile)   | ❌ (compile) |
+
+5. SUMMARY
+----------
+- **CSS**: Basic, standard, no preprocessor features.
+- **SASS**: Original preprocessor syntax, indentation-based.
+- **SCSS**: CSS-compatible syntax, supports all SASS features, widely used.
+- Use **SCSS** in modern projects for cleaner, maintainable, and reusable CSS.

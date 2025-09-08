@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Template Example</title>
+</head>
+<body>
+  <template id="card-template">
+    <div style="border: 1px solid black; padding: 10px; margin: 10px;">
+      <h3>Card Title</h3>
+      <p>Card content here.</p>
+    </div>
+  </template>
+
+  <script>
+    const template = document.getElementById('card-template');
+    const clone = template.content.cloneNode(true);
+    document.body.appendChild(clone);
+  </script>
+</body>
+</html>

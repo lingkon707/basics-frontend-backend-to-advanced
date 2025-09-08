@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Scroll Snap Vertical</title>
+  <style>
+    .container {
+      height: 300px;
+      overflow-y: scroll;
+      scroll-snap-type: y mandatory;
+      border: 2px solid black;
+    }
+    .section {
+      height: 300px;
+      scroll-snap-align: start;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+    }
+    .s1 { background-color: coral; }
+    .s2 { background-color: lightblue; }
+    .s3 { background-color: lightgreen; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="section s1">Section 1</div>
+    <div class="section s2">Section 2</div>
+    <div class="section s3">Section 3</div>
+  </div>
+</body>
+</html>
