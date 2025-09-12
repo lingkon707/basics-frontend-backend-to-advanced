@@ -1,0 +1,5 @@
+npm install dom-to-image jspdf
+
+
+extra: no need
+npm install html2canvas jspdf

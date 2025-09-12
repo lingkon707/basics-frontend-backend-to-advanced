@@ -1,0 +1,51 @@
+{
+  "skills": [
+    { "name": "JavaScript", "icon": "FaJsSquare", "color": "text-yellow-400" },
+    { "name": "ReactJS", "icon": "FaReact", "color": "text-blue-400" },
+    { "name": "NextJS", "icon": "SiNextdotjs", "color": "text-white" },
+    { "name": "TypeScript", "icon": "SiTypescript", "color": "text-blue-600" },
+    { "name": "HTML5", "icon": "FaHtml5", "color": "text-orange-500" },
+    { "name": "CSS3", "icon": "FaCss3Alt", "color": "text-blue-500" },
+    { "name": "Tailwind CSS", "icon": "SiTailwindcss", "color": "text-sky-400" },
+    { "name": "NodeJS", "icon": "FaNodeJs", "color": "text-green-500" }
+  ],
+  "experiences": [
+    {
+      "role": "Frontend Developer (Full-Time)",
+      "company": "Nexis LTD",
+      "duration": "Sep 2023 – Jul 2024 (11 mos)",
+      "desc": "Worked as a TypeScript Developer (Frontend) building scalable frontend apps using Next.js, Prisma, ZOD, and TRPC in an on-site role at Uttora 12, Dhaka.",
+      "desc2": "Projects: Hogla Pata | Neer-Education (abroad study) | E-commerce etc."
+    },
+    {
+      "role": "MERN Stack Developer (Apprenticeship)",
+      "company": "IIT, University of Dhaka",
+      "duration": "Jun 2023 – Aug 2023 (3 mos)",
+      "desc": "Completed hands-on training in React, Node.js, Express, and MongoDB. Gained strong backend and frontend development experience."
+    },
+    {
+      "role": "Frontend Developer (Internship + Fulltime)",
+      "company": "BDTask Software LTD.",
+      "duration": "Oct 2022 – Jun 2023 (9 mos)",
+      "desc": "Agro AI E-commerce project build using TypeScript, NextJS, Tailwind CSS. [Backend Python, Django]. Worked in an on-site environment at Khilkhet, Dhaka."
+    }
+  ],
+  "education": [
+    {
+      "degree": "Diploma in Engineering | Computer Science",
+      "institution": "Nawabganj Govt Polytechnic, Bangladesh",
+      "year": "2018 - 2023 || CGPA 3.52 out of 4.00"
+    }
+  ],
+  "projects": [
+    { "title": "Meal Management App", "link": "https://meal-manager1.vercel.app/" },
+    { "title": "Real Estate - India & Asia", "link": "https://real-estate-agent.vercel.app/" },
+    { "title": "Dokan.com", "link": "https://lingkon-dokan.netlify.app/" },
+    { "title": "Buggati", "link": "https://buggati-shop.vercel.app/" }
+  ],
+  "header": {
+    "name": "🔹 LINGKON ISLAM",
+    "title": "Frontend Developer | ReactJS | NextJS | TypeScript | Tailwind CSS",
+    "description": "100% Responsive, modern web apps and scalable UI/UX components. Passionate about clean code and cutting-edge frontend technologies."
+  }
+}

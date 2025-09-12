@@ -1,0 +1,19 @@
+✅ Features included: and no css
+
+Add/remove items and adjust quantity
+
+Dynamic subtotal, shipping, total calculation
+
+Payment input to confirm order
+
+Dashboard tracks:
+
+Total confirmed orders
+
+Total quantity sold
+
+Updated cash balance
+
+Order history first → last
+
+Simple functional UI without CSS classes
