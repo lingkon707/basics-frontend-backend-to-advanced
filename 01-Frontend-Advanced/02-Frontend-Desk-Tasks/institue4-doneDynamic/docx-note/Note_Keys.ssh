@@ -1,0 +1,5 @@
+why and when use : const schools = Object.keys(studentsData)
+
+1️⃣ What Object.keys() does
+
+Object.keys() takes an object and returns an array of its property names (keys).

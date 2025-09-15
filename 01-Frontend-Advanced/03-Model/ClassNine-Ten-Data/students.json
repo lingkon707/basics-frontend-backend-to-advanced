@@ -1,0 +1,44 @@
+{
+  "class8": {
+    "boys": [
+      { "name": "Rahim", "roll": 1 },
+      { "name": "Karim", "roll": 2 }
+    ],
+    "girls": [
+      { "name": "Sadia", "roll": 1 },
+      { "name": "Nusrat", "roll": 2 }
+    ]
+  },
+  "class9": {
+    "science": {
+      "boys": [
+        { "name": "Fahim", "roll": 1 },
+        { "name": "Jahid", "roll": 2 }
+      ],
+      "girls": [
+        { "name": "Rumana", "roll": 1 },
+        { "name": "Nabila", "roll": 2 }
+      ]
+    },
+    "arts": {
+      "boys": [
+        { "name": "Shakib", "roll": 1 },
+        { "name": "Tariq", "roll": 2 }
+      ],
+      "girls": [
+        { "name": "Anika", "roll": 1 },
+        { "name": "Farzana", "roll": 2 }
+      ]
+    },
+    "commerce": {
+      "boys": [
+        { "name": "Rafiq", "roll": 1 },
+        { "name": "Hasib", "roll": 2 }
+      ],
+      "girls": [
+        { "name": "Tania", "roll": 1 },
+        { "name": "Sumi", "roll": 2 }
+      ]
+    }
+  }
+}

@@ -1,0 +1,89 @@
+"use client"
+
+import { useParams } from "next/navigation"
+import Link from "next/link"
+import topicsData from "./topics.json"
+
+export default function TopicPage() {
+  const { slug } = useParams()
+
+  // Find topic in JSON
+  const topic = topicsData.find(t => t.slug === slug)
+
+  if (!topic) {
+    return (
+      <main className="w-full min-h-screen bg-black flex items-center justify-center text-red-500 font-mono">
+        <h1 className="text-4xl font-bold">Topic not found</h1>
+      </main>
+    )
+  }
+
+  // Current date
+  const currentDate = new Date().toLocaleDateString("en-US", {
+    weekday: "long",
+    year: "numeric",
+    month: "long",
+    day: "numeric"
+  })
+
+  // Render different layouts dynamically
+  const renderContent = () => {
+    switch (topic.layout) {
+      case "card":
+        return (
+          <div className={`bg-black/70 border border-${topic.color}-500 p-8 rounded-xl shadow-lg text-${topic.color}-400`}>
+            <h2 className="text-3xl font-bold mb-4">{topic.title}</h2>
+            <p>{topic.description}</p>
+          </div>
+        )
+      case "terminal":
+        return (
+          <div className={`bg-black/90 border border-${topic.color}-500 p-6 rounded-lg shadow-lg text-${topic.color}-400 font-mono`}>
+            <h2 className="text-3xl font-bold mb-4">{topic.title}</h2>
+            <p>{topic.description}</p>
+          </div>
+        )
+      case "futuristic":
+        return (
+          <div className={`bg-gradient-to-r from-${topic.color}-900 to-${topic.color}-600 p-8 rounded-2xl shadow-lg text-white`}>
+            <h2 className="text-3xl font-bold mb-4">{topic.title}</h2>
+            <p>{topic.description}</p>
+          </div>
+        )
+      default:
+        return (
+          <div className="bg-black/60 border border-green-500 p-8 rounded-xl shadow-lg text-green-400">
+            <h2 className="text-3xl font-bold mb-4">{topic.title}</h2>
+            <p>{topic.description}</p>
+          </div>
+        )
+    }
+  }
+
+  return (
+    <main className="w-full min-h-screen bg-black flex flex-col items-center justify-start text-green-400 font-mono px-4 py-12">
+      
+      {/* Back button */}
+      <Link
+        href="/private"
+        className="mb-8 text-green-300 hover:text-green-100 transition-colors"
+      >
+        ← Back to Topics
+      </Link>
+
+      {/* Title */}
+      <h1 className="text-5xl md:text-6xl font-bold mb-4 animate-pulse drop-shadow-lg text-center">
+        {topic.title}
+      </h1>
+
+      {/* Date */}
+      <p className="text-xl md:text-2xl text-green-300 mb-12 text-center">
+        {currentDate}
+      </p>
+
+      {/* Topic-specific content */}
+      {renderContent()}
+
+    </main>
+  )
+}

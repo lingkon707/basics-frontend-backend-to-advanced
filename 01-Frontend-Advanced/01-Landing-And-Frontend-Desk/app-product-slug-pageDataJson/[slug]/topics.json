@@ -1,0 +1,44 @@
+[
+  {
+    "title": "Artificial Intelligence",
+    "slug": "artificial-intelligence",
+    "description": "Explore the future of Artificial Intelligence, Machine Learning, and automation.",
+    "color": "blue",
+    "layout": "card"
+  },
+  {
+    "title": "Cyber Security",
+    "slug": "cyber-security",
+    "description": "Learn about hacking, defense strategies, and keeping data safe online.",
+    "color": "red",
+    "layout": "terminal"
+  },
+  {
+    "title": "Quantum Computing",
+    "slug": "quantum-computing",
+    "description": "Dive into qubits, superposition, and the next era of computation.",
+    "color": "purple",
+    "layout": "futuristic"
+  },
+  {
+    "title": "Blockchain",
+    "slug": "blockchain",
+    "description": "Understand decentralized ledgers, smart contracts, and crypto tech.",
+    "color": "green",
+    "layout": "card"
+  },
+  {
+    "title": "Space Tech",
+    "slug": "space-tech",
+    "description": "Explore rockets, satellites, and space exploration technology.",
+    "color": "yellow",
+    "layout": "futuristic"
+  },
+  {
+    "title": "Web Development",
+    "slug": "web-development",
+    "description": "Learn HTML, CSS, JS, frameworks, and building web apps.",
+    "color": "cyan",
+    "layout": "card"
+  }
+]

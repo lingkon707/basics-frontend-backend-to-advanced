@@ -1,0 +1,30 @@
+[
+  {
+    "title": "Artificial Intelligence",
+    "description": "Explore the future of AI, Machine Learning, and automation.",
+    "layout": "card",
+    "color": "blue",
+    "extra": {
+      "buttonText": "Learn More",
+      "highlight": "ML & AI"
+    }
+  },
+  {
+    "title": "Cyber Security",
+    "description": "Learn about hacking, defense strategies, and keeping data safe online.",
+    "layout": "terminal",
+    "color": "red",
+    "extra": {
+      "terminalCommand": "execute tutorial.sh"
+    }
+  },
+  {
+    "title": "Quantum Computing",
+    "description": "Dive into qubits, superposition, and next-gen computation.",
+    "layout": "futuristic",
+    "color": "purple",
+    "extra": {
+      "buttons": ["Explore", "Resources"]
+    }
+  }
+]

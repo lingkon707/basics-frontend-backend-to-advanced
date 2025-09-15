@@ -1,0 +1,17 @@
+Thanks for sharing your slugify.js 🙌 — I see the problem now.
+You’re using named export (export function slugify) but in your VerifiedYes.jsx 
+you’re importing it like a default export (import slugify from ...).
+
+That mismatch is why you got:
+is not a function
+
+import slugify from "@/utils/slugify"  
+import { slugify } from "@/utils/slugify"
+
+
+✅ Fix Option 1: Keep your current file (named export)
+import { slugify } from "@/utils/slugify"
+
+✅ Fix Option 2: Use default export instead
+// app/utils/slugify.js
+export default function slugify(text)

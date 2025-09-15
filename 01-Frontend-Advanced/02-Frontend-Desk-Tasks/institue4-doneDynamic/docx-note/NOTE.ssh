@@ -1,0 +1,11 @@
+/institue → list schools
+/institue/sunrise-academy → list classes
+/institue/sunrise-academy/class9 → list sections (or students)
+/institue/sunrise-academy/class9/science → list students
+
+
+✅ How this works dynamically
+
+Every link uses current pathname + slug: Link href={${pathname}/${slugify(child)}}
+
+You never hardcode parent paths.

@@ -1,0 +1,28 @@
+{
+  "Green Valley School": {
+    "class6": [
+      { "name": "Rahim", "roll": 1 },
+      { "name": "Karim", "roll": 2 }
+    ],
+    "class7": [
+      { "name": "Sadia", "roll": 1 },
+      { "name": "Nusrat", "roll": 2 }
+    ]
+  },
+  "Sunrise Academy": {
+    "class8": [
+      { "name": "Fahim", "roll": 1 },
+      { "name": "Jahid", "roll": 2 }
+    ],
+    "class9": {
+      "science": [
+        { "name": "Shakib", "roll": 1 },
+        { "name": "Tariq", "roll": 2 }
+      ],
+      "arts": [
+        { "name": "Shakib", "roll": 1 },
+        { "name": "Tariq", "roll": 2 }
+      ]
+    }
+  }
+}

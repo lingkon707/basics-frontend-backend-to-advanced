@@ -1,0 +1,12 @@
+| Folder Name Pattern | Pros                                   | Cons                              |
+| ------------------- | -------------------------------------- | --------------------------------- |
+| `[school]/[class]`  | Semantic, readable, easy to understand | Longer folder names               |
+| `[slug]/[slug]`     | Generic, can use for unknown paths     | Confusing, you must parse meaning |
+| `[class]/[student]` | Semantic for class → student URLs      | Must plan hierarchy carefully     |
+
+
+TL;DR
+
+Use descriptive names ([school], [class], [student]) for nested dynamic routes.
+Use [slug] only for generic unknown segments.
+Naming segments semantically improves readability, maintainability, and debugging.

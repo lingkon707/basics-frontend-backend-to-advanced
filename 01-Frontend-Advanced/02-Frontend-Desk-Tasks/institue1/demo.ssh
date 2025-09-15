@@ -1,0 +1,13 @@
+/app
+  /institue
+    /[class]
+      /[student]
+        page.jsx        ← shows student details
+      page.jsx          ← shows all students for that class
+    page.jsx   
+    
+            
+/institue
+  slugify.js            ← helper function
+/institue
+  students.json         ← all data
