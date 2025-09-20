@@ -1,0 +1,13 @@
+{
+  "headerLinks": [
+    { "label": "Home", "href": "/" },
+    { "label": "Shop", "href": "/products" },
+    { "label": "Wishlist", "href": "/wishlist" },
+    { "label": "Cart", "href": "/cart" }
+  ],
+  "footerLinks": [
+    { "label": "Contact Us", "href": "/contact" },
+    { "label": "Privacy Policy", "href": "/privacy" },
+    { "label": "Terms of Service", "href": "/terms" }
+  ]
+}

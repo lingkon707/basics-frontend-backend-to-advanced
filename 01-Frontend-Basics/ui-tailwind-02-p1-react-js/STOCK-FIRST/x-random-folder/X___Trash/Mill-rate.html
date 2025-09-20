@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Room Billing Table</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 p-4">
+
+  <div class="max-w-full md:max-w-5xl mx-auto px-4 py-6 text-sm md:text-base bg-white rounded-lg shadow-lg">
+    <!-- Summary -->
+    <div id="summary" class="mb-6 text-center md:text-left space-y-2 font-semibold text-gray-800"></div>
+
+    <!-- Table Container -->
+    <div class="overflow-x-auto rounded-lg border border-gray-300">
+      <table
+        id="billingTable"
+        class="min-w-[600px] w-full border-collapse border border-gray-300 text-center"
+      >
+        <thead class="bg-blue-100 text-blue-900">
+          <tr>
+            <th class="border border-gray-300 px-4 py-3 min-w-[120px] text-left">নাম (রুম)</th>
+            <th class="border border-gray-300 px-4 py-3 min-w-[90px]">খাওয়া মিল</th>
+            <th class="border border-gray-300 px-4 py-3 min-w-[90px]">বিল</th>
+            <th class="border border-gray-300 px-4 py-3 min-w-[90px]">পরিশোধিত</th>
+            <th class="border border-gray-300 px-4 py-3 min-w-[90px]">অবশিষ্ট</th>
+            <th class="border border-gray-300 px-4 py-3 min-w-[110px]">স্ট্যাটাস</th>
+            <th class="border border-gray-300 px-4 py-3 min-w-[110px]">অনুকম্পা</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+      </table>
+    </div>
+  </div>
+
+<script>
+  // Constants
+  const millRate = 60;
+  const extraCharge = 800;
+
+  // People Data with Bangla names and room numbers
+  const people = [
+    { name: "মোঃ রাশেদ", room: "রুম ১০১", eatMills: 25, paid: 1300, situation: true },
+    { name: "সাবিনা আক্তার", room: "রুম ১০২", eatMills: 30, paid: 1900, situation: false },
+    { name: "জাহিদ হাসান", room: "রুম ১০৩", eatMills: 28, paid: 1600, situation: true },
+    { name: "রুমানা পারভিন", room: "রুম ১০৪", eatMills: 20, paid: 1100, situation: false },
+    { name: "মিজানুর রহমান", room: "রুম ১০৫", eatMills: 32, paid: 2100, situation: true },
+    { name: "ফারুক আহমেদ", room: "রুম ১০৬", eatMills: 35, paid: 2250, situation: false },
+  ];
+
+  // Calculate enriched data
+  const enrichedData = people.map(person => {
+    const bills = person.eatMills * millRate + extraCharge;
+    const remaining = person.paid - bills;
+
+    let status = "";
+    if (person.paid < bills) {
+      status = "Mill Off";  // changed from "Paid partially"
+    } else if (remaining <= 500) {
+      status = "Warning";
+    }
+
+    return {...person, bills, remaining, status};
+  });
+
+  // Summary counts
+  const totalMembers = enrichedData.length;
+  const totalMillOff = enrichedData.filter(p => p.status === "Mill Off").length;
+  const totalWarning = enrichedData.filter(p => p.status === "Warning").length;
+
+  // Render summary
+  const summaryDiv = document.getElementById("summary");
+  summaryDiv.innerHTML = `
+    <div>মোট সদস্য: ${totalMembers}</div>
+    <div class="text-red-600">মিল অফ: ${totalMillOff}</div>
+    <div>Warning: ${totalWarning}</div>
+  `;
+
+  // Render table rows
+  const tbody = document.getElementById("tableBody");
+  enrichedData.forEach(person => {
+    const tr = document.createElement("tr");
+    tr.className = `
+      ${person.status === "Mill Off" ? "bg-red-100 text-red-700 font-semibold" : ""}
+      hover:bg-gray-50
+    `;
+
+    tr.innerHTML = `
+      <td class="border border-gray-300 px-4 py-3 text-left">${person.name} - ${person.room}</td>
+      <td class="border border-gray-300 px-4 py-3">${person.eatMills}</td>
+      <td class="border border-gray-300 px-4 py-3">${person.bills} ৳</td>
+      <td class="border border-gray-300 px-4 py-3">${person.paid} ৳</td>
+      <td class="border border-gray-300 px-4 py-3">${person.remaining} ৳</td>
+      <td class="border border-gray-300 px-4 py-3">${person.status || "-"}</td>
+      <td class="border border-gray-300 px-4 py-3">${person.situation ? "সময় দিলাম" : "-"}</td>
+    `;
+
+    tbody.appendChild(tr);
+  });
+</script>
+
+</body>
+</html>

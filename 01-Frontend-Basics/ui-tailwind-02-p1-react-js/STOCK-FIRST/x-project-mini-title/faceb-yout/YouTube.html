@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>YouTube Category App - Small Cards</title>
+<style>
+  /* Reset */
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    background-color: #eff6ff; /* bg-blue-50 */
+    font-family: system-ui, sans-serif;
+    color: #1e293b;
+    min-height: 100vh;
+    padding: 1.5rem;
+  }
+  .container {
+    max-width: 1120px;
+    margin: 0 auto;
+  }
+  .button-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  button.category-btn {
+    padding: 0.4rem 1.2rem;
+    border-radius: 9999px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border: 2px solid #2563eb;
+    background-color: white;
+    color: #2563eb;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+  }
+  button.category-btn.active,
+  button.category-btn:hover {
+    background-color: #2563eb;
+    color: white;
+    box-shadow: 0 4px 8px rgb(37 99 235 / 0.4);
+  }
+  /* Grid layout with 4 columns on md+ */
+  .grid {
+    display: grid;
+    gap: 1.25rem;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  @media(min-width: 640px) {
+    .grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media(min-width: 768px) {
+    .grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  @media(min-width: 1024px) {
+    .grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  /* Card background gradients */
+  .bg-gradient-1 {
+    background: linear-gradient(135deg, #fee2e2, #fecaca, #fee2e2);
+  }
+  .bg-gradient-2 {
+    background: linear-gradient(135deg, #dcfce7, #bef264, #dcfce7);
+  }
+  .bg-gradient-3 {
+    background: linear-gradient(135deg, #dbeafe, #22d3ee, #dbeafe);
+  }
+  .bg-gradient-4 {
+    background: linear-gradient(135deg, #ede9fe, #a5b4fc, #ede9fe);
+  }
+  /* Smaller Card */
+  .card {
+    border-radius: 0.75rem;
+    box-shadow: 0 3px 6px rgb(0 0 0 / 0.1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: box-shadow 0.3s;
+    background-color: white;
+    font-size: 0.875rem;
+  }
+  .card:hover {
+    box-shadow: 0 6px 12px rgb(0 0 0 / 0.15);
+  }
+  .card img {
+    width: 100%;
+    height: 140px; /* smaller height */
+    object-fit: cover;
+    border-top-left-radius: 0.75rem;
+    border-top-right-radius: 0.75rem;
+  }
+  .card-content {
+    padding: 1rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  .channel-link {
+    color: #2563eb;
+    font-weight: 600;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 0.25rem;
+  }
+  .channel-link:hover {
+    text-decoration: underline;
+  }
+  .channel-link svg {
+    width: 16px;
+    height: 16px;
+    fill: #2563eb;
+  }
+  .button-group-inner {
+    display: flex;
+    gap: 0.75rem;
+    margin-top: auto;
+  }
+  .btn-primary, .btn-secondary {
+    flex: 1;
+    font-weight: 600;
+    padding: 0.4rem 0.6rem;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    font-size: 0.85rem;
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+  .btn-primary {
+    background-color: #2563eb;
+    color: white;
+    box-shadow: 0 3px 6px rgb(37 99 235 / 0.4);
+  }
+  .btn-primary:hover {
+    background-color: #1e40af;
+  }
+  .btn-secondary {
+    background-color: white;
+    border: 2px solid #2563eb;
+    color: #2563eb;
+    box-shadow: 0 2px 4px rgb(37 99 235 / 0.3);
+  }
+  .btn-secondary:hover {
+    background-color: #dbeafe;
+  }
+  /* No videos message */
+  .no-videos {
+    grid-column: 1 / -1;
+    text-align: center;
+    font-size: 1rem;
+    color: #94a3b8;
+  }
+
+  
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="button-group" id="categoryButtons">
+      <!-- Buttons injected by JS -->
+    </div>
+
+    <div class="grid" id="videoGrid">
+      <!-- Cards injected by JS -->
+    </div>
+  </div>
+
+<script>
+  const videos = [
+    {
+      category: "History",
+      url: "https://www.youtube.com/watch?v=65i16Abvdxs&t=56s",
+      channelName: "Labid Rahat",
+      channelUrl: "https://www.youtube.com/@LabidRahat/videos",
+    },
+    {
+      category: "Politics",
+      url: "https://www.youtube.com/watch?v=uW9DPJWsjj4&t=38s",
+      channelName: "PinakiBhattacharya",
+      channelUrl: "https://www.youtube.com/@PinakiBhattacharya/videos",
+    },
+    {
+      category: "Funny",
+      url: "https://www.youtube.com/watch?v=oyJpxy0VcO0",
+      channelName: "Ajaira LTD",
+      channelUrl: "https://www.youtube.com/@ajairapublicofficial/videos",
+    },
+  ];
+
+  const cardBackgroundClasses = [
+    "bg-gradient-1",
+    "bg-gradient-2",
+    "bg-gradient-3",
+    "bg-gradient-4",
+  ];
+
+  function extractYouTubeID(url) {
+    const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|&v=)([^#&?]*).*/;
+    const match = url.match(regExp);
+    return match && match[2].length === 11 ? match[2] : null;
+  }
+
+  const container = document.getElementById("categoryButtons");
+  const videoGrid = document.getElementById("videoGrid");
+
+  let selectedCategory = null;
+
+  // Get unique categories
+  const categories = [...new Set(videos.map(v => v.category))];
+
+  function renderButtons() {
+    container.innerHTML = "";
+
+    // All button
+    const allBtn = document.createElement("button");
+    allBtn.className = "category-btn" + (selectedCategory === null ? " active" : "");
+    allBtn.textContent = "All";
+    allBtn.onclick = () => {
+      selectedCategory = null;
+      renderButtons();
+      renderVideos();
+    };
+    container.appendChild(allBtn);
+
+    // Category buttons
+    categories.forEach(cat => {
+      const btn = document.createElement("button");
+      btn.className = "category-btn" + (selectedCategory === cat ? " active" : "");
+      btn.textContent = cat;
+      btn.onclick = () => {
+        selectedCategory = cat;
+        renderButtons();
+        renderVideos();
+      };
+      container.appendChild(btn);
+    });
+  }
+
+  function renderVideos() {
+    videoGrid.innerHTML = "";
+    const filteredVideos = selectedCategory
+      ? videos.filter(v => v.category === selectedCategory)
+      : videos;
+
+    if (filteredVideos.length === 0) {
+      const msg = document.createElement("p");
+      msg.className = "no-videos";
+      msg.textContent = "No videos found in this category.";
+      videoGrid.appendChild(msg);
+      return;
+    }
+
+    filteredVideos.forEach((video, i) => {
+      const videoId = extractYouTubeID(video.url);
+      const thumbnail = videoId
+        ? `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`
+        : "";
+
+      const card = document.createElement("div");
+      card.className = `card ${cardBackgroundClasses[i % cardBackgroundClasses.length]}`;
+
+      card.innerHTML = `
+        ${thumbnail ? `<img src="${thumbnail}" alt="YouTube Video Thumbnail" />` : ""}
+        <div class="card-content">
+          <a href="${video.channelUrl}" target="_blank" rel="noopener noreferrer" class="channel-link" >
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" >
+              <path d="M10 15l5-3-5-3v6z"/>
+              <path d="M19.14 4.94a2.75 2.75 0 0 0-1.94-1.94C15.78 2.75 12 2.75 12 2.75s-3.78 0-5.2.25a2.75 2.75 0 0 0-1.94 1.94C4.5 6.36 4.5 9.6 4.5 9.6s0 3.24.36 4.66a2.75 2.75 0 0 0 1.94 1.94c1.42.25 5.2.25 5.2.25s3.78 0 5.2-.25a2.75 2.75 0 0 0 1.94-1.94c.36-1.42.36-4.66.36-4.66s0-3.24-.36-4.66z"/>
+            </svg>
+            <span>${video.channelName}</span>
+          </a>
+          <div class="button-group-inner">
+            <button class="btn-primary">Open Video</button>
+            <button class="btn-secondary">Channel Visit</button>
+          </div>
+        </div>
+      `;
+
+      card.querySelector(".btn-primary").onclick = () => window.open(video.url, "_blank");
+      card.querySelector(".btn-secondary").onclick = () => window.open(video.channelUrl, "_blank");
+
+      videoGrid.appendChild(card);
+    });
+  }
+
+  renderButtons();
+  renderVideos();
+</script>
+</body>
+</html>

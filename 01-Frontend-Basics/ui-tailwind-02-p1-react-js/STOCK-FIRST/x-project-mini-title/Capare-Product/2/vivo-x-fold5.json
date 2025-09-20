@@ -1,0 +1,369 @@
+[
+  {
+    "name": "Vivo X Fold5",
+    "model": "X Fold5",
+    "releaseDate": "02 July 2025",
+    "general": {
+      "brand": "Vivo",
+      "deviceType": "Smartphone",
+      "status": "Available"
+    },
+    "hardwareSoftware": {
+      "operatingSystem": "Android",
+      "osVersion": "v15",
+      "userInterface": "OriginOS 5",
+      "chipset": "Qualcomm SM8650-AB Snapdragon 8 Gen 3",
+      "cpu": "Octa-core (1x3.3 GHz Cortex-X4 & 3x3.2 GHz Cortex-A720 & 2x3.0 GHz Cortex-A720 & 2x2.3 GHz Cortex-A520)",
+      "cpuCores": "8 Cores",
+      "architecture": "64 bit",
+      "fabrication": "3 nm",
+      "gpu": "Adreno 750"
+    },
+    "display": {
+      "displayType": "Foldable LTPO AMOLED",
+      "screenSize": "8.03 inches (20.4 cm)",
+      "resolution": "2200x2480 px",
+      "pixelDensity": "413 ppi",
+      "screenToBodyRatio": "90.9%",
+      "screenProtection": "Gorilla Glass",
+      "bezelLessDisplay": "Yes with punch-hole display",
+      "touchScreen": "Capacitive Touchscreen, Multi-touch",
+      "brightness": "4500 nits",
+      "hdrSupport": "HDR 10+",
+      "refreshRate": "120 Hz",
+      "notch": "Punch-hole",
+      "features": "Cover display: LTPO AMOLED, 120Hz, HDR10+, Dolby Vision, 5500 nits (peak) 6.53 inches, 1172 x 2748 pixels, 21:9 ratio Armor Glass (2nd gen)"
+    },
+    "cameras": {
+      "primaryCamera": {
+        "cameraSetup": "Triple",
+        "resolution": [
+          "50 MP, f/1.6, Wide Angle, Primary Camera",
+          "50 MP, f/2.6, Periscope Telephoto Camera",
+          "50 MP, f/2.1, Ultra-Wide Angle Camera"
+        ],
+        "autofocus": "Laser autofocus",
+        "ois": "Yes",
+        "flash": "Dual LED Flash",
+        "imageResolution": "8150 x 6150 Pixels",
+        "settings": ["Exposure compensation", "ISO control"],
+        "zoom": "Digital Zoom",
+        "shootingModes": ["Continuous Shooting", "High Dynamic Range mode (HDR)"],
+        "aperture": "f/1.6",
+        "cameraFeatures": ["Auto Flash", "Face detection", "Touch to focus", "Bokeh portrait video"],
+        "videoRecording": ["7680x4320", "3840x2160", "1920x1080"],
+        "videoFPS": ["30 fps", "60 fps"]
+      },
+      "selfieCamera": {
+        "cameraSetup": "Single",
+        "resolution": "20 MP, f/2.4, Wide Angle, Primary Camera Cover camera: 20 MP, f/2.4, Wide Angle",
+        "videoRecording": "1920x1080",
+        "videoFPS": "30 fps",
+        "aperture": "f/2.4"
+      }
+    },
+    "design": {
+      "height": "159.7 mm",
+      "width": "72.6 mm",
+      "thickness": "9.2 mm",
+      "weight": "217 grams",
+      "build": "Glass front (closed), aluminum alloy frame, glass fiber back",
+      "colors": ["Titanium Gray", "Green", "White"],
+      "waterproof": "Water resistant (up to 3m for 30 min)",
+      "ipRating": "IP58/IP59+",
+      "ruggedness": "Dust proof"
+    },
+    "battery": {
+      "batteryType": "Li-Ion (Lithium Ion)",
+      "capacity": "6000 mAh",
+      "wirelessCharging": "40W wireless",
+      "quickCharging": "80W wired",
+      "reverseCharging": "5W reverse wireless",
+      "placement": "Non-removable",
+      "usbTypeC": "USB Type-C 3.2, Display Port"
+    },
+    "memory": {
+      "internalStorage": "256 GB",
+      "storageType": "UFS 4.1",
+      "usbOTG": "Yes",
+      "ram": "12 GB",
+      "ramType": "LPDDR5X"
+    },
+    "networkConnectivity": {
+      "network": ["2G", "3G", "4G", "5G"],
+      "simSlot": "Dual SIM, GSM+GSM",
+      "simSize": ["SIM1: Nano", "SIM2: Nano"],
+      "edge": "Available",
+      "gprs": "Available",
+      "volte": "Yes",
+      "speed": ["HSPA", "LTE", "5G"],
+      "sarValue": {"head": "0.86 W/kg", "body": "0.85 W/kg"},
+      "wlan": "Wi-Fi 7 (802.11 a/b/g/n/ac/be/ax) 5GHz 6GHz, MIMO",
+      "bluetooth": "v5.4",
+      "gps": "Yes with A-GPS, Glonass",
+      "infrared": "Yes",
+      "wifiHotspot": "Yes",
+      "nfc": "Yes",
+      "usb": ["Mass storage device", "USB charging"]
+    },
+    "sensorsSecurity": {
+      "lightSensor": "Light sensor, Proximity sensor, Accelerometer, Compass, Gyroscope",
+      "fingerprintSensor": "Yes",
+      "fingerSensorPosition": "Side-mounted",
+      "faceUnlock": "Yes"
+    },
+    "multimedia": {
+      "loudspeaker": "Yes",
+      "audioJack": "USB Type-C",
+      "video": "8K@30fps, 4K@30/60fps, 1080p@30/60fps, gyro-EIS"
+    },
+    "more": {
+      "madeBy": "China",
+      "features": ["Accelerometer", "gyro", "proximity", "compass"]
+    }
+  },
+  {
+    "name": "Techno Spark 40 Pro",
+    "model": "Spark 40 Pro",
+    "releaseDate": "10 March 2023",
+    "general": {
+      "brand": "Techno",
+      "deviceType": "Smartphone",
+      "status": "Available"
+    },
+    "hardwareSoftware": {
+      "operatingSystem": "Android",
+      "osVersion": "v12",
+      "userInterface": "HiOS",
+      "chipset": "MediaTek Helio G85",
+      "cpu": "Octa-core (2x2.0 GHz Cortex-A75 & 6x1.8 GHz Cortex-A55)",
+      "cpuCores": "8 Cores",
+      "architecture": "64 bit",
+      "fabrication": "12 nm",
+      "gpu": "Mali-G52 MC2"
+    },
+    "display": {
+      "displayType": "IPS LCD",
+      "screenSize": "6.4 inches",
+      "resolution": "720 x 1600 pixels",
+      "pixelDensity": "270 ppi",
+      "screenToBodyRatio": "83.0%",
+      "screenProtection": "None",
+      "bezelLessDisplay": "No",
+      "touchScreen": "Capacitive Touchscreen, Multi-touch",
+      "brightness": "400 nits",
+      "hdrSupport": "No",
+      "refreshRate": "60 Hz",
+      "notch": "Waterdrop notch",
+      "features": "Standard LCD display"
+    },
+    "cameras": {
+      "primaryCamera": {
+        "cameraSetup": "Dual",
+        "resolution": [
+          "50 MP, f/1.8, Wide Angle",
+          "2 MP, f/2.4, Depth Sensor"
+        ],
+        "autofocus": "Yes",
+        "ois": "No",
+        "flash": "LED Flash",
+        "imageResolution": "8192 x 6144 Pixels",
+        "settings": ["Exposure compensation", "ISO control"],
+        "zoom": "Digital Zoom",
+        "shootingModes": ["HDR"],
+        "aperture": "f/1.8",
+        "cameraFeatures": ["Face detection", "Touch to focus"],
+        "videoRecording": ["1080p@30fps"],
+        "videoFPS": ["30 fps"]
+      },
+      "selfieCamera": {
+        "cameraSetup": "Single",
+        "resolution": "8 MP, f/2.0, Wide Angle",
+        "videoRecording": "720p@30fps",
+        "videoFPS": "30 fps",
+        "aperture": "f/2.0"
+      }
+    },
+    "design": {
+      "height": "164.8 mm",
+      "width": "76.1 mm",
+      "thickness": "8.7 mm",
+      "weight": "185 grams",
+      "build": "Glass front, plastic frame, plastic back",
+      "colors": ["Aqua Blue", "Emerald Green", "Mystic Purple"],
+      "waterproof": "No",
+      "ipRating": "None",
+      "ruggedness": "None"
+    },
+    "battery": {
+      "batteryType": "Li-Po (Lithium Polymer)",
+      "capacity": "4500 mAh",
+      "wirelessCharging": "No",
+      "quickCharging": "18W wired",
+      "reverseCharging": "No",
+      "placement": "Non-removable",
+      "usbTypeC": "Micro USB 2.0"
+    },
+    "memory": {
+      "internalStorage": "128 GB",
+      "storageType": "eMMC 5.1",
+      "usbOTG": "Yes",
+      "ram": "4 GB",
+      "ramType": "LPDDR4X"
+    },
+    "networkConnectivity": {
+      "network": ["2G", "3G", "4G"],
+      "simSlot": "Dual SIM, Nano + Nano",
+      "simSize": ["SIM1: Nano", "SIM2: Nano"],
+      "edge": "Available",
+      "gprs": "Available",
+      "volte": "Yes",
+      "speed": ["HSPA", "LTE"],
+      "sarValue": {"head": "0.92 W/kg", "body": "0.98 W/kg"},
+      "wlan": "Wi-Fi 802.11 b/g/n",
+      "bluetooth": "v5.0",
+      "gps": "Yes with A-GPS",
+      "infrared": "No",
+      "wifiHotspot": "Yes",
+      "nfc": "No",
+      "usb": ["Mass storage device", "USB charging"]
+    },
+    "sensorsSecurity": {
+      "lightSensor": "Light sensor, Proximity sensor, Accelerometer",
+      "fingerprintSensor": "Rear-mounted",
+      "fingerSensorPosition": "Back",
+      "faceUnlock": "No"
+    },
+    "multimedia": {
+      "loudspeaker": "Yes",
+      "audioJack": "3.5mm headphone jack",
+      "video": "1080p@30fps"
+    },
+    "more": {
+      "madeBy": "China",
+      "features": ["Accelerometer", "proximity", "compass"]
+    }
+  },
+  {
+    "name": "SAMSUNG 35",
+    "model": "M35",
+    "releaseDate": "10 March 2025",
+    "general": {
+      "brand": "Techno",
+      "deviceType": "Smartphone",
+      "status": "Available"
+    },
+    "hardwareSoftware": {
+      "operatingSystem": "Android",
+      "osVersion": "v12",
+      "userInterface": "HiOS",
+      "chipset": "MediaTek Helio G85",
+      "cpu": "Octa-core (2x2.0 GHz Cortex-A75 & 6x1.8 GHz Cortex-A55)",
+      "cpuCores": "8 Cores",
+      "architecture": "64 bit",
+      "fabrication": "12 nm",
+      "gpu": "Mali-G52 MC2"
+    },
+    "display": {
+      "displayType": "IPS LCD",
+      "screenSize": "6.4 inches",
+      "resolution": "720 x 1600 pixels",
+      "pixelDensity": "270 ppi",
+      "screenToBodyRatio": "83.0%",
+      "screenProtection": "None",
+      "bezelLessDisplay": "No",
+      "touchScreen": "Capacitive Touchscreen, Multi-touch",
+      "brightness": "400 nits",
+      "hdrSupport": "No",
+      "refreshRate": "60 Hz",
+      "notch": "Waterdrop notch",
+      "features": "Standard LCD display"
+    },
+    "cameras": {
+      "primaryCamera": {
+        "cameraSetup": "Dual",
+        "resolution": [
+          "50 MP, f/1.8, Wide Angle",
+          "2 MP, f/2.4, Depth Sensor"
+        ],
+        "autofocus": "Yes",
+        "ois": "No",
+        "flash": "LED Flash",
+        "imageResolution": "8192 x 6144 Pixels",
+        "settings": ["Exposure compensation", "ISO control"],
+        "zoom": "Digital Zoom",
+        "shootingModes": ["HDR"],
+        "aperture": "f/1.8",
+        "cameraFeatures": ["Face detection", "Touch to focus"],
+        "videoRecording": ["1080p@30fps"],
+        "videoFPS": ["30 fps"]
+      },
+      "selfieCamera": {
+        "cameraSetup": "Single",
+        "resolution": "8 MP, f/2.0, Wide Angle",
+        "videoRecording": "720p@30fps",
+        "videoFPS": "30 fps",
+        "aperture": "f/2.0"
+      }
+    },
+    "design": {
+      "height": "164.8 mm",
+      "width": "76.1 mm",
+      "thickness": "8.7 mm",
+      "weight": "185 grams",
+      "build": "Glass front, plastic frame, plastic back",
+      "colors": ["Aqua Blue", "Emerald Green", "Mystic Purple"],
+      "waterproof": "No",
+      "ipRating": "None",
+      "ruggedness": "None"
+    },
+    "battery": {
+      "batteryType": "Li-Po (Lithium Polymer)",
+      "capacity": "4500 mAh",
+      "wirelessCharging": "No",
+      "quickCharging": "18W wired",
+      "reverseCharging": "No",
+      "placement": "Non-removable",
+      "usbTypeC": "Micro USB 2.0"
+    },
+    "memory": {
+      "internalStorage": "128 GB",
+      "storageType": "eMMC 5.1",
+      "usbOTG": "Yes",
+      "ram": "4 GB",
+      "ramType": "LPDDR4X"
+    },
+    "networkConnectivity": {
+      "network": ["2G", "3G", "4G"],
+      "simSlot": "Dual SIM, Nano + Nano",
+      "simSize": ["SIM1: Nano", "SIM2: Nano"],
+      "edge": "Available",
+      "gprs": "Available",
+      "volte": "Yes",
+      "speed": ["HSPA", "LTE"],
+      "sarValue": {"head": "0.92 W/kg", "body": "0.98 W/kg"},
+      "wlan": "Wi-Fi 802.11 b/g/n",
+      "bluetooth": "v5.0",
+      "gps": "Yes with A-GPS",
+      "infrared": "No",
+      "wifiHotspot": "Yes",
+      "nfc": "No",
+      "usb": ["Mass storage device", "USB charging"]
+    },
+    "sensorsSecurity": {
+      "lightSensor": "Light sensor, Proximity sensor, Accelerometer",
+      "fingerprintSensor": "Rear-mounted",
+      "fingerSensorPosition": "Back",
+      "faceUnlock": "No"
+    },
+    "multimedia": {
+      "loudspeaker": "Yes",
+      "audioJack": "3.5mm headphone jack",
+      "video": "1080p@30fps"
+    },
+    "more": {
+      "madeBy": "China",
+      "features": ["Accelerometer", "proximity", "compass"]
+    }
+  }
+]

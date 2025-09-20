@@ -1,0 +1,89 @@
+📦app/
+│
+├── 📁(auth)              # Route Group: public auth pages
+│   ├── 📁sign-in
+│   └── 📁sign-up
+│
+├── 📁(shop)              # Route Group: shopping related routes
+│   ├── 📁products
+│   │   ├── 📄page.tsx              # PLP - Product List Page
+│   │   └── 📁[slug]
+│   │       └── 📄page.tsx          # PDP - Product Details Page
+│   │
+│   ├── 📁cart
+│   │   └── 📄page.tsx
+│   ├── 📁checkout
+│   │   └── 📄page.tsx
+│   ├── 📁wishlist
+│   │   └── 📄page.tsx
+│   └── 📁search
+│       └── 📄page.tsx
+│
+├── 📁(user)              # Route Group: authenticated user pages
+│   ├── 📁account
+│   │   └── 📄page.tsx
+│   ├── 📁orders
+│   │   └── 📄page.tsx
+│   └── 📁addresses
+│       └── 📄page.tsx
+│
+├── 📁(admin)             # Route Group: admin-only pages
+│   ├── 📁dashboard
+│   │   └── 📄page.tsx
+│   ├── 📁products
+│   │   └── 📄page.tsx
+│   └── 📁orders
+│       └── 📄page.tsx
+│
+├── 📁components          # Reusable UI components
+│   ├── 📁ui              # Shared UI like Button, Input
+│   ├── 📁layout          # Header, Footer, Sidebar
+│   └── 📁product         # ProductCard, ProductGallery, etc.
+│
+├── 📁lib                 # Utilities, fetchers, helpers
+│   ├── 📄api.ts          # API fetch wrappers
+│   ├── 📄auth.ts         # Auth utils
+│   └── 📄format.ts       # Formatters (currency, date, etc.)
+│
+├── 📁hooks               # Custom React hooks
+│   └── 📄use-cart.ts
+│
+├── 📁context             # React Contexts (e.g., cart, auth)
+│   └── 📄cart-context.tsx
+│
+├── 📁styles              # Tailwind config + global styles
+│   └── 📄globals.css
+│
+├── 📁public              # Public assets (images, etc.)
+│
+├── 📄layout.tsx          # Root layout
+├── 📄page.tsx            # Homepage
+└── 📄favicon.ico
+
+
+
+
+
+create json file all by powershell/cmd command site.json # General site settings (title, meta, currency, etc.) ├── navigation.json # Header and footer nav links ├── categories.json # Product categories ├── products.json # All product info (id, name, price, images, etc.) ├── users.json # Fake user data (for auth, orders, wishlist) ├── orders.json # User order history ├── wishlist.json # Wishlist items per user ├── cart.json # Initial cart data └── homepage.json
+
+
+
+
+
+What kind of issues are you facing?
+
+❓ Build errors?
+
+❓ Page not rendering?
+
+❓ Tailwind not working?
+
+❓ Data not loading?
+
+❓ TypeScript type errors?
+
+❓ Context not working?
+
+❓ Dynamic routes ([slug]) broken?
+
+❓ File path/case sensitivity in imports?

@@ -1,0 +1,14 @@
+[
+  {
+    "position": "Senior Developer",
+    "company": "Tech Innovations",
+    "period": "Jan 2021 - Present",
+    "description": "Leading front-end team to build scalable applications with React and Next.js."
+  },
+  {
+    "position": "Frontend Developer",
+    "company": "Creative Solutions",
+    "period": "Jun 2018 - Dec 2020",
+    "description": "Worked on responsive UI/UX design and development using React and Tailwind CSS."
+  }
+]

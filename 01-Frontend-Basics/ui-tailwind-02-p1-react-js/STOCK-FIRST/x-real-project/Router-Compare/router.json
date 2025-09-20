@@ -1,0 +1,50 @@
+[
+  {
+    "brand": "Mercusys",
+    "model": "Mercusys MR30G",
+    "routerType": "Wireless & Ethernet",
+    "lanStandard": "10/100/1000",
+    "wanStandard": "10/100/1000",
+    "antenna": "4 x 5 dBi External Fixed Omni-Directional Antennas",
+    "wifiGeneration": "Wi-Fi 5",
+    "band": "Dual",
+    "wifiCoverage": "Up to 2000 sq. ft.",
+    "concurrentUsers": "Up to 20 User connections",
+    "meshTechnology": "No",
+    "mimoTechnology": "Yes",
+    "color": "Black",
+    "warranty": "1 Year (Without Adapter)"
+  },
+  {
+    "brand": "TP-Link",
+    "model": "TP-Link Archer C50",
+    "routerType": "Wireless & Ethernet",
+    "lanStandard": "10/100",
+    "wanStandard": "10/100",
+    "antenna": "4 x External Antena",
+    "wifiGeneration": "Wi-Fi 5",
+    "band": "Dual",
+    "wifiCoverage": "Up to 1500 sq. ft.",
+    "concurrentUsers": "Up to 20 User connections",
+    "meshTechnology": "Yes",
+    "mimoTechnology": "Yes",
+    "color": "Black",
+    "warranty": "1 Year (Without Adapter)"
+  },
+  {
+    "brand": "Cudy",
+    "model": "Cudy M1200 (1-Pack)",
+    "routerType": "Wireless & Ethernet",
+    "lanStandard": "10/100",
+    "wanStandard": "10/100",
+    "antenna": "2 x Internal Antena",
+    "wifiGeneration": "Wi-Fi 5",
+    "band": "Dual",
+    "wifiCoverage": "Up to 1500 sq. ft.",
+    "concurrentUsers": "Up to 30 user",
+    "meshTechnology": "Yes",
+    "mimoTechnology": "Yes",
+    "color": "White",
+    "warranty": "1 Year (Without Adapter)"
+  }
+]

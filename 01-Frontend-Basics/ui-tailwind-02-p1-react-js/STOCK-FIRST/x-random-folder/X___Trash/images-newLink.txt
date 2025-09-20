@@ -1,0 +1,13 @@
+react- tailwind. design this ui first
+Convert the attached image UI (follow Layout deeply) into 100% identical React code using Tailwind CSS. width : full. full screen.
+
+React and tailwind ....design same ui page - images :
+
+update this image ui to unexpected design and massive improve. React and tailwind.
+
+https://m.media-amazon.com/images/I/61+FNZ7DptL._UF1000,1000_QL80_.jpg
+https://m.media-amazon.com/images/I/61j-lpgB9+L._UF1000,1000_QL80_.jpg
+https://m.media-amazon.com/images/I/61BGLZw9P1L._UF1000,1000_QL80_.jpg
+https://bizimages.withfloats.com/actual/5a8cf13ba3f9b90be0025abb.jpg
+https://tropicalagro.in/wp-content/uploads/2023/09/DION-1024x1024.png
+

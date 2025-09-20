@@ -1,0 +1,19 @@
+{
+  "01-1-2024": [
+    {
+      "Quotes": "Your first quote here",
+      "Author": "Author Name",
+      "Category": "Category Name"
+    },
+    {
+      "Quotes": "Your second quote here",
+      "Author": "Author Name",
+      "Category": "Category Name"
+    },
+    {
+      "Quotes": "Your third quote here",
+      "Author": "Author Name",
+      "Category": "Category Name"
+    }
+  ]
+}

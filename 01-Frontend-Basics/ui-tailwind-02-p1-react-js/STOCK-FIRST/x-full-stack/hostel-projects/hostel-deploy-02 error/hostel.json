@@ -1,0 +1,75 @@
+{
+  "students": [
+    {
+      "name": "Rahim",
+      "roomNumber": 101,
+      "paid": [1000, 2000, 500],
+      "dateOfMeals": {
+        "1": { "morning": 0.5, "lunch": 1, "night": 1 },
+        "2": { "morning": 0.5, "lunch": 1, "night": 1 },
+        "3": { "morning": 0.5, "lunch": 1, "night": 1 },
+        "4": { "morning": 0.5, "lunch": 1, "night": 1 },
+        "5": {}
+      }
+    },
+    {
+      "name": "Karim",
+      "roomNumber": 102,
+      "paid": [1500, 2500],
+      "dateOfMeals": {
+        "1": { "morning": 0.5, "lunch": 1, "night": 1 },
+        "2": { "morning": 0.5, "lunch": 1, "night": 1 },
+        "3": { "morning": 0.5, "lunch": 1, "night": 1 },
+        "4": { "morning": 0.5, "lunch": 1, "night": 1 },
+        "5": {}
+      }
+    },
+    {
+      "name": "Salma",
+      "roomNumber": 103,
+      "paid": [2000, 1000],
+      "dateOfMeals": {
+        "1": { "morning": 0.5, "lunch": 1, "night": 1 },
+        "2": { "morning": 0.5, "lunch": 1, "night": 1 },
+        "3": { "morning": 0.5, "lunch": 1, "night": 1 },
+        "4": { "morning": 0.5, "lunch": 1, "night": 1 },
+        "5": {}
+      }
+    }
+  ],
+  "dailyBazar": {
+    "1": {
+      "bazarName": "Nazmul",
+      "roomNumber": 101,
+      "given": 2500,
+      "totalBills": 2400,
+      "return": 100,
+      "extraCost": 240
+    },
+    "2": {
+      "bazarName": "Noman",
+      "roomNumber": 102,
+      "given": 3000,
+      "totalBills": 2400,
+      "return": 100,
+      "extraCost": 240
+    },
+    "3": {
+      "bazarName": "Naim",
+      "roomNumber": 103,
+      "given": 2000,
+      "totalBills": 1800,
+      "return": 201
+    
+    },
+    "4": {
+      "bazarName": "Nazmul",
+      "roomNumber": 101,
+      "given": 2500,
+      "totalBills": 2400,
+      "return": 100,
+      "extraCost": 240
+    },
+    "5": {}
+  }
+}

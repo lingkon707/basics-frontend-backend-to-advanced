@@ -1,0 +1,17 @@
+[
+  {
+    "title": "About Lingkon",
+    "description": "Lingkon is a passionate Frontend Developer specializing in modern, responsive web applications using React, Next.js, and TypeScript.",
+    "output": "Name: Lingkon\nRole: Frontend Developer\nSpecialty: React & Next.js"
+  },
+  {
+    "title": "Skills & Tools",
+    "description": "He is skilled in React, Next.js, TailwindCSS, TypeScript, and has experience building scalable web applications with modern UI/UX practices.",
+    "output": "Skills: React, Next.js, TailwindCSS, TypeScript\nExperience: 1+ years"
+  },
+  {
+    "title": "Experience",
+    "description": "Lingkon has 1+ years of experience in frontend development and 1.5 years in overall software engineering. He focuses on creating clean, responsive, and user-friendly interfaces.",
+    "output": "Frontend: 1+ years\nSoftware: 1.5 years\nFocus: Clean & Responsive UI"
+  }
+]

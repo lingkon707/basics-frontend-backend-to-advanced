@@ -1,0 +1,3 @@
+touch projects.jsx skills.jsx experience.jsx education.jsx testimonials.jsx blog.jsx contact.jsx resume.jsx
+touch Header.jsx Footer.jsx ProjectCard.jsx SkillBar.jsx TestimonialCard.jsx BlogPostCard.jsx ExperienceItem.jsx EducationItem.jsx
+touch about.json projects.json skills.json experience.json education.json testimonials.json blog.json contact.json resume.json

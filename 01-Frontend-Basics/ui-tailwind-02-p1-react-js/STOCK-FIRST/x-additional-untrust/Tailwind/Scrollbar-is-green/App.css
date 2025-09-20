@@ -1,0 +1,17 @@
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 12px; /* Adjust width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background-color: #2D3748; /* Darker background color for the track */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #38B2AC; /* Teal color for the thumb */
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #319795; /* Slightly darker teal on hover */
+}

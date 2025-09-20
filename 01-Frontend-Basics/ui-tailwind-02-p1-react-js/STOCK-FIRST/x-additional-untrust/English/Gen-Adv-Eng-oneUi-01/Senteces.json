@@ -1,0 +1,219 @@
+[
+  {
+    "id": 1,
+    "General": "I Like you",
+    "Advance": "Feel from Heart.",
+    "Date": "2025-08-20",
+    "mini-notes": "A heartfelt expression."
+  },
+  {
+    "id": 2,
+    "General": "I don't know",
+    "Advance": "Wait I am recalling.",
+    "Date": "2025-08-25",
+    "mini-notes": "Needs more clarity."
+  },
+  {
+    "id": 3,
+    "General": "Let's go",
+    "Advance": "We should hurry.",
+    "Date": "2025-08-20",
+    "mini-notes": "Excited for the day."
+  },
+  {
+    "id": 4,
+    "General": "Hello",
+    "Advance": "It's been a while.",
+    "Date": "2025-08-21",
+    "mini-notes": "Casual greeting."
+  },
+  {
+    "id": 5,
+    "General": "Good morning",
+    "Advance": "Rise and shine.",
+    "Date": "2025-08-22",
+    "mini-notes": "Starting the day right."
+  },
+  {
+    "id": 6,
+    "General": "Take care",
+    "Advance": "Stay safe and healthy.",
+    "Date": "2025-08-23",
+    "mini-notes": "Wishing well-being."
+  },
+  {
+    "id": 7,
+    "General": "See you soon",
+    "Advance": "I’ll be waiting.",
+    "Date": "2025-08-24",
+    "mini-notes": "Looking forward to it."
+  },
+  {
+    "id": 8,
+    "General": "I'm sorry",
+    "Advance": "I didn’t mean to hurt you.",
+    "Date": "2025-08-22",
+    "mini-notes": "Apologizing for a mistake."
+  },
+  {
+    "id": 9,
+    "General": "Thank you",
+    "Advance": "I really appreciate it.",
+    "Date": "2025-08-20",
+    "mini-notes": "Gratitude expressed."
+  },
+  {
+    "id": 10,
+    "General": "Good night",
+    "Advance": "Sleep well.",
+    "Date": "2025-08-21",
+    "mini-notes": "Winding down for the night."
+  },
+  {
+    "id": 11,
+    "General": "Congratulations",
+    "Advance": "You did an amazing job.",
+    "Date": "2025-08-23",
+    "mini-notes": "Celebrating success."
+  },
+  {
+    "id": 12,
+    "General": "How are you?",
+    "Advance": "Hope everything’s okay.",
+    "Date": "2025-08-24",
+    "mini-notes": "Checking in on someone."
+  },
+  {
+    "id": 13,
+    "General": "What's up?",
+    "Advance": "Anything new?",
+    "Date": "2025-08-20",
+    "mini-notes": "Casual inquiry."
+  },
+  {
+    "id": 14,
+    "General": "No worries",
+    "Advance": "Everything's fine.",
+    "Date": "2025-08-25",
+    "mini-notes": "Reassuring someone."
+  },
+  {
+    "id": 15,
+    "General": "Let’s talk",
+    "Advance": "I have something to discuss.",
+    "Date": "2025-08-21",
+    "mini-notes": "Starting a conversation."
+  },
+  {
+    "id": 16,
+    "General": "Take it easy",
+    "Advance": "Don’t stress too much.",
+    "Date": "2025-08-22",
+    "mini-notes": "Offering comfort."
+  },
+  {
+    "id": 17,
+    "General": "I'm proud of you",
+    "Advance": "You’ve worked hard.",
+    "Date": "2025-08-23",
+    "mini-notes": "Expressing pride."
+  },
+  {
+    "id": 18,
+    "General": "Let’s chill",
+    "Advance": "Time to relax.",
+    "Date": "2025-08-24",
+    "mini-notes": "Suggesting downtime."
+  },
+  {
+    "id": 19,
+    "General": "That's awesome",
+    "Advance": "I’m impressed.",
+    "Date": "2025-08-20",
+    "mini-notes": "Expressing admiration."
+  },
+  {
+    "id": 20,
+    "General": "Don't worry",
+    "Advance": "We’ll figure it out.",
+    "Date": "2025-08-25",
+    "mini-notes": "Providing reassurance."
+  },
+  {
+    "id": 21,
+    "General": "I miss you",
+    "Advance": "I wish we were together.",
+    "Date": "2025-08-22",
+    "mini-notes": "Feeling of longing."
+  },
+  {
+    "id": 22,
+    "General": "Have a nice day",
+    "Advance": "Enjoy every moment.",
+    "Date": "2025-08-21",
+    "mini-notes": "Wishing someone well."
+  },
+  {
+    "id": 23,
+    "General": "Good job",
+    "Advance": "You nailed it!",
+    "Date": "2025-08-20",
+    "mini-notes": "Praise for effort."
+  },
+  {
+    "id": 24,
+    "General": "Take a break",
+    "Advance": "You deserve it.",
+    "Date": "2025-08-24",
+    "mini-notes": "Encouraging relaxation."
+  },
+  {
+    "id": 25,
+    "General": "I'm here for you",
+    "Advance": "You’re not alone.",
+    "Date": "2025-08-23",
+    "mini-notes": "Offering support."
+  },
+  {
+    "id": 26,
+    "General": "What’s the plan?",
+    "Advance": "What should we do next?",
+    "Date": "2025-08-25",
+    "mini-notes": "Seeking direction."
+  },
+  {
+    "id": 27,
+    "General": "Stay strong",
+    "Advance": "You’ve got this.",
+    "Date": "2025-08-20",
+    "mini-notes": "Motivational message."
+  },
+  {
+    "id": 28,
+    "General": "Take your time",
+    "Advance": "No rush.",
+    "Date": "2025-08-22",
+    "mini-notes": "Allowing space."
+  },
+  {
+    "id": 29,
+    "General": "I trust you",
+    "Advance": "I have faith in your decisions.",
+    "Date": "2025-08-21",
+    "mini-notes": "Expressing confidence."
+  },
+  {
+    "id": 30,
+    "General": "I believe in you",
+    "Advance": "You’re capable of anything.",
+    "Date": "2025-08-23",
+    "mini-notes": "Encouraging someone’s potential."
+  },
+  {
+    "id": 31,
+    "General": "Good luck",
+    "Advance": "I hope everything goes well.",
+    "Date": "2025-08-24",
+    "mini-notes": "Wishing success."
+  }
+]

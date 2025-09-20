@@ -1,0 +1,62 @@
+in below of Person Data(ui)
+add: do math : 
+
+IN below of Daily Bazar Data(ui)
+add:
+
+The error happens because in your JSON file dailyBazar is an object, not an array — so .reduce() won’t work.
+
+okay all is best . now make a new file dashboard.jsx
+
+UI show 
+1. total meals of all student from first day to last day
+2. set a meal rate : 60 tk
+3. total bazar of all student from first day to last day " i mean - Total Bills +Extra Cost = do math"
+3.  set a services charge : 950
+4. set a total student number : 30
+
+------------------
+
+okay all is best . now make a new file dashboard.jsx
+
+UI will show 6 Data...
+Total Bazar Bills:
+Total Meals:
+Total Services Charge:
+Per Student Services Charge:
+Total Student : 30
+Meal Rate : 
+
+How solve this Ui by my command : read my logic and use json data must.
+Total Bazar Bills: 
+Total Meals: do math on json data - total meals of all student from first day to last day.
+Total Services Charge:
+Total Student : 30
+Meal Rate : 
+
+1. 
+2. set a meal rate : 60 tk
+3. total bazar bills of all student from first day to last day " i mean - Total Bills +Extra Cost = do math, its bazar bills"
+3.  set a services charge : 950
+4. set a total student number : 30
+
+
+--------------
+
+update this file.
+
+set 2 data 
+1. Approx Meal Rate = 60
+2. Approx Services Change = 950
+
+in table, add : eaten, remaining, remaining with service charges
+eaten = Total Meals * Approx Meal Rate 
+
+
+remaining =  total paid - eaten
+remaining with service charges = Approx Services Change - ( total paid - eaten )
+
+
+
+
+

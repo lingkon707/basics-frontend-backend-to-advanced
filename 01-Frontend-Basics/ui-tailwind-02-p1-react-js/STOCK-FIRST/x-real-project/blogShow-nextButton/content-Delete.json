@@ -1,0 +1,136 @@
+[
+  {
+    "id": 1,
+    "title": "Why JavaScript is everywhere: 5 reasons",
+    "author": {
+      "name": "Alice Johnson",
+      "image": "https://randomuser.me/api/portraits/women/44.jpg"
+    },
+    "publishDate": "August 10, 2025",
+    "blogThumbnail": {
+      "url": "https://adtack.com/hubfs/45CECFEE-FB69-48C5-9DC9-1AF2079C6EC0_1_201_a.jpeg",
+      "alt": "JavaScript coding"
+    },
+    "intro": "JavaScript has become the backbone of modern web development. Here are 5 reasons why it dominates everywhere.",
+    "tips": [
+      {
+        "id": 1,
+        "title": "Versatility",
+        "content": "JavaScript runs on browsers, servers, mobile apps, and even IoT devices, making it extremely versatile."
+      },
+      {
+        "id": 2,
+        "title": "Huge Ecosystem",
+        "content": "Thousands of libraries and frameworks like React, Angular, and Vue.js fuel JavaScript's popularity."
+      },
+      {
+        "id": 3,
+        "title": "Fast Execution",
+        "content": "Modern JS engines like V8 compile JavaScript to fast machine code boosting performance."
+      },
+      {
+        "id": 4,
+        "title": "Active Community",
+        "content": "A massive community continuously develops tools, tutorials, and support."
+      },
+      {
+        "id": 5,
+        "title": "Easy to Learn",
+        "content": "JavaScript’s syntax is beginner-friendly with a gentle learning curve."
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Why Python is Faster: 6 reasons",
+    "author": {
+      "name": "Bob Smith",
+      "image": "https://randomuser.me/api/portraits/men/55.jpg"
+    },
+    "publishDate": "August 11, 2025",
+    "blogThumbnail": {
+      "url": "https://codecyper.com/assests/images/payroll_Services.webp",
+      "alt": "Python programming"
+    },
+    "intro": "Python’s speed in development and execution makes it a favorite among developers. Here are 6 reasons why.",
+    "tips": [
+      {
+        "id": 1,
+        "title": "Simple Syntax",
+        "content": "Python’s syntax is clean and easy to write, accelerating development speed."
+      },
+      {
+        "id": 2,
+        "title": "Rich Libraries",
+        "content": "Extensive libraries reduce the need to write code from scratch."
+      },
+      {
+        "id": 3,
+        "title": "Interpreted Language",
+        "content": "Python’s interpreted nature allows quick testing and debugging."
+      },
+      {
+        "id": 4,
+        "title": "Dynamic Typing",
+        "content": "Less code to manage types makes prototyping and changes faster."
+      },
+      {
+        "id": 5,
+        "title": "Integration Capabilities",
+        "content": "Python integrates well with other languages and platforms."
+      },
+      {
+        "id": 6,
+        "title": "Vibrant Community",
+        "content": "Continuous support and updates improve efficiency."
+      }
+    ]
+  },
+   {
+  "id": 2,
+  "title": "6 Reasons Machine Learning is Changing the World",
+  "author": {
+    "name": "Alice Johnson",
+    "image": "https://randomuser.me/api/portraits/women/44.jpg"
+  },
+  "publishDate": "August 11, 2025",
+  "blogThumbnail": {
+    "url": "https://www.repsol.com/content/dam/repsol-corporate/es/energia-e-innovacion/robot-machine-learning.jpg.transform/rp-rendition-sm/image.jpg",
+    "alt": "Machine Learning Concept"
+  },
+  "intro": "Machine Learning (ML) is no longer just a buzzword. It's a powerful force that's transforming industries, from healthcare to finance. Here are six key reasons why Machine Learning is changing the world.",
+  "tips": [
+    {
+      "id": 1,
+      "title": "Automated Decision Making",
+      "content": "ML models can process vast datasets and make real-time decisions without human intervention, leading to faster and more accurate results."
+    },
+    {
+      "id": 2,
+      "title": "Predictive Analytics",
+      "content": "From forecasting stock markets to predicting customer behavior, ML enables businesses to anticipate outcomes and act proactively."
+    },
+    {
+      "id": 3,
+      "title": "Personalization",
+      "content": "ML powers recommendation engines like Netflix and Amazon, providing personalized content that boosts user engagement and satisfaction."
+    },
+    {
+      "id": 4,
+      "title": "Improved Efficiency",
+      "content": "Industries leverage ML to optimize operations, reduce downtime, and streamline processes, leading to significant cost savings."
+    },
+    {
+      "id": 5,
+      "title": "Enhanced Healthcare",
+      "content": "ML aids in disease diagnosis, drug discovery, and patient care, making healthcare more precise and accessible."
+    },
+    {
+      "id": 6,
+      "title": "Scalability & Adaptability",
+      "content": "ML systems improve over time with more data, allowing them to scale and adapt to changing conditions effortlessly."
+    }
+  ]
+}
+
+]

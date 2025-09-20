@@ -1,0 +1,11 @@
+{
+  "name": "John Doe",
+  "title": "Full Stack Developer",
+  "description": "Passionate developer with a knack for creating vibrant, user-friendly websites using modern technologies.",
+  "image": "https://cdn.pixabay.com/photo/2023/04/21/15/42/portrait-7942151_1280.jpg",
+  "social": {
+    "linkedin": "https://linkedin.com/in/johndoe",
+    "github": "https://github.com/johndoe",
+    "twitter": "https://twitter.com/johndoe"
+  }
+}

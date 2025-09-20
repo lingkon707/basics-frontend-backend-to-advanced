@@ -1,0 +1,221 @@
+{
+  "basics": {
+    "name": "Lingkon Ahmed",
+    "label": "Frontend Engineer",
+    "picture": "https://www.newsmile4u.com/wp-content/uploads/2018/11/Don%E2%80%99t-be-Embarrassed-Men-Anyone-Can-Get-a-Smile-Makeover-min.png",
+    "x_pictureFallback": "images/jcoelho.jpg",
+    "x_title": "Hey There! Glad you're here",
+    "summary": "I've spent the last few years focused on building and maintaining reliable, scalable infrastructure. I enjoy making systems easy to operate and resilient under pressure, whether that's through automation, smart architecture, or thoughtful processes.<br /><br />I'm especially interested in cloud infrastructure and distributed systems, and I enjoy working on platforms that enable development teams to move quickly without sacrificing stability. I care about clean, maintainable solutions and believe reliability should be a product feature, not an afterthought.",
+    "location": {
+      "country": "Bangladesh",
+      "countryCode": "PT",
+      "region": "Dhaka"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "josecoelho93",
+        "url": "https://www.linkedin.com/in/josecoelho93",
+        "x_icon": "fab fa-2x fa-linkedin"
+      },
+      {
+        "network": "GitHub",
+        "username": "jcoelho93",
+        "url": "https://github.com/jcoelho93",
+        "x_icon": "fab fa-2x fa-github"
+      },
+      {
+        "network": "DEV Community",
+        "username": "jcoelho",
+        "url": "https://dev.to/jcoelho",
+        "x_icon": "fab fa-2x fa-dev"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "PagerDuty",
+      "position": "Site Reliability Engineer",
+      "website": "https://pagerduty.com",
+      "startDate": "2023-07-14",
+      "endDate": "",
+      "summary": "Part of the SRE Delivery team, I'm helping PagerDuty deliver the best experience to their customers.",
+      "highlights": []
+    },
+    {
+      "company": "Mindera",
+      "position": "Site Reliability Engineer",
+      "website": "https://mindera.com",
+      "startDate": "2023-03-13",
+      "endDate": "2023-07-10",
+      "summary": "A self-organizing company, time to be my own boss.",
+      "highlights": []
+    },
+    {
+      "company": "feedzai",
+      "position": "Cloud Engineer",
+      "website": "https://feedzai.com",
+      "startDate": "2021-04-26",
+      "endDate": "2023-03-11",
+      "summary": "The first startup in my professional path, feedzai - a Unicorn 🦄 - fighting financial crime and fraude",
+      "highlights": []
+    },
+    {
+      "company": "Self-employed",
+      "position": "Software engineering consultant",
+      "website": "https://jcoelho93.netlify.com",
+      "startDate": "2021-01-15",
+      "endDate": "",
+      "summary": "Started working for myself, providing expertise on software development and DevOps culture and best practices for international startups.",
+      "highlights": []
+    },
+    {
+      "company": "Bosch",
+      "position": "DevOps Engineer",
+      "website": "https://www.bosch.hu",
+      "startDate": "2019-10-15",
+      "endDate": "2020-10-10",
+      "summary": "Joined the Athena project, a Bosch & Daimler effort to bring a level 4 autonomous car to the streets.",
+      "highlights": []
+    },
+    {
+      "company": "Asseco PST",
+      "position": "DevOps Engineer",
+      "website": "https://www.pst.asseco.com",
+      "startDate": "2018-04-01",
+      "endDate": "2019-08-30",
+      "summary": "Joined Asseco PST DevOps team to help them deliver happiness to their customers",
+      "highlights": []
+    },
+    {
+      "company": "Asseco PST",
+      "position": "Backend Developer",
+      "website": "https://www.pst.asseco.com",
+      "startDate": "2017-08-16",
+      "endDate": "",
+      "summary": "Started my first professional developer experience as a Backend Developer for Asseco PST",
+      "highlights": []
+    },
+    {
+      "company": "European GNSS Agency",
+      "position": "IT Support Trainee",
+      "website": "https://www.euspa.europa.eu/",
+      "startDate": "2016-05-01",
+      "endDate": "",
+      "summary": "Moved to Prague, Czech Republic to intern for the European Commission helping them build one of the biggest european projects, Galileo Satellite System",
+      "highlights": []
+    },
+    {
+      "company": "Empresa de Electricidade da Madeira",
+      "position": "IT Support Trainee",
+      "website": "https://www.eem.pt",
+      "startDate": "2015-03-01",
+      "endDate": "",
+      "summary": "My first real work experience. Interning as an IT Support Technician I was able to learn and explore way more than the workings of a big IT Infrastructure. I got to work with PowerShell scripting, PHP and email marketing.",
+      "highlights": []
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Madeira",
+      "area": "Computer Engineering",
+      "studyType": "Bachelor",
+      "startDate": "2011-09-15",
+      "endDate": "2019-06-07",
+      "courses": [
+        "Object Oriented Programming",
+        "Database Management Systems",
+        "Operating systems and computers architectures",
+        "Requirements Engineering"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "AWS",
+      "x_icon": "fa-brands fa-aws",
+      "x_description": "Designing scalable, secure, and resilient systems using core AWS services"
+    },
+    {
+      "name": "Infrastructure as Code",
+      "x_icon": "fa-cubes",
+      "x_description": "Provisioning infrastructure repeatably and reliably using declarative code"
+    },
+    {
+      "name": "Kubernetes",
+      "x_icon": "fa-dharmachakra",
+      "x_description": "Orchestrating and managing containerized workloads using Kubernetes and GitOps"
+    },
+    {
+      "name": "Cloud Security",
+      "x_icon": "fa-shield-halved",
+      "x_description": "Enforcing least privilege, encryption, and compliance in heavily regulated cloud environments"
+    },
+    {
+      "name": "Reliability",
+      "x_icon": "fa-heart-pulse",
+      "x_description": "Driving reliability through SLI/SLO, incident management, and postmortem culture"
+    },
+    {
+      "name": "CI/CD",
+      "x_icon": "fa-infinity",
+      "x_description": "Building robust pipelines for continuous integration, testing, and delivery"
+    },
+    {
+      "name": "Python",
+      "x_icon": "fa-brands fa-python",
+      "x_description": "Automating workflows and building internal tools with Python"
+    },
+    {
+      "name": "Monitoring",
+      "x_icon": "fa-chart-line",
+      "x_description": "Instrumenting systems with OpenTelemetry to enable insight, traceability, and fast incident response"
+    },
+    {
+      "name": "Serverless",
+      "x_icon": "fa-bolt",
+      "x_description": "Building scalable event-driven systems using serverless compute"
+    },
+    {
+      "name": "Containers",
+      "x_icon": "fa-brands fa-docker",
+      "x_description": "Packaging and running applications in isolated, portable environments"
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Fluent speaker"
+    },
+    {
+      "language": "Portuguese",
+      "fluency": "Native speaker"
+    }
+  ],
+  "certificates": [
+    {
+      "name": "AWS Certified Solutions Architect Associate",
+      "issuer": "Amazon Web Services Training and Certification",
+      "url": "https://www.credly.com/badges/263d35c5-83db-4f93-97a4-a84ee806da90/public_url",
+      "badge": "images/certificates/aws-certified-solutions-architect-associate.png"
+    },
+    {
+      "name": "HashiCorp Certified: Terraform Associate",
+      "issuer": "HashiCorp",
+      "url": "https://www.credly.com/badges/b5c9ee11-de03-482b-8b74-71c4eba299cf/public_url",
+      "badge": "images/certificates/hc-terraform-associate.png"
+    },
+    {
+      "name": "Certified Kubernetes Application Developer",
+      "issuer": "The Linux Foundation",
+      "url": "https://www.credly.com/badges/3b4c4056-b736-4a9b-bcad-5a8457ef72e1/public_url",
+      "badge": "images/certificates/certified-kubernetes-application-developer.png"
+    },
+    {
+      "name": "Certificate of Cloud Security Knowledge",
+      "issuer": "Cloud Security Alliance",
+      "url": "https://www.credly.com/badges/a597b998-5019-46d9-a93f-47841ae3bd64/public_url",
+      "badge": "images/certificates/certificate-of-cloud-security-knowledge.png"
+    }
+  ]
+}

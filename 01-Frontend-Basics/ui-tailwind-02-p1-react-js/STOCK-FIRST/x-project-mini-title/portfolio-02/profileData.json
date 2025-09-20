@@ -1,0 +1,184 @@
+{
+  "basics": {
+    "name": "Lingkon",
+    "label": "Frontend Developer & ICT Assistant Advisor",
+    "picture": "https://www.newsmile4u.com/wp-content/uploads/2018/11/Don%E2%80%99t-be-Embarrassed-Men-Anyone-Can-Get-a-Smile-Makeover-min.png",
+    "x_pictureFallback": "images/lingkon.jpg",
+    "x_title": "Assalamu Alaikum! I'm Lingkon",
+    "summary": "I'm a web developer and ICT enthusiast from Bangladesh, with over 1.5 years of experience in frontend development. I've worked with companies in Bangladesh and contributed to national ICT initiatives. My passion lies in building responsive, accessible, and user-friendly interfaces using modern JavaScript frameworks like ReactJS, NextJS, and TypeScript. I'm also active in tech education and political awareness through YouTube and blogging.",
+    "location": {
+      "country": "Bangladesh",
+      "countryCode": "BD",
+      "region": "Dhaka"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "lingkon-dev",
+        "url": "https://www.linkedin.com/in/lingkon-dev",
+        "x_icon": "fab fa-2x fa-linkedin"
+      },
+      {
+        "network": "GitHub",
+        "username": "lingkon-dev",
+        "url": "https://github.com/lingkon-dev",
+        "x_icon": "fab fa-2x fa-github"
+      },
+      {
+        "network": "YouTube",
+        "username": "Lingkon Academy",
+        "url": "https://www.youtube.com/@LingkonAcademy",
+        "x_icon": "fab fa-2x fa-youtube"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Bangladesh ICT Division",
+      "position": "Assistant ICT Advisor",
+      "website": "https://ictd.gov.bd",
+      "startDate": "2024-09-01",
+      "endDate": "",
+      "summary": "Advising on national ICT policy, Dhaka management, and freelancer development strategies.",
+      "highlights": []
+    },
+    {
+      "company": "NexaTech BD",
+      "position": "Junior Frontend Developer",
+      "website": "https://nexatech.com.bd",
+      "startDate": "2023-01-10",
+      "endDate": "2023-12-31",
+      "summary": "Worked on web apps using ReactJS, improving UI performance and accessibility.",
+      "highlights": []
+    },
+    {
+      "company": "CodeLab BD",
+      "position": "Frontend Intern",
+      "website": "https://codelab.com.bd",
+      "startDate": "2022-06-01",
+      "endDate": "2022-12-30",
+      "summary": "Internship focused on HTML, CSS, JavaScript, and building responsive layouts.",
+      "highlights": []
+    }
+  ],
+  "education": [
+    {
+      "institution": "Bangladesh Open University",
+      "area": "Computer Science & Engineering",
+      "studyType": "Bachelor",
+      "startDate": "2024-01-01",
+      "endDate": "",
+      "courses": [
+        "Data Structures & Algorithms",
+        "Software Engineering",
+        "Web Technologies",
+        "Database Management"
+      ]
+    },
+    {
+      "institution": "Nageshwari College",
+      "area": "Science",
+      "studyType": "HSC",
+      "startDate": "2017-07-01",
+      "endDate": "2019-06-30",
+      "courses": []
+    },
+    {
+      "institution": "Nageshwari High School",
+      "area": "General Education",
+      "studyType": "SSC",
+      "startDate": "2012-01-01",
+      "endDate": "2017-06-30",
+      "courses": []
+    }
+  ],
+  "skills": [
+    {
+      "name": "ReactJS",
+      "x_icon": "fa-brands fa-react",
+      "x_description": "Building dynamic UIs using components and hooks"
+    },
+    {
+      "name": "NextJS",
+      "x_icon": "fa-solid fa-code",
+      "x_description": "Full-stack React framework for SSR and SSG"
+    },
+    {
+      "name": "TypeScript",
+      "x_icon": "fa-solid fa-terminal",
+      "x_description": "Typed superset of JavaScript for safer frontend code"
+    },
+    {
+      "name": "JavaScript",
+      "x_icon": "fa-brands fa-js",
+      "x_description": "Modern JavaScript (ES6+) for frontend logic and interactivity"
+    },
+    {
+      "name": "HTML & CSS",
+      "x_icon": "fa-brands fa-html5",
+      "x_description": "Semantic structure and responsive design with Flexbox & Grid"
+    },
+    {
+      "name": "Tailwind CSS",
+      "x_icon": "fa-solid fa-paint-brush",
+      "x_description": "Utility-first CSS framework for rapid UI development"
+    },
+    {
+      "name": "Git & GitHub",
+      "x_icon": "fa-brands fa-git-alt",
+      "x_description": "Version control and project collaboration"
+    },
+    {
+      "name": "Microsoft Office",
+      "x_icon": "fa-solid fa-file-word",
+      "x_description": "Proficient in Word, Excel, PowerPoint for documentation and reporting"
+    },
+    {
+      "name": "Content & Script Writing",
+      "x_icon": "fa-solid fa-pen-nib",
+      "x_description": "Writing for blogs, YouTube videos, and educational content"
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Fluent"
+    },
+    {
+      "language": "Bengali",
+      "fluency": "Native"
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Frontend Development Certification",
+      "issuer": "FreeCodeCamp",
+      "url": "https://www.freecodecamp.org/certification/lingkon/front-end-development",
+      "badge": "images/certificates/fcc-front-end.png"
+    }
+  ],
+  "awards": [
+    {
+      "title": "Top YouTube Shorts Creator – Tech",
+      "date": "2024-12-01",
+      "awarder": "YouTube Bangladesh",
+      "summary": "Recognized for reaching over 300K weekly views through educational tech shorts."
+    }
+  ],
+  "organizations": [
+    {
+      "name": "Nageshwari SSC Batch 2018",
+      "position": "Founder Member",
+      "startDate": "2018-01-01",
+      "endDate": "",
+      "summary": "Led community activities, study circles, and youth engagement programs."
+    },
+    {
+      "name": "Bangladesh Tech Youth Society",
+      "position": "Core Organizer",
+      "startDate": "2023-03-01",
+      "endDate": "",
+      "summary": "Organized online and offline workshops for student developers across rural areas."
+    }
+  ]
+}

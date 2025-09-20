@@ -1,0 +1,12 @@
+{
+  "user-1": [
+    {
+      "id": "addr-1",
+      "fullName": "John Doe",
+      "street": "123 Main Street",
+      "city": "New York",
+      "zip": "10001",
+      "country": "USA"
+    }
+  ]
+}

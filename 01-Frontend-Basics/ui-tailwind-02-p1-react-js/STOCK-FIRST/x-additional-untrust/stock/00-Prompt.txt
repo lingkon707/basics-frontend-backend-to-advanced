@@ -1,0 +1,28 @@
+I am uploading a PNG file that shows a UI design. 
+Please analyze this design thoroughly — layout, color scheme, spacing, typography, and interaction flow. 
+Then, recreate the same design using high-quality, professional standards as if you were a senior Google UI/UX designer. 
+Use React.js for the component structure and Tailwind CSS for styling. 
+Ensure the code is clean, responsive, pixel-perfect, and maintainable. 
+Use best practices in both UX and accessibility. 
+I want this to look production-ready and feel like a Google-level product.
+write only one - main.jsx | use object/array for data store.
+Screen size: width: 1280px, height: 720px
+images:
+
+make an unexpected design
+act like you are top 10 company UI designer..
+As a UI designer for a top-tier company, the key focus would be to ensure that the design is not only aesthetically appealing but also user-friendly, intuitive, and aligned with the brand’s values. The goal would be to create a seamless and delightful user experience that feels modern, polished, and functional across all devices and platforms.
+
+
+
+Task:
+I Just Uploaded a PNG UI design -  analysis this ui.
+Recreate the design in React.js with Tailwind CSS.
+Ensure high-quality, responsive, pixel-perfect, and maintainable code.
+Follow best practices in UX and accessibility.
+Focus on a clean, Google-level product feel.
+
+Output: Only the main.jsx file.
+Screen Size: 1280x720px.
+
+use images (if needs):

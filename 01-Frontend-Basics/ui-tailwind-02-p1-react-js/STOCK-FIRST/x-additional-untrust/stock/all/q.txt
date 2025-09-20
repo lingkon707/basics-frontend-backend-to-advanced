@@ -1,0 +1,7 @@
+Filter Date, Categories, and author. Search bar
+Clear all button, 
+
+Add pagination: 
+Per page 15+ quotes
+
+human math

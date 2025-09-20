@@ -1,0 +1,27 @@
+{
+  "summary": "Experienced Full Stack Developer specialized in React, Next.js, and modern front-end technologies.",
+  "skills": ["JavaScript", "React", "Next.js", "Node.js", "Tailwind CSS", "TypeScript"],
+  "experience": [
+    {
+      "position": "Senior Developer",
+      "company": "Tech Innovations",
+      "period": "Jan 2021 - Present"
+    },
+    {
+      "position": "Frontend Developer",
+      "company": "Creative Solutions",
+      "period": "Jun 2018 - Dec 2020"
+    }
+  ],
+  "education": [
+    {
+      "degree": "B.Sc. in Computer Science",
+      "institution": "University of Technology",
+      "period": "2014 - 2018"
+    }
+  ],
+  "contact": {
+    "email": "john.doe@example.com",
+    "phone": "+1 234 567 890"
+  }
+}

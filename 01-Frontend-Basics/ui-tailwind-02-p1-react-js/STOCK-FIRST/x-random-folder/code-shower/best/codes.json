@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Add Two Numbers",
+    "code": "function add(a, b) {\n  return a + b;\n}\n\nconsole.log(add(2, 3)); // Output: 5"
+  },
+  {
+    "title": "Find Largest Number in Array",
+    "code": "function findLargest(arr) {\n  return Math.max(...arr);\n}\n\nconsole.log(findLargest([1, 5, 2, 8, 3])); // Output: 8"
+  },
+  {
+    "title": "Reverse a String",
+    "code": "function reverseString(str) {\n  return str.split('').reverse().join('');\n}\n\nconsole.log(reverseString('hello')); // Output: 'olleh'"
+  },
+  {
+    "title": "Check Prime Number",
+    "code": "function isPrime(num) {\n  if (num <= 1) return false;\n  for (let i = 2; i <= Math.sqrt(num); i++) {\n    if (num % i === 0) return false;\n  }\n  return true;\n}\n\nconsole.log(isPrime(7)); // Output: true\nconsole.log(isPrime(4)); // Output: false"
+  },
+  {
+    "title": "Sum All Elements in Array",
+    "code": "function sumArray(arr) {\n  return arr.reduce((sum, num) => sum + num, 0);\n}\n\nconsole.log(sumArray([1, 2, 3, 4, 5])); // Output: 15"
+  }
+]

@@ -1,0 +1,10 @@
+Why does the "Previous" button work when you're on the first blog, and the "Next" button still works on the last blog?
+
+🧠 The reason:
+
+Because you're not disabling the buttons when they should be inactive.
+
+Right now, both buttons (onPrev and onNext) always call their respective functions when clicked — regardless of whether currentIndex is 0 (first blog) or currentIndex === totalBlogs - 1 (last blog).
+✅ What You Need to Do
+
+Add logic to disable the buttons based on the currentIndex.

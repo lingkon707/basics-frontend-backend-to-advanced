@@ -1,0 +1,12 @@
+[
+  {
+    "title": "How to Build a Vibrant Portfolio Website",
+    "excerpt": "Learn how to create an eye-catching portfolio with Next.js and Tailwind CSS.",
+    "link": "https://blog.example.com/vibrant-portfolio"
+  },
+  {
+    "title": "Why RGB Colors Rock in UI Design",
+    "excerpt": "Exploring the impact of RGB colors and gradients on user engagement.",
+    "link": "https://blog.example.com/rgb-ui-design"
+  }
+]

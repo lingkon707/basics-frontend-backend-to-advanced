@@ -1,0 +1,6 @@
+** Responsive **
+Please make this full page fully responsive across all devices and screen sizes. 
+Ensure the layout adjusts smoothly for mobile, tablet, and desktop views without horizontal scrolling or content overflow. 
+All elements—including text, images, colors, border, buttons, and —should resize or reposition appropriately to maintain usability and visual balance. 
+Improve the UI for a smooth and better user experience .
+The page must fill the viewport height and width while keeping the design clean and accessible.

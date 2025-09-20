@@ -1,0 +1,111 @@
+{
+  "students": [
+    {
+      "name": "Taher",
+      "roomNumber": 601,
+      "paid": [1000, 2000, 500],
+      "dateOfMeals": {
+        "1": { "morning": 0.5, "lunch": 1, "night": 1, "updated": true },
+        "2": { "morning": 0.5, "lunch": 2, "night": 1 },
+        "3": { "morning": 0.5, "lunch": 1, "night": 1 },
+        "4": { "morning": 0.5, "lunch": 1, "night": 2 },
+        "5": {}
+      }
+    },
+    {
+      "name": "Baizid",
+      "roomNumber": 601,
+      "paid": [1500, 2500],
+      "dateOfMeals": {
+        "1": { "morning": 0.5, "lunch": 2, "night": 1 },
+        "2": { "morning": 0, "lunch": 1, "night": 1 },
+        "3": { "morning": 0, "lunch": 0, "night": 1, "updated": true },
+        "5": { "morning": 0.5, "lunch": 2, "night": 1 }
+      }
+    },
+    {
+      "name": "Musfiq",
+      "roomNumber": 602,
+      "paid": [2000, 1000],
+      "dateOfMeals": {
+        "1": { "morning": 0.5, "lunch": 2, "night": 1 },
+        "2": { "morning": 0.5, "lunch": 2, "night": 1 },
+        "3": { "morning": 0.5, "lunch": 1, "night": 1 },
+        "4": { "morning": 0.5, "lunch": 4, "night": 1 },
+        "5": {}
+      }
+    },
+    {
+      "name": "Sharif",
+      "roomNumber": 602,
+      "paid": [500],
+      "dateOfMeals": {
+        "1": { "morning": 0.5, "lunch": 3, "night": 1 },
+        "2": { "morning": 0.5, "lunch": 1, "night": 1 }
+      }
+    },
+    {
+      "name": "Lingkon",
+      "roomNumber": 603,
+      "paid": [500],
+      "dateOfMeals": {
+        "1": { "morning": 0.5, "lunch": 1, "night": 1 },
+        "2": { "morning": 1, "lunch": 2, "night": 1 }
+      }
+    },
+    {
+      "name": "Noman",
+      "roomNumber": 604,
+      "paid": [700],
+      "dateOfMeals": {
+        "1": { "morning": 1, "lunch": 2, "night": 1 },
+        "2": { "morning": 0.5, "lunch": 1, "night": 2 },
+        "3": { "morning": 0.5, "lunch": 1, "night": 2 }
+      }
+    },
+    {
+      "name": "Mehedi",
+      "roomNumber": 604,
+      "paid": [400],
+      "dateOfMeals": {
+        "1": { "morning": 0.5, "lunch": 1, "night": 1 },
+        "2": { "morning": 1.5, "lunch": 2, "night": 0 }
+      }
+    }
+  ],
+
+  "dailyBazar": {
+    "1": {
+      "bazarName": "Naim",
+      "roomNumber": 605,
+      "given": 2500,
+      "totalBills": 1102,
+      "return": 100,
+      "extraCost": 0
+    },
+    "2": {
+      "bazarName": "Abdullah",
+      "roomNumber": 605,
+      "given": 3000,
+      "totalBills": 1102,
+      "return": 100,
+      "extraCost": 0
+    },
+    "3": {
+      "bazarName": "Nasim",
+      "roomNumber": 606,
+      "given": 2000,
+      "totalBills": 1102,
+      "return": 0
+    },
+    "4": {
+      "bazarName": "Byzid",
+      "roomNumber": 601,
+      "given": 2500,
+      "totalBills": 1102,
+      "return": 100,
+      "extraCost": 1
+    },
+    "5": {}
+  }
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "slug": "why-python-is-fast",
+    "title": "Why Python is Faster: 6 Reasons",
+    "author": {
+      "name": "Bob Smith",
+      "image": "https://randomuser.me/api/portraits/men/55.jpg"
+    },
+    "publishDate": "August 11, 2025",
+    "blogThumbnail": {
+      "url": "https://codecyper.com/assests/images/payroll_Services.webp",
+      "alt": "Python programming"
+    },
+    "intro": "Python’s speed in development and execution makes it a favorite among developers. Here are 6 reasons why.",
+    "tips": []
+  },
+  {
+    "id": 2,
+    "slug": "machine-learning-reasons",
+    "title": "6 Reasons Machine Learning is Changing the World",
+    "author": {
+      "name": "Alice Johnson",
+      "image": "https://randomuser.me/api/portraits/women/44.jpg"
+    },
+    "publishDate": "August 12, 2025",
+    "blogThumbnail": {
+      "url": "https://source.unsplash.com/featured/?machinelearning",
+      "alt": "Machine Learning"
+    },
+    "intro": "Machine Learning is a powerful force transforming industries. Here's why it's shaping the future.",
+    "tips": []
+  },
+  {
+    "id": 3,
+    "slug": "build-better-ui",
+    "title": "5 Principles for Building Clean UI with Tailwind",
+    "author": {
+      "name": "Sarah Lane",
+      "image": "https://randomuser.me/api/portraits/women/65.jpg"
+    },
+    "publishDate": "August 13, 2025",
+    "blogThumbnail": {
+      "url": "https://source.unsplash.com/featured/?ui,tailwind",
+      "alt": "Tailwind UI"
+    },
+    "intro": "Learn how to build clean and scalable user interfaces with Tailwind CSS.",
+    "tips": []
+  }
+]

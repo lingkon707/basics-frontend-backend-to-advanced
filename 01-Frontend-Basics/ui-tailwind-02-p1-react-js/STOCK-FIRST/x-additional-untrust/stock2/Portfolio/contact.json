@@ -1,0 +1,10 @@
+{
+  "email": "john.doe@example.com",
+  "phone": "+1 234 567 890",
+  "address": "123 RGB Street, Color City, TX",
+  "social": {
+    "linkedin": "https://linkedin.com/in/johndoe",
+    "github": "https://github.com/johndoe",
+    "twitter": "https://twitter.com/johndoe"
+  }
+}

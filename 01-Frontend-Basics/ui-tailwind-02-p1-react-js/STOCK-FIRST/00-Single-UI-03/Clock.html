@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clock Maintain App</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f4f9;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+    h1 {
+      margin: 20px 0;
+      font-size: 1.8rem;
+      color: #222;
+      text-align: center;
+    }
+    .timer-card {
+      background: white;
+      padding: 16px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      width: 90%;
+      max-width: 400px;
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .timer-display {
+      font-size: 2.2rem;
+      font-weight: bold;
+      text-align: center;
+      color: #333;
+      font-family: monospace;
+    }
+    .input-subject, .timer-input {
+      padding: 8px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 0.9rem;
+      width: 100%;
+    }
+    .timer-inputs {
+      display: flex;
+      gap: 5px;
+      justify-content: center;
+    }
+    .timer-input {
+      width: 50px;
+      text-align: center;
+    }
+    .btns {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    button {
+      padding: 6px 14px;
+      border: none;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      font-weight: bold;
+      cursor: pointer;
+      color: white;
+    }
+    .start { background: #28a745; }
+    .start:hover { background: #218838; }
+    .pause { background: #ffc107; color: #333; }
+    .pause:hover { background: #e0a800; }
+    .reset { background: #dc3545; }
+    .reset:hover { background: #c82333; }
+    .set { background: #007bff; }
+    .set:hover { background: #0056b3; }
+
+    .history {
+      width: 90%;
+      max-width: 600px;
+      margin-bottom: 30px;
+    }
+    .history-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+    .history h2 {
+      font-size: 1.1rem;
+      color: #222;
+    }
+    .clear-all {
+      background: none;
+      color: #dc3545;
+      font-size: 0.8rem;
+      border: none;
+      cursor: pointer;
+    }
+    .clear-all:hover {
+      text-decoration: underline;
+    }
+    .history-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .history-item {
+      background: white;
+      border-radius: 8px;
+      padding: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+      font-size: 0.85rem;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .history-details {
+      flex: 1 1 100%;
+    }
+    .history-actions button {
+      font-size: 0.7rem;
+      padding: 4px 10px;
+      border-radius: 4px;
+      margin-left: 4px;
+    }
+    .reuse { background: #007bff; }
+    .reuse:hover { background: #0056b3; }
+    .delete { background: #dc3545; }
+    .delete:hover { background: #c82333; }
+    summary {
+      cursor: pointer;
+      font-weight: 500;
+      margin-top: 4px;
+    }
+    @media (max-width: 480px) {
+      .timer-display { font-size: 1.8rem; }
+      .timer-input { width: 40px; font-size: 0.8rem; }
+    }
+  </style>
+</head>
+<body>
+  <h1>Clock Maintain App</h1>
+
+  <div class="timer-card">
+    <input type="text" class="input-subject" placeholder="Subject Name" id="subjectInput">
+
+    <div class="timer-display" id="timerDisplay">00:00:00</div>
+
+    <div class="btns">
+      <button class="start" id="startBtn">Start</button>
+      <button class="pause" id="pauseBtn">Pause</button>
+      <button class="reset" id="resetBtn">Reset</button>
+    </div>
+
+    <form class="timer-inputs" id="timerForm">
+      <input type="number" min="0" placeholder="H" class="timer-input" id="hoursInput">
+      <input type="number" min="0" max="59" placeholder="M" class="timer-input" id="minutesInput">
+      <input type="number" min="0" max="59" placeholder="S" class="timer-input" id="secondsInput">
+      <button type="submit" class="set">Set</button>
+    </form>
+  </div>
+
+  <section class="history">
+    <div class="history-header">
+      <h2>History</h2>
+      <button class="clear-all" id="clearAllBtn">Clear All</button>
+    </div>
+    <ul class="history-list" id="historyList"></ul>
+  </section>
+
+  <script>
+    const timerDisplay = document.getElementById('timerDisplay');
+    const subjectInput = document.getElementById('subjectInput');
+    const startBtn = document.getElementById('startBtn');
+    const pauseBtn = document.getElementById('pauseBtn');
+    const resetBtn = document.getElementById('resetBtn');
+    const timerForm = document.getElementById('timerForm');
+    const hoursInput = document.getElementById('hoursInput');
+    const minutesInput = document.getElementById('minutesInput');
+    const secondsInput = document.getElementById('secondsInput');
+    const historyList = document.getElementById('historyList');
+    const clearAllBtn = document.getElementById('clearAllBtn');
+
+    let duration = 0;
+    let timeLeft = 0;
+    let running = false;
+    let interval = null;
+    let startTime = null;
+    let pauseStart = null;
+    let pauseIntervals = [];
+
+    let history = JSON.parse(localStorage.getItem('timerHistory') || '[]');
+
+    function formatTime(ms) {
+      const totalSec = Math.floor(ms/1000);
+      const h = String(Math.floor(totalSec/3600)).padStart(2,'0');
+      const m = String(Math.floor((totalSec%3600)/60)).padStart(2,'0');
+      const s = String(totalSec%60).padStart(2,'0');
+      return `${h}:${m}:${s}`;
+    }
+    function formatDateTime(ts) {
+      return new Date(ts).toLocaleString();
+    }
+    function formatDuration(ms) {
+      const sec = Math.floor(ms/1000);
+      const h = Math.floor(sec/3600);
+      const m = Math.floor((sec%3600)/60);
+      const s = sec%60;
+      return `${h>0?h+'h ':''}${m>0?m+'m ':''}${s}s`;
+    }
+
+    function updateDisplay() {
+      timerDisplay.textContent = formatTime(timeLeft || duration);
+    }
+
+    function saveHistory(entry) {
+      history.unshift(entry);
+      localStorage.setItem('timerHistory', JSON.stringify(history));
+      renderHistory();
+    }
+
+    function renderHistory() {
+      historyList.innerHTML = '';
+      if(history.length === 0) {
+        historyList.innerHTML = '<li style="font-size:0.85rem;color:#666;font-style:italic;">No history yet.</li>';
+        return;
+      }
+      history.forEach(item => {
+        const li = document.createElement('li');
+        li.className = 'history-item';
+
+        const details = document.createElement('div');
+        details.className = 'history-details';
+        details.innerHTML = `
+          <div><strong>Subject:</strong> ${item.subject || 'N/A'}</div>
+          <div>Duration: ${formatTime(item.duration)}</div>
+          <div>Start: ${formatDateTime(item.startTime)}</div>
+          <div>End: ${formatDateTime(item.endTime)}</div>
+          <details>
+            <summary>Pauses (${item.pauseIntervals?.length || 0}, total ${formatTime((item.pauseIntervals||[]).reduce((a,p)=>a+p.duration,0))})</summary>
+            <ul>
+              ${(item.pauseIntervals||[]).map(p=>`<li>${formatDateTime(p.start)} → ${formatDateTime(p.end)} (${formatDuration(p.duration)})</li>`).join('')}
+            </ul>
+          </details>
+        `;
+        li.appendChild(details);
+
+        const actions = document.createElement('div');
+        actions.className = 'history-actions';
+        const reuseBtn = document.createElement('button');
+        reuseBtn.className = 'reuse';
+        reuseBtn.textContent = 'Reuse';
+        reuseBtn.onclick = () => {
+          duration = item.duration;
+          timeLeft = duration;
+          subjectInput.value = item.subject;
+          running = false;
+          updateDisplay();
+        };
+        const deleteBtn = document.createElement('button');
+        deleteBtn.className = 'delete';
+        deleteBtn.textContent = 'Delete';
+        deleteBtn.onclick = () => {
+          history = history.filter(h => h.id !== item.id);
+          localStorage.setItem('timerHistory', JSON.stringify(history));
+          renderHistory();
+        };
+        actions.appendChild(reuseBtn);
+        actions.appendChild(deleteBtn);
+        li.appendChild(actions);
+
+        historyList.appendChild(li);
+      });
+    }
+
+    function clearAll() {
+      history = [];
+      localStorage.removeItem('timerHistory');
+      renderHistory();
+    }
+
+    function resetSession() {
+      startTime = null;
+      pauseStart = null;
+      pauseIntervals = [];
+      subjectInput.value = '';
+    }
+
+    function tick() {
+      const now = Date.now();
+      const totalPause = pauseIntervals.reduce((a,p)=>a+p.duration,0);
+      const elapsed = now - startTime - totalPause;
+      timeLeft = duration - elapsed;
+      if(timeLeft <= 0) {
+        clearInterval(interval);
+        running = false;
+        timeLeft = 0;
+        updateDisplay();
+        saveHistory({
+          id: Date.now(),
+          subject: subjectInput.value,
+          duration,
+          startTime,
+          pauseIntervals,
+          endTime: now
+        });
+        resetSession();
+        return;
+      }
+      updateDisplay();
+    }
+
+    startBtn.onclick = () => {
+      if(duration <= 0) return alert('Set duration first!');
+      if(!subjectInput.value.trim()) return alert('Enter subject name!');
+      if(!running) {
+        if(!startTime) startTime = Date.now();
+        if(pauseStart) {
+          const end = Date.now();
+          pauseIntervals.push({start: pauseStart, end, duration:end-pauseStart});
+          pauseStart = null;
+        }
+        interval = setInterval(tick, 200);
+        running = true;
+      }
+    };
+    pauseBtn.onclick = () => {
+      if(running) {
+        running = false;
+        pauseStart = Date.now();
+        clearInterval(interval);
+      }
+    };
+    resetBtn.onclick = () => {
+      running = false;
+      timeLeft = duration;
+      updateDisplay();
+      resetSession();
+      clearInterval(interval);
+    };
+    timerForm.onsubmit = e => {
+      e.preventDefault();
+      const h = parseInt(hoursInput.value)||0;
+      const m = parseInt(minutesInput.value)||0;
+      const s = parseInt(secondsInput.value)||0;
+      const totalMs = (h*3600 + m*60 + s)*1000;
+      if(totalMs <= 0) return alert('Enter a valid duration!');
+      duration = totalMs;
+      timeLeft = totalMs;
+      running = false;
+      resetSession();
+      updateDisplay();
+      hoursInput.value = '';
+      minutesInput.value = '';
+      secondsInput.value = '';
+    };
+    clearAllBtn.onclick = () => {
+      if(confirm('Clear all history?')) clearAll();
+    };
+
+    updateDisplay();
+    renderHistory();
+  </script>
+</body>
+</html>

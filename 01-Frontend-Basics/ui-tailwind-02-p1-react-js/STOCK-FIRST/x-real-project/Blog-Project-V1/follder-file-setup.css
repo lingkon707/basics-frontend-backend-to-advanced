@@ -1,0 +1,11 @@
+app/
+├── blog/
+│   ├── [slug]/
+│   │   └── page.jsx       // Detail page
+├── components/
+│   └── AllBlogSection.jsx
+├── utils/
+│   └── slugify.js
+├── content/
+│   └── content.json
+└── page.jsx               // Home or main route

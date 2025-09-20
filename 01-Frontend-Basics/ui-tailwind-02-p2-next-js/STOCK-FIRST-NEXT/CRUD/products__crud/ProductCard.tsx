@@ -1,0 +1,40 @@
+"use client";
+
+import React from "react";
+import { Product } from "./types";
+
+interface Props {
+  product: Product;
+  onEdit: (product: Product) => void;
+  onDelete: (productId: string) => void;
+}
+
+const ProductCard: React.FC<Props> = ({ product, onEdit, onDelete }) => {
+  return (
+    <div className="bg-white rounded shadow overflow-hidden hover:shadow-lg transition flex flex-col">
+      <img src={product.image} alt={product.name} className="h-48 w-full object-cover" />
+      <div className="p-4 flex-1 flex flex-col justify-between">
+        <div>
+          <h3 className="font-semibold text-lg">{product.name}</h3>
+          <p className="text-gray-700">${product.price}</p>
+        </div>
+        <div className="mt-4 flex gap-2">
+          <button
+            className="flex-1 bg-yellow-400 text-white p-1 rounded hover:bg-yellow-500"
+            onClick={() => onEdit(product)}
+          >
+            Edit
+          </button>
+          <button
+            className="flex-1 bg-red-500 text-white p-1 rounded hover:bg-red-600"
+            onClick={() => onDelete(product.id)}
+          >
+            Delete
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default ProductCard;

@@ -1,0 +1,5 @@
+App.jsx (Use nextjs and Tailwind CSS) 
+Follow this attached file. read and understand This UI first. them,
+Design Like modern, clean, and minimalistic user interface inspired by Google’s designer and other leading tech companies designer type.
+Serious Note: 100% responsive in PC Monitor Screen.
+Note: ignore functionality type task and graph.

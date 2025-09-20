@@ -1,0 +1,12 @@
+[
+  {
+    "title": "RGB Portfolio Website",
+    "description": "A colorful portfolio built with Next.js and TailwindCSS featuring an RGB theme.",
+    "link": "https://github.com/johndoe/rgb-portfolio"
+  },
+  {
+    "title": "AI Art Generator",
+    "description": "Web app that generates art using AI models, built with React and Node.js.",
+    "link": "https://github.com/johndoe/ai-art-generator"
+  }
+]

@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "General": "I Like you",
+    "Advance": "Feel from Heart.",
+    "Date": "2025-08-20",
+    "mini-notes": "A heartfelt expression."
+  },
+  {
+    "id": 2,
+    "General": "I don't know",
+    "Advance": "Wait I am recalling.",
+    "Date": "2025-08-25",
+    "mini-notes": "Needs more clarity."
+  },
+  {
+    "id": 3,
+    "General": "Let's go",
+    "Advance": "We should hurry.",
+    "Date": "2025-08-18",
+    "mini-notes": "Excited for the day."
+  }
+]

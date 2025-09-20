@@ -1,0 +1,7 @@
+[
+  { "name": "JavaScript", "level": 90 },
+  { "name": "React", "level": 85 },
+  { "name": "Next.js", "level": 80 },
+  { "name": "Tailwind CSS", "level": 85 },
+  { "name": "Node.js", "level": 70 }
+]

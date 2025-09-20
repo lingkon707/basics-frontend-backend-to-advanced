@@ -1,0 +1,10 @@
+{
+  "heroBanner": {
+    "title": "Welcome to NextStore",
+    "subtitle": "Your one-stop shop for everything.",
+    "image": "/banners/hero.jpg",
+    "cta": { "label": "Shop Now", "href": "/products" }
+  },
+  "featuredCategories": ["Electronics", "Fashion"],
+  "featuredProducts": ["prod-1", "prod-2"]
+}

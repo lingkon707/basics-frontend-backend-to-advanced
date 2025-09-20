@@ -1,0 +1,5 @@
+in top flex 3 section : logo + header + modal 
+when scrolling page - keep absolute this 3
+
+blog and content + Project Details is flex . fix position. 
+Note : Project Details card set hover shadow on his box of content beside

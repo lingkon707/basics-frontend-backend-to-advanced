@@ -1,0 +1,89 @@
+{
+  "blogs": [
+    {
+      "title": "5 tips for your success",
+      "author": {
+        "name": "John Doe",
+        "image": "https://cdn.pixabay.com/photo/2018/08/18/16/23/indian-man-3615047_1280.jpg"
+      },
+      "publishDate": "August 12, 2025",
+      "blogThumbnail": {
+        "url": "https://pbil.in/wp-content/uploads/2025/05/2024-04-22___Potato-Cracker-shop-sign-board-design-for-India-market-8X4-scaled.png",
+        "alt": "Success concept image"
+      },
+      "intro": "To ensure that you can celebrate your personal successes, we have summarized 5 tips that will help you achieve your goals!",
+      "tips": [
+        {
+          "id": 1,
+          "title": "Go the extra mile",
+          "content": "The bigger your goals are, the more time and energy you have to invest in achieving them..."
+        },
+        {
+          "id": 2,
+          "title": "Lifelong learning",
+          "content": "Learning is a lifelong process..."
+        },
+        {
+          "id": 3,
+          "title": "Focus your challenges",
+          "content": "To be successful, you must not shy away from your individual challenges..."
+        },
+        {
+          "id": 4,
+          "title": "Prioritize your health",
+          "content": "While you are mastering your challenges, investing extra time and energy..."
+        },
+        {
+          "id": 5,
+          "title": "Get out of your comfort zone",
+          "content": "Successful people are courageous and willing to grow beyond themselves..."
+        }
+      ]
+    },
+    {
+      "title": "6 tips for health",
+      "author": {
+        "name": "Jane Smith",
+        "image": "https://www.medylife.com/blog/wp-content/uploads/2017/05/Healthy-Living.jpg"
+      },
+      "publishDate": "August 12, 2025",
+      "blogThumbnail": {
+        "url": "https://www.slma.cc/wp-content/uploads/2018/05/shutterstock_310396487-1000x675.jpg",
+        "alt": "Health and wellness"
+      },
+      "intro": "Staying healthy is the foundation for a fulfilling life. Here are 6 practical tips to help you maintain your physical and mental well-being.",
+      "tips": [
+        {
+          "id": 1,
+          "title": "Eat a balanced diet",
+          "content": "Focus on incorporating whole grains, fresh fruits, vegetables, and lean proteins into your meals."
+        },
+        {
+          "id": 2,
+          "title": "Stay hydrated",
+          "content": "Drink at least 8 glasses of water a day and limit sugary or caffeinated drinks."
+        },
+        {
+          "id": 3,
+          "title": "Exercise regularly",
+          "content": "Aim for at least 30 minutes of physical activity most days of the week."
+        },
+        {
+          "id": 4,
+          "title": "Get enough sleep",
+          "content": "Quality sleep helps your body recover and keeps your mind sharp."
+        },
+        {
+          "id": 5,
+          "title": "Manage stress",
+          "content": "Practice mindfulness, meditation, or engage in hobbies to reduce daily stress."
+        },
+        {
+          "id": 6,
+          "title": "Avoid harmful habits",
+          "content": "Limit alcohol, avoid smoking, and stay away from processed foods whenever possible."
+        }
+      ]
+    }
+  ]
+}

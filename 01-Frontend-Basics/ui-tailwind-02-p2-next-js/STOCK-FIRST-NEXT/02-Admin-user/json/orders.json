@@ -1,0 +1,12 @@
+[
+  {
+    "orderId": "ord-1001",
+    "userId": "user-1",
+    "items": [
+      { "productId": "prod-1", "quantity": 2 }
+    ],
+    "total": 240,
+    "status": "Delivered",
+    "date": "2025-09-01"
+  }
+]
