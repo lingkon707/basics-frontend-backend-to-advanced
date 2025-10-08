@@ -1,0 +1,13 @@
+| Feature             | Purpose                          |
+| ------------------- | -------------------------------- |
+| Collections         | Organize requests                |
+| Requests            | Send & test APIs                 |
+| Environments        | Switch configs easily            |
+| Variables           | Store dynamic data               |
+| Pre-request Scripts | Run code before requests         |
+| Tests               | Validate responses automatically |
+| Mock Servers        | Simulate backend                 |
+| Monitors            | Scheduled automated tests        |
+| Workspaces          | Team collaboration               |
+| Newman              | CLI automation                   |
+| Documentation       | Auto-generate API docs           |

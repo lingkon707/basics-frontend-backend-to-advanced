@@ -1,0 +1,11 @@
+| Device            | Width (px) | Tailwind Prefix |
+| ----------------- | ---------- | --------------- |
+| iPhone SE         | 320px      | default         |
+| iPhone 8          | 375px      | default         |
+| iPhone X / 11     | 375px      | default         |
+| iPhone 12 Pro Max | 428px      | default         |
+| Small Tablets     | 600px      | sm              |
+| iPad / Tablet     | 768px      | md              |
+| Laptop            | 1024px     | lg              |
+| Desktop           | 1280px     | xl              |
+| Large Desktop     | 1536px     | 2xl             |

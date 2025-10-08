@@ -1,0 +1,26 @@
+Updating Data and Hitting an API in React
+1️⃣ Concepts
+
+User Input / State:
+
+Capture new or edited data from the user using useState or useReducer.
+
+Form Submission:
+
+Use a button or form onSubmit to trigger the API call.
+
+API Request (POST/PUT/PATCH):
+
+POST → Create new data
+
+PUT → Replace existing data completely
+
+PATCH → Update part of existing data
+
+Handle Response:
+
+Update state if the API returns the updated data.
+
+Show loading or error messages.
+
+2️⃣ Example: Update Username via API

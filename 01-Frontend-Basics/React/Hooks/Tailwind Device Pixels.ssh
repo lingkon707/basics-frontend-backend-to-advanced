@@ -1,0 +1,7 @@
+| Prefix | Screen Width | Example Devices             |
+| ------ | ------------ | --------------------------- |
+| `sm:`  | ≥ 640px      | Small tablets, large phones |
+| `md:`  | ≥ 768px      | iPad, small laptops         |
+| `lg:`  | ≥ 1024px     | Laptops, desktops           |
+| `xl:`  | ≥ 1280px     | Large desktops              |
+| `2xl:` | ≥ 1536px     | Very large desktops         |
