@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pocket Clock - Dhaka</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #f0f0f0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .clock {
+      background: #333;
+      color: #fff;
+      padding: 40px 60px;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+    }
+
+    .zone {
+      font-size: 1rem;
+      margin-top: 10px;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="clock-container">
+    <div class="clock" id="clock">--:--:--</div>
+    <div class="zone">Asia/Dhaka</div>
+  </div>
+
+  <script>
+    function updateClock() {
+      // Get current time in Dhaka timezone
+      const options = { timeZone: 'Asia/Dhaka', hour12: false, hour: '2-digit', minute: '2-digit', second: '2-digit' };
+      const formatter = new Intl.DateTimeFormat([], options);
+      const now = new Date();
+      const timeParts = formatter.formatToParts(now);
+      const timeStr = timeParts.map(part => part.value).join('');
+      document.getElementById('clock').textContent = timeStr;
+    }
+
+    setInterval(updateClock, 1000);
+    updateClock();
+  </script>
+
+</body>
+</html>
